@@ -1,0 +1,469 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>ВестСервис</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+
+
+    <link href="{% static 'css/templatemo_style.css' %}" rel="stylesheet" type="text/css"/>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ddsmoothmenu.css' %}"/>
+
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/ddsmoothmenu.js' %}">
+
+        /***********************************************
+         * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+         * This notice MUST stay intact for legal use
+         * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+         ***********************************************/
+
+    </script>
+
+    <script type="text/javascript" src="{% static 'scripts/init.js' %}">
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+
+    <script language="javascript" type="text/javascript" src="{% static 'scripts/mootools-1.2.1-core.js' %}"></script>
+    <script language="javascript" type="text/javascript" src="{% static 'scripts/mootools-1.2-more.js' %}"></script>
+    <script language="javascript" type="text/javascript" src="{% static 'scripts/slideitmoo-1.1.js' %}"></script>
+    <script language="javascript" type="text/javascript" src="{% static 'scripts/slider.js' %}">
+    </script>
+    <style type="text/css">
+        .wrapper {
+            background: #fff;
+            width: 700px;
+            padding: 1px 15px 15px;
+            margin: 0 auto;
+        }
+
+        .slider {
+            z-index: 9;
+            width: 705px;
+            height: 225px;
+            overflow: hidden;
+            margin: 0 0 7px;
+            position: relative;
+        }
+
+        .slider ul,
+        .slider li {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .slider ul {
+            width: 9999px;
+        }
+
+        .slider ul li {
+            list-style-type: none;
+            float: left;
+            width: 705px;
+            height: 225px;
+        }
+
+        .slider .nav {
+            position: absolute;
+            left: 15px;
+            bottom: 12px;
+        }
+
+        .slider .nav span {
+            opacity: 0.9;
+            background: #fff;
+            margin: 0 8px 0 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            overflow: hidden;
+            display: block;
+            float: left;
+            box-shadow: 0 1px 2px #000;
+        }
+
+        .slider .nav span.on {
+            background: #2e9419;
+        }
+
+        .slider2 {
+            z-index: 9;
+            width: 850px;
+            height: 225px;
+            overflow: hidden;
+            margin: 0 0 7px;
+            position: relative;
+        }
+
+        .slider2 ul,
+        .slider2 li {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .slider2 ul {
+            width: 9999px;
+        }
+
+        .slider2 ul li {
+            list-style-type: none;
+            float: left;
+            width: 850px;
+            height: 225px;
+        }
+
+        .slider2 .nav {
+            position: absolute;
+            left: 15px;
+            bottom: 12px;
+        }
+
+        .slider2 .nav span {
+            opacity: 0.9;
+            background: #fff;
+            margin: 0 8px 0 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            overflow: hidden;
+            display: block;
+            float: left;
+            box-shadow: 0 1px 2px #000;
+        }
+
+        .slider2 .nav span.on {
+            background: #2e9419;
+        }
+
+
+    </style>
+    <script type="text/javascript" src="{% static 'js/jquery1.js' %}"></script>
+
+    <script type="text/javascript" src="{% static 'js/slider.js' %}"></script>
+</head>
+
+<body id="home">
+
+<div id="templatemo_wrapper">
+    <div id="templatemo_header">
+        <center><img src="{% static 'images/newlogo.png' %}" alt="Image 01"/></center>
+        <!-- <div id="header_right">
+             <div class="cleaner"></div>
+             <div id="templatemo_search">
+                 <form action="#" method="get">
+                     <input type="text" value="Search" name="keyword" id="keyword" title="keyword"
+                            onfocus="clearText(this)" onblur="clearText(this)" class="txt_field"/>
+                     <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search"
+                            class="sub_btn"/>
+                 </form>
+             </div>
+         </div> <!-- END -->
+    </div> <!-- END of header -->
+
+
+    <nav class="top-menu">
+        <ul class="menu-main">
+            <li class="left-item"><a href="index.html" class="selected">Главная</a></li>
+            <li class="left-item"><a href="remont.html">Услуги</a></li>
+            <li class="left-item"><a href="">Продажа</a></li>
+            <li class="right-item"><a href="">Контакты</a></li>
+            <li class="right-item"><a href="">Кредит</a></li>
+            <li class="right-item"><a href="">Наш магазин</a></li>
+        </ul>
+        <a class="navbar-logo" href=""><img src=""></a>
+    </nav>
+
+
+    <!--
+    <div id="templatemo_menu" class="ddsmoothmenu">
+        <ul>
+            <li><a href="index.html" class="selected">Главная</a></li>
+            <li><a href="products.html">Услуги</a>
+                <ul>
+                    <li><a href="#">Ремонт ноутбуков</a></li>
+                    <li><a href="#">Ремонт телефонов</a></li>
+                    <li><a href="#">Ремонт принтеров</a></li>
+                    <li><a href="#">Ремонт мониторов</a></li>
+                    <li><a href="#">Заправка картриджей</a>
+                        <ul>
+                            <li><a href="#">Лазерный принтер</a></li>
+                            <li><a href="#">Струйный принтер</a></li>
+                            <li><a href="#">Прошивка чипа</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="about.html">Продажа</a>
+                <ul>
+                    <li><a href="#">Скидки</a></li>
+                    <li><a href="#">Новинки</a></li>
+                    <li><a href="#">Ноутбуки</a></li>
+                    <li><a href="#">Комплектующие</a></li>
+                    <li><a href="#">Б/У товары</a></li>
+                </ul>
+            </li>
+            <li><a href="checkout.html">Кредит</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <br style="clear: left"/>
+    </div> <!-- end of templatemo_menu -->
+    <center>
+        <div id="templatemo_middle">
+            <div class="slider">
+                <ul>
+                    <li><img src="{% static 'i/1.png' %}" alt="product 1"/></li>
+                    <li><img src="{% static 'i/2.png' %}" alt="product 2"/></li>
+                    <li><img src="{% static 'i/3.png' %}" alt="product 2"/></li>
+                    <li><img src="{% static 'i/4.png' %}" alt="product 2"/></li>
+                    <li><img src="{% static 'i/5.png' %}" alt="product 2"/></li>
+                </ul>
+            </div>
+        </div> <!-- END of middle -->
+    </center>
+
+    <div id="templatemo_main_top"></div>
+    <div id="templatemo_main">
+        <div class="slider2">
+            <ul>
+                <li>
+        <div id="product_slider">
+            <div id="SlideItMoo_outer">
+                <div id="SlideItMoo_inner">
+                    <div id="SlideItMoo_items">
+                        <div class="SlideItMoo_element">
+                            <a href="#slide1" target="_parent">
+                                <img src="{% static 'images/gallery/Rnote.png' %}" alt="product 1"/></a>
+                        </div>
+                        <div class="SlideItMoo_element">
+                            <a href="#slide3" target="_parent">
+                                <img src="{% static 'images/gallery/Rcomp.png'%}" alt="product 3"/></a>
+                        </div>
+                        <div class="SlideItMoo_element">
+                            <a href="#slide4" target="_parent">
+                                <img src="{% static 'images/gallery/Rtel.png'%}" alt="product 4"/></a>
+                        </div>
+						 <div class="SlideItMoo_element">
+                            <a href="#slide2" target="_parent">
+                                <img src="{% static 'images/gallery/Rprint.png'%}" alt="product 2"/></a>
+                        </div>
+                        <div class="SlideItMoo_element">
+                            <a href="#slide5" target="_parent">
+                                <img src="{% static 'images/gallery/Rcart.png'%}" alt="product 5"/></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="cleaner"></div>
+        </div>
+		</li>
+
+
+
+
+
+		<li>
+        <div id="product_slider">
+            <div id="SlideItMoo_outer">
+                <div id="SlideItMoo_inner">
+                    <div id="SlideItMoo_items">
+                        <div class="SlideItMoo_element">
+                            <a href="#slide1" target="_parent">
+                                <img src="{% static 'images/gallery/comp.png'%}" alt="product 1"/></a>
+                        </div>
+                        <div class="SlideItMoo_element">
+                            <a href="#slide3" target="_parent">
+                                <img src="{% static 'images/gallery/pevm.png'%}" alt="product 3"/></a>
+                        </div>
+                        <div class="SlideItMoo_element">
+                            <a href="#slide4" target="_parent">
+                                <img src="{% static 'images/gallery/kompl.png'%}" alt="product 4"/></a>
+                        </div>
+						 <div class="SlideItMoo_element">
+                            <a href="#slide2" target="_parent">
+                                <img src="{% static 'images/gallery/printer.png'%}" alt="product 2"/></a>
+                        </div>
+                        <div class="SlideItMoo_element">
+                            <a href="#slide5" target="_parent">
+                                <img src="{% static 'images/gallery/aks.png'%}" alt="product 5"/></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="cleaner"></div>
+        </div>
+		</li>
+
+
+
+
+
+
+		<li>
+        <div id="product_slider">
+            <div id="SlideItMoo_outer">
+                <div id="SlideItMoo_inner">
+                    <div id="SlideItMoo_items">
+                        <div class="SlideItMoo_element">
+                            <a href="#slide1" target="_parent">
+                                <img src="{% static 'images/gallery/calc.png'%}" alt="product 1"/></a>
+                        </div>
+						<div class="SlideItMoo_element">
+                            <a href="#slide1" target="_parent">
+                                <img src="{% static 'images/gallery/calcR.png'%}" alt="product 1"/></a>
+                        </div>
+                        <div class="SlideItMoo_element">
+                            <a href="#slide3" target="_parent">
+                                <img src="{% static 'images/gallery/ysl.png'%}" alt="product 3"/></a>
+                        </div>
+                        <div class="SlideItMoo_element">
+                            <a href="#slide4" target="_parent">
+                                <img src="{% static 'images/gallery/rassr.png'%}" alt="product 4"/></a>
+                        </div>
+						 <div class="SlideItMoo_element">
+                            <a href="#slide2" target="_parent">
+                                <img src="{% static 'images/gallery/liz.png'%}" alt="product 2"/></a>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="cleaner"></div>
+        </div>
+		</li>
+
+
+
+
+
+
+		<li>
+        <div id="product_slider">
+            <div id="SlideItMoo_outer">
+                <div id="SlideItMoo_inner">
+                    <div id="SlideItMoo_items">
+                        <div class="SlideItMoo_element">
+                            <a href="#slide1" target="_parent">
+                                <img src="{% static 'images/gallery/by.png'%}" alt="product 1"/></a>
+                        </div>
+                        <div class="SlideItMoo_element">
+                            <a href="#slide3" target="_parent">
+                                <img src="{% static 'images/gallery/note.jpg'%}" alt="product 3"/></a>
+                        </div>
+                        <div class="SlideItMoo_element">
+                            <a href="#slide4" target="_parent">
+                                <img src="{% static 'images/gallery/note.jpg'%}" alt="product 4"/></a>
+                        </div>
+						 <div class="SlideItMoo_element">
+                            <a href="#slide2" target="_parent">
+                                <img src="{% static 'images/gallery/note.jpg'%}" alt="product 2"/></a>
+                        </div>
+						<div class="SlideItMoo_element">
+                            <a href="#slide2" target="_parent">
+                                <img src="{% static 'images/gallery/note.jpg'%}" alt="product 2"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cleaner"></div>
+        </div>
+		</li>
+
+
+
+
+
+		<li>
+        <div id="product_slider">
+            <div id="SlideItMoo_outer">
+                <div id="SlideItMoo_inner">
+                    <div id="SlideItMoo_items">
+
+
+						<iframe
+							width="800"
+							height="200"
+							frameborder="0" style="border:0"
+							src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAH2AF3WZ-J4SSwlz_4SYWNeRcRmzpozwI
+								&q=Minsk,Leningradskaya,3" allowfullscreen>
+						</iframe>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="cleaner"></div>
+        </div>
+		</li>
+
+
+
+
+
+		</ul>
+		</div>
+
+
+        <div id="templatemo_footer">
+
+            <div>
+                <h7><b>В магазине-мастерской "ВестСервис"</b> представлен спектр услуг по <b>обслуживанию и ремонту</b>
+                    персональных компьютеров и ноутбуков, от <b>переустановки ОС</b>, обновления антивируса и ремонта
+                    зарядных устройств до <b>восстановления</b> материнских плат после залития и <b>замены чипсета</b> с
+                    предоставлением <b>гарантии</b> на сложный ремонт до 6 месяцев. Кроме того, мы можем
+                    <b>заправить</b> и вернуть в строй ваши <b>струйные и лазерные картриджи</b>, а также при
+                    необходимости <b>отремонтировать или перепрошить принтер</b>. Также мы представляем широкий выбор
+                    <b>ноутбуков, компьютеров, комплектующих</b> и аксессуаров к ним. Мы рады предложить вам безупречный
+                    сервис и выгодные условия для покупки техники в <b>кредит, рассточку, лизинг без справки о
+                        заработной плате, за наличный и безналичный расчёт</b>. Весь товар <b>сертифицирован</b> и имеет
+                    официальную гарантию.<br>Мы ждём вас по адресу: <b>г. Минск, ул. Ленинградская, 3 (м. Площадь
+                        Ленина, ж/д Вокзал), магазин-мастерская "ВестСервис".</b>
+                </h7>
+                <br>
+                <br>
+                <br>
+            </div>
+
+            <div>
+
+                <h4>ЧТУП «Весткомпьютер</h4>
+                <p> 223021, Минский р-н, д. Богатырево, ул. Полесская, д.1-180
+                    р/сч 3012165410019 в «МТБанк» ЗАО, код 117
+                    <br>г. Минск, ул. Толстого, 10
+                    <br>УНП 690633058
+                    <br>Свидетельство о гос. регистрации выдано 30.01.2008г. Минским облисполкомом
+                    <br>Внесены в Торговый реестр РБ за №359513
+                    <br>Внесены в Реестр бытовых услуг РБ за №000000065572
+                </p>
+            </div>
+
+            <div class="cleaner h40"></div>
+            <center>
+                © 2017 WESTCOMP.BY. Все права защищены.
+            </center>
+        </div> <!-- END of footer -->
+
+    </div>
+
+
+    <script type="text/javascript" src="{% static 'scripts/footerInCode.js' %}"></script>
+    <noscript>
+        <div><img src="//mc.yandex.ru/watch/20963398" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript>
+</div>
+
+</body>
+</html>
