@@ -11,7 +11,10 @@ from .models import NoteProcessor
 from .models import NotePov
 from .models import NoteSizeHDD
 from .models import NoteTypeGraphic
+
 from .models import Material
+from .models import Color
+from .models import Import
 
 from .models import PC
 from .models import PCBlock
@@ -36,6 +39,9 @@ admin.site.register(NotePov)
 admin.site.register(NoteSizeHDD)
 admin.site.register(Material)
 admin.site.register(NoteTypeGraphic)
+
+admin.site.register(Color)
+admin.site.register(Import)
 
 
 admin.site.register(PC)

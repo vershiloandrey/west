@@ -8,7 +8,7 @@
     <meta name="description" content=""/>
 
 
-    <link href="{% static 'css/templatemo_style.css' %}" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/templatemo_style.css' %}"/>
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/ddsmoothmenu.css' %}"/>
 
@@ -26,7 +26,7 @@
     <script type="text/javascript" src="{% static 'scripts/init.js' %}">
     </script>
 
-    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css'%}"/>
 
     <script language="javascript" type="text/javascript" src="{% static 'scripts/mootools-1.2.1-core.js' %}"></script>
     <script language="javascript" type="text/javascript" src="{% static 'scripts/mootools-1.2-more.js' %}"></script>
@@ -171,14 +171,14 @@
 
     <nav class="top-menu">
         <ul class="menu-main">
-            <li class="left-item"><a href="index.html" class="selected">Главная</a></li>
-            <li class="left-item"><a href="remont.html">Услуги</a></li>
-            <li class="left-item"><a href="">Продажа</a></li>
+            <li class="left-item"><a href="/" class="selected">Главная</a></li>
+            <li class="left-item"><a href="/remont">Услуги</a></li>
+            <li class="left-item"><a href="/shop">Продажа</a></li>
             <li class="right-item"><a href="">Контакты</a></li>
             <li class="right-item"><a href="">Кредит</a></li>
             <li class="right-item"><a href="">Наш магазин</a></li>
         </ul>
-        <a class="navbar-logo" href=""><img src=""></a>
+
     </nav>
 
 
