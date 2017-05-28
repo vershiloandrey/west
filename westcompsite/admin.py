@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Note
+from .models import Notes
 from .models import NoteType
 from .models import NoteHHD
 from .models import NoteEkran
@@ -26,7 +26,7 @@ from .models import PCProizv
 from .models import PCVent
 from .models import PCVideo
 
-admin.site.register(Note)
+admin.site.register(Notes)
 admin.site.register(NoteType)
 admin.site.register(NoteHHD)
 admin.site.register(NoteRazr)

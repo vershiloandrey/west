@@ -6,108 +6,109 @@ from django.db import models
 class Import(models.Model):
     i = models.CharField(max_length=50, default='')
 
-    def __unicode__(self):
+    def __str__(self):
         return self.i
 
 
 class Color(models.Model):
     c = models.CharField(max_length=20)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.c
 
 
 class NoteHHD(models.Model):
     type = models.CharField(max_length=5)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.type
 
 
 class NoteOS(models.Model):
     os = models.CharField(max_length=50)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.os
 
 
 class NoteEkran(models.Model):
     type = models.CharField(max_length=20)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.type
 
 
 class NoteType(models.Model):
     type = models.CharField(max_length=20)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.type
 
 
 class Material(models.Model):
     material = models.CharField(max_length=20)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.material
 
 
 class NoteRazr(models.Model):
     razr = models.CharField(max_length=20)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.razr
 
 
 class NoteDiag(models.Model):
     diag = models.CharField(max_length=20)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.diag
 
 
 class NoteProizv(models.Model):
     pr = models.CharField(max_length=20)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.pr
 
 
 class NoteProcessor(models.Model):
     pr = models.CharField(max_length=20)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.pr
 
 
 class NotePov(models.Model):
     pov = models.CharField(max_length=20)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.pov
 
 
 class NoteSizeHDD(models.Model):
     size = models.CharField(max_length=20)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.size
 
 
 class NoteTypeGraphic(models.Model):
     g = models.CharField(max_length=20)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.g
 
 
-class Note(models.Model):
+class Notes(models.Model):
     Proizv = models.ForeignKey(NoteProizv)
     Model = models.CharField(max_length=100)
-    # Image = models.ImageField(upload_to='bdimage/notes/')
+    Image_URL = models.CharField(max_length=300)
     Data = models.CharField(max_length=50)
     Type = models.ForeignKey(NoteType)
     Processor = models.ForeignKey(NoteProcessor)
+    kol_yader = models.CharField(max_length=10)
     Color = models.ForeignKey(Color)
     Material = models.ForeignKey(Material)
     Matrica = models.ForeignKey(NoteEkran)
@@ -127,7 +128,6 @@ class Note(models.Model):
     Transformer = models.BooleanField()
     Micro = models.BooleanField()
     Camera = models.BooleanField()
-    Count_pixel = models.CharField(max_length=5)
     Sensor = models.BooleanField()
     DVD = models.BooleanField()
     bluetooth = models.BooleanField()
@@ -142,70 +142,73 @@ class Note(models.Model):
     Importer = models.ForeignKey(Import)
     sale = models.BooleanField()
     by = models.BooleanField()
+    cena = models.CharField(max_length=10)
+    o_proizv = models.CharField(max_length=100)
 
-    def __unicode__(self):
+    def __str__(self):
         return (self.Proizv.pr + " " + self.Model)
 
 
 class PCProizv(models.Model):
     p = models.CharField(max_length=20)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.p
 
 
 class PCOC(models.Model):
     oc = models.CharField(max_length=20)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.oc
 
 
 class PCProc(models.Model):
     p = models.CharField(max_length=20)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.p
 
 
 class PCVent(models.Model):
     v = models.CharField(max_length=20)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.v
 
 
 class PCPam(models.Model):
     p = models.CharField(max_length=10)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.p
 
 
 class PCHDD(models.Model):
     h = models.CharField(max_length=20)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.h
 
 
 class PCVideo(models.Model):
     v = models.CharField(max_length=50)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.v
 
 
 class PCBlock(models.Model):
     b = models.CharField(max_length=20)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.b
 
 
 class PC(models.Model):
     Proizv = models.ForeignKey(PCProizv)
     Processor = models.ForeignKey(PCProc)
+    kol_yader = models.CharField(max_length=10)
     Ventilator = models.ForeignKey(PCVent)
     Mat_plata = models.CharField(max_length=20)
     OMemory = models.ForeignKey(PCPam)
@@ -217,7 +220,8 @@ class PC(models.Model):
     OS = models.ForeignKey(PCOC)
     sale = models.BooleanField()
     by = models.BooleanField()
+    o_proizv = models.CharField(max_length=100)
+    cena = models.CharField(max_length=10)
 
-    def __unicode__(self):
+    def __str__(self):
         return (self.Proizv.pr + " " + self.Processor)
-

@@ -203,13 +203,15 @@
     <nav class="top-menu">
         <ul class="menu-main">
             <li class="left-item"><a href="/" class="selected">Главная</a></li>
-            <li class="left-item"><a href="products.html">Услуги</a></li>
-            <li class="left-item"><a href="shop">Продажа</a></li>
-            <li class="right-item"><a href="">Контакты</a></li>
-            <li class="right-item"><a href="">Кредит</a></li>
-            <li class="right-item"><a href="">Наш магазин</a></li>
+            <li class="left-item"><a href="/remont">Услуги</a></li>
+            <li class="left-item"><a href="/shop">Продажа</a></li>
+            <li class="left-item"><a href="/shop">Б/У</a></li>
+            <li class="left-item"><a href="">Наш магазин</a></li>
+            <li class="left-item"><a href="">Кредит</a></li>
+            <li class="left-item"><a href="">Контакты</a></li>
+
         </ul>
-        <a class="navbar-logo" href=""><img src=""></a>
+
     </nav>
 
 
@@ -254,13 +256,13 @@
 
         <div id="sidebar">
             <h3>Категории</h3>
-            <ul class="sidebar_menu">
-                <li><a href="#">Ноутбуки</a></li>
-                <li><a href="#">Компьютеры</a></li>
-                <li><a href="#">Комплектующие</a></li>
-                <li><a href="#">Перферия</a></li>
-                <li><a href="#">Аксессуары</a></li>
-                <li><a href="#">Скидки</a></li>
+             <ul class="sidebar_menu">
+                <li><a href="{%  static '/notes' %}">Ноутбуки</a></li>
+                <li><a href="{%  static '/pcs' %}">Компьютеры</a></li>
+                <li><a href="{%  static '/complex' %}">Комплектующие</a></li>
+                <li><a href="{%  static '/periphery' %}">Перферия</a></li>
+                <li><a href="{% static '/access' %}">Аксессуары</a></li>
+                <li><a href="{%  static '/shop' %}">Скидки</a></li>
                 <li><a href="#">Новинки</a></li>
             </ul>
             <h3>Не нашли, что искали?</h3>

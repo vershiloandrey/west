@@ -26,7 +26,7 @@
     <script type="text/javascript" src="{% static 'scripts/init.js' %}">
     </script>
 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css'%}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
 
     <script language="javascript" type="text/javascript" src="{% static 'scripts/mootools-1.2.1-core.js' %}"></script>
     <script language="javascript" type="text/javascript" src="{% static 'scripts/mootools-1.2-more.js' %}"></script>
@@ -174,9 +174,11 @@
             <li class="left-item"><a href="/" class="selected">Главная</a></li>
             <li class="left-item"><a href="/remont">Услуги</a></li>
             <li class="left-item"><a href="/shop">Продажа</a></li>
-            <li class="right-item"><a href="">Контакты</a></li>
-            <li class="right-item"><a href="">Кредит</a></li>
-            <li class="right-item"><a href="">Наш магазин</a></li>
+            <li class="left-item"><a href="/shop">Б/У</a></li>
+            <li class="left-item"><a href="">Наш магазин</a></li>
+            <li class="left-item"><a href="">Кредит</a></li>
+            <li class="left-item"><a href="">Контакты</a></li>
+
         </ul>
 
     </nav>
@@ -219,11 +221,11 @@
         <div id="templatemo_middle">
             <div class="slider">
                 <ul>
-                    <li><img src="{% static 'i/1.png' %}" alt="product 1"/></li>
-                    <li><img src="{% static 'i/2.png' %}" alt="product 2"/></li>
-                    <li><img src="{% static 'i/3.png' %}" alt="product 2"/></li>
-                    <li><img src="{% static 'i/4.png' %}" alt="product 2"/></li>
-                    <li><img src="{% static 'i/5.png' %}" alt="product 2"/></li>
+                    <li><a href="/remont"><img src="{% static 'i/1.png' %}" alt="product 1"/></a></li>
+                    <li><a href="/shop"><img src="{% static 'i/2.png' %}" alt="product 2"/></a></li>
+                    <li><a><img src="{% static 'i/3.png' %}" alt="product 2"/></a></li>
+                    <li><a href="/shop"><img src="{% static 'i/4.png' %}" alt="product 2"/></a></li>
+                    <li><a><img src="{% static 'i/5.png' %}" alt="product 2"/></a></li>
                 </ul>
             </div>
         </div> <!-- END of middle -->
@@ -234,187 +236,169 @@
         <div class="slider2">
             <ul>
                 <li>
-        <div id="product_slider">
-            <div id="SlideItMoo_outer">
-                <div id="SlideItMoo_inner">
-                    <div id="SlideItMoo_items">
-                        <div class="SlideItMoo_element">
-                            <a href="#slide1" target="_parent">
-                                <img src="{% static 'images/gallery/Rnote.png' %}" alt="product 1"/></a>
-                        </div>
-                        <div class="SlideItMoo_element">
-                            <a href="#slide3" target="_parent">
-                                <img src="{% static 'images/gallery/Rcomp.png'%}" alt="product 3"/></a>
-                        </div>
-                        <div class="SlideItMoo_element">
-                            <a href="#slide4" target="_parent">
-                                <img src="{% static 'images/gallery/Rtel.png'%}" alt="product 4"/></a>
-                        </div>
-						 <div class="SlideItMoo_element">
-                            <a href="#slide2" target="_parent">
-                                <img src="{% static 'images/gallery/Rprint.png'%}" alt="product 2"/></a>
-                        </div>
-                        <div class="SlideItMoo_element">
-                            <a href="#slide5" target="_parent">
-                                <img src="{% static 'images/gallery/Rcart.png'%}" alt="product 5"/></a>
-                        </div>
+                    <div id="product_slider">
+                        <div id="SlideItMoo_outer">
+                            <div id="SlideItMoo_inner">
+                                <div id="SlideItMoo_items">
+                                    <div class="SlideItMoo_element">
+                                        <a href="#slide1" target="_parent">
+                                            <img src="{% static 'images/gallery/Rnote.png' %}" alt="product 1"/></a>
+                                    </div>
+                                    <div class="SlideItMoo_element">
+                                        <a href="#slide3" target="_parent">
+                                            <img src="{% static 'images/gallery/Rcomp.png' %}" alt="product 3"/></a>
+                                    </div>
+                                    <div class="SlideItMoo_element">
+                                        <a href="#slide4" target="_parent">
+                                            <img src="{% static 'images/gallery/Rtel.png' %}" alt="product 4"/></a>
+                                    </div>
+                                    <div class="SlideItMoo_element">
+                                        <a href="#slide2" target="_parent">
+                                            <img src="{% static 'images/gallery/Rprint.png' %}" alt="product 2"/></a>
+                                    </div>
+                                    <div class="SlideItMoo_element">
+                                        <a href="#slide5" target="_parent">
+                                            <img src="{% static 'images/gallery/Rcart.png' %}" alt="product 5"/></a>
+                                    </div>
 
 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cleaner"></div>
                     </div>
-                </div>
-            </div>
-            <div class="cleaner"></div>
-        </div>
-		</li>
+                </li>
 
 
+                <li>
+                    <div id="product_slider">
+                        <div id="SlideItMoo_outer">
+                            <div id="SlideItMoo_inner">
+                                <div id="SlideItMoo_items">
+                                    <div class="SlideItMoo_element">
+                                        <a href="{% static '/notes' %}" target="_parent">
+                                            <img src="{% static 'images/gallery/comp.png' %}" alt="product 1"/></a>
+                                    </div>
+                                    <div class="SlideItMoo_element">
+                                        <a href="{% static '/pcs' %}" target="_parent">
+                                            <img src="{% static 'images/gallery/pevm.png' %}" alt="product 3"/></a>
+                                    </div>
+                                    <div class="SlideItMoo_element">
+                                        <a href="{% static '/complex' %}" target="_parent">
+                                            <img src="{% static 'images/gallery/kompl.png' %}" alt="product 4"/></a>
+                                    </div>
+                                    <div class="SlideItMoo_element">
+                                        <a href="{% static '/periphery' %}" target="_parent">
+                                            <img src="{% static 'images/gallery/printer.png' %}" alt="product 2"/></a>
+                                    </div>
+                                    <div class="SlideItMoo_element">
+                                        <a href="{% static '/access' %}" target="_parent">
+                                            <img src="{% static 'images/gallery/aks.png' %}" alt="product 5"/></a>
+                                    </div>
 
 
-
-		<li>
-        <div id="product_slider">
-            <div id="SlideItMoo_outer">
-                <div id="SlideItMoo_inner">
-                    <div id="SlideItMoo_items">
-                        <div class="SlideItMoo_element">
-                            <a href="#slide1" target="_parent">
-                                <img src="{% static 'images/gallery/comp.png'%}" alt="product 1"/></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="SlideItMoo_element">
-                            <a href="#slide3" target="_parent">
-                                <img src="{% static 'images/gallery/pevm.png'%}" alt="product 3"/></a>
-                        </div>
-                        <div class="SlideItMoo_element">
-                            <a href="#slide4" target="_parent">
-                                <img src="{% static 'images/gallery/kompl.png'%}" alt="product 4"/></a>
-                        </div>
-						 <div class="SlideItMoo_element">
-                            <a href="#slide2" target="_parent">
-                                <img src="{% static 'images/gallery/printer.png'%}" alt="product 2"/></a>
-                        </div>
-                        <div class="SlideItMoo_element">
-                            <a href="#slide5" target="_parent">
-                                <img src="{% static 'images/gallery/aks.png'%}" alt="product 5"/></a>
-                        </div>
-
-
+                        <div class="cleaner"></div>
                     </div>
-                </div>
-            </div>
-            <div class="cleaner"></div>
-        </div>
-		</li>
+                </li>
 
 
+                <li>
+                    <div id="product_slider">
+                        <div id="SlideItMoo_outer">
+                            <div id="SlideItMoo_inner">
+                                <div id="SlideItMoo_items">
+                                    <div class="SlideItMoo_element">
+                                        <a href="#slide1" target="_parent">
+                                            <img src="{% static 'images/gallery/calc.png' %}" alt="product 1"/></a>
+                                    </div>
+                                    <div class="SlideItMoo_element">
+                                        <a href="#slide1" target="_parent">
+                                            <img src="{% static 'images/gallery/calcR.png' %}" alt="product 1"/></a>
+                                    </div>
+                                    <div class="SlideItMoo_element">
+                                        <a href="#slide3" target="_parent">
+                                            <img src="{% static 'images/gallery/ysl.png' %}" alt="product 3"/></a>
+                                    </div>
+                                    <div class="SlideItMoo_element">
+                                        <a href="#slide4" target="_parent">
+                                            <img src="{% static 'images/gallery/rassr.png' %}" alt="product 4"/></a>
+                                    </div>
+                                    <div class="SlideItMoo_element">
+                                        <a href="#slide2" target="_parent">
+                                            <img src="{% static 'images/gallery/liz.png' %}" alt="product 2"/></a>
+                                    </div>
 
 
-
-
-		<li>
-        <div id="product_slider">
-            <div id="SlideItMoo_outer">
-                <div id="SlideItMoo_inner">
-                    <div id="SlideItMoo_items">
-                        <div class="SlideItMoo_element">
-                            <a href="#slide1" target="_parent">
-                                <img src="{% static 'images/gallery/calc.png'%}" alt="product 1"/></a>
+                                </div>
+                            </div>
                         </div>
-						<div class="SlideItMoo_element">
-                            <a href="#slide1" target="_parent">
-                                <img src="{% static 'images/gallery/calcR.png'%}" alt="product 1"/></a>
-                        </div>
-                        <div class="SlideItMoo_element">
-                            <a href="#slide3" target="_parent">
-                                <img src="{% static 'images/gallery/ysl.png'%}" alt="product 3"/></a>
-                        </div>
-                        <div class="SlideItMoo_element">
-                            <a href="#slide4" target="_parent">
-                                <img src="{% static 'images/gallery/rassr.png'%}" alt="product 4"/></a>
-                        </div>
-						 <div class="SlideItMoo_element">
-                            <a href="#slide2" target="_parent">
-                                <img src="{% static 'images/gallery/liz.png'%}" alt="product 2"/></a>
-                        </div>
-
-
-
+                        <div class="cleaner"></div>
                     </div>
-                </div>
-            </div>
-            <div class="cleaner"></div>
-        </div>
-		</li>
+                </li>
 
 
-
-
-
-
-		<li>
-        <div id="product_slider">
-            <div id="SlideItMoo_outer">
-                <div id="SlideItMoo_inner">
-                    <div id="SlideItMoo_items">
-                        <div class="SlideItMoo_element">
-                            <a href="#slide1" target="_parent">
-                                <img src="{% static 'images/gallery/by.png'%}" alt="product 1"/></a>
+                <li>
+                    <div id="product_slider">
+                        <div id="SlideItMoo_outer">
+                            <div id="SlideItMoo_inner">
+                                <div id="SlideItMoo_items">
+                                    <div class="SlideItMoo_element">
+                                        <a href="#slide1" target="_parent">
+                                            <img src="{% static 'images/gallery/by.png' %}" alt="product 1"/></a>
+                                    </div>
+                                    <div class="SlideItMoo_element">
+                                        <a href="#slide3" target="_parent">
+                                            <img src="{% static 'images/gallery/note.jpg' %}" alt="product 3"/></a>
+                                    </div>
+                                    <div class="SlideItMoo_element">
+                                        <a href="#slide4" target="_parent">
+                                            <img src="{% static 'images/gallery/note.jpg' %}" alt="product 4"/></a>
+                                    </div>
+                                    <div class="SlideItMoo_element">
+                                        <a href="#slide2" target="_parent">
+                                            <img src="{% static 'images/gallery/note.jpg' %}" alt="product 2"/></a>
+                                    </div>
+                                    <div class="SlideItMoo_element">
+                                        <a href="#slide2" target="_parent">
+                                            <img src="{% static 'images/gallery/note.jpg' %}" alt="product 2"/></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="SlideItMoo_element">
-                            <a href="#slide3" target="_parent">
-                                <img src="{% static 'images/gallery/note.jpg'%}" alt="product 3"/></a>
-                        </div>
-                        <div class="SlideItMoo_element">
-                            <a href="#slide4" target="_parent">
-                                <img src="{% static 'images/gallery/note.jpg'%}" alt="product 4"/></a>
-                        </div>
-						 <div class="SlideItMoo_element">
-                            <a href="#slide2" target="_parent">
-                                <img src="{% static 'images/gallery/note.jpg'%}" alt="product 2"/></a>
-                        </div>
-						<div class="SlideItMoo_element">
-                            <a href="#slide2" target="_parent">
-                                <img src="{% static 'images/gallery/note.jpg'%}" alt="product 2"/></a>
-                        </div>
+                        <div class="cleaner"></div>
                     </div>
-                </div>
-            </div>
-            <div class="cleaner"></div>
-        </div>
-		</li>
+                </li>
 
 
+                <li>
+                    <div id="product_slider">
+                        <div id="SlideItMoo_outer">
+                            <div id="SlideItMoo_inner">
+                                <div id="SlideItMoo_items">
 
 
-
-		<li>
-        <div id="product_slider">
-            <div id="SlideItMoo_outer">
-                <div id="SlideItMoo_inner">
-                    <div id="SlideItMoo_items">
-
-
-						<iframe
-							width="800"
-							height="200"
-							frameborder="0" style="border:0"
-							src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAH2AF3WZ-J4SSwlz_4SYWNeRcRmzpozwI
+                                    <iframe
+                                            width="800"
+                                            height="200"
+                                            frameborder="0" style="border:0"
+                                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAH2AF3WZ-J4SSwlz_4SYWNeRcRmzpozwI
 								&q=Minsk,Leningradskaya,3" allowfullscreen>
-						</iframe>
+                                    </iframe>
 
 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cleaner"></div>
                     </div>
-                </div>
-            </div>
-            <div class="cleaner"></div>
+                </li>
+
+
+            </ul>
         </div>
-		</li>
-
-
-
-
-
-		</ul>
-		</div>
 
 
         <div id="templatemo_footer">
