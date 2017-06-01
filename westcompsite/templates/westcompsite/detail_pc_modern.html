@@ -6,8 +6,6 @@
     <title>ВестСервис</title>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
-
-
     <link href="{% static 'css/templatemo_style.css' %}" rel="stylesheet" type="text/css"/>
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/ddsmoothmenu.css' %}"/>
@@ -64,6 +62,39 @@
         }
     </script>
     <style type="text/css">
+
+
+
+        .alert {
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+            opacity: 1;
+            transition: opacity 0.6s;
+            margin-bottom: 15px;
+        }
+
+        .alert.info {
+            background-color: #b5b2c2;
+            color: black;
+        }
+
+        .closebtn {
+            margin-left: 15px;
+            color: black;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .closebtn:hover {
+            color: darkred;
+        }
+
+
         .wrapper {
             background: #fff;
             width: 700px;
@@ -420,9 +451,9 @@
             <li class="left-item"><a href="/remont">Услуги</a></li>
             <li class="left-item"><a href="/shop">Продажа</a></li>
             <li class="left-item"><a href="/shop">Б/У</a></li>
-            <li class="left-item"><a href="">Наш магазин</a></li>
-            <li class="left-item"><a href="">Кредит</a></li>
-            <li class="left-item"><a href="">Контакты</a></li>
+            <li class="left-item"><a href="/price">Прейскурант</a></li>
+            <li class="left-item"><a href="/credit">Кредит</a></li>
+            <li class="left-item"><a href="/contacts">Контакты</a></li>
 
         </ul>
 
@@ -472,7 +503,12 @@
 
             </div>
             <div class="cleaner h20"></div>
+             <div class="alert info">
+                <span class="closebtn">&times;</span>
+                <strong>Внимание!</strong> В основном, ремонт комплектующих ПК подразумевает их замену.
+            </div>
             <h3><strong>Описание:</strong></h3>
+
             <h5>Матрица (дисплей, экран) – одна из самых важных и чувствительных к повреждениям деталей ноутбука.
                 Необходимость замены дефектной матрицы или шлейфа матрицы - одна из самых частых причин обращения в нашу
                 мастерскую.
@@ -541,6 +577,21 @@
 
 
 </div>
+
+<script>
+    var close = document.getElementsByClassName("closebtn");
+    var i;
+
+    for (i = 0; i < close.length; i++) {
+        close[i].onclick = function () {
+            var div = this.parentElement;
+            div.style.opacity = "0";
+            setTimeout(function () {
+                div.style.display = "none";
+            }, 600);
+        }
+    }
+</script>
 
 </body>
 </html>

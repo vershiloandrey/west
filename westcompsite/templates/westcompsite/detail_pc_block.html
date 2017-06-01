@@ -64,21 +64,38 @@
         }
     </script>
     <style type="text/css">
-        .wrapper {
-            background: #fff;
-            width: 700px;
-            padding: 1px 15px 15px;
-            margin: 0 auto;
+
+
+        .alert {
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+            opacity: 1;
+            transition: opacity 0.6s;
+            margin-bottom: 15px;
         }
 
-        .slider {
-            z-index: 9;
-            width: 705px;
-            height: 225px;
-            overflow: hidden;
-            margin: 0 0 7px;
-            position: relative;
+        .alert.info {
+            background-color: #b5b2c2;
+            color: black;
         }
+
+        .closebtn {
+            margin-left: 15px;
+            color: black;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .closebtn:hover {
+            color: darkred;
+        }
+
+
 
         .slider ul,
         .slider li {
@@ -172,7 +189,6 @@
         .slider2 .nav span.on {
             background: #2e9419;
         }
-
 
         .Box2 {
             margin-bottom: 15px;
@@ -414,15 +430,15 @@
     </div> <!-- END of header -->
 
 
-    <nav class="top-menu">
+   <nav class="top-menu">
         <ul class="menu-main">
             <li class="left-item"><a href="/" class="selected">Главная</a></li>
             <li class="left-item"><a href="/remont">Услуги</a></li>
             <li class="left-item"><a href="/shop">Продажа</a></li>
             <li class="left-item"><a href="/shop">Б/У</a></li>
-            <li class="left-item"><a href="">Наш магазин</a></li>
-            <li class="left-item"><a href="">Кредит</a></li>
-            <li class="left-item"><a href="">Контакты</a></li>
+            <li class="left-item"><a href="/price">Прейскурант</a></li>
+            <li class="left-item"><a href="/credit">Кредит</a></li>
+            <li class="left-item"><a href="/contacts">Контакты</a></li>
 
         </ul>
 
@@ -458,12 +474,12 @@
             </div>
         </div> <!-- END of sidebar -->
         <div id="content">
-            <h2>Ремонт дисплея:</h2>
+            <h2>Ремонт/замена блока питания:</h2>
             <div class="col col_13">
-                <a rel="lightbox[portfolio]" href="{% static 'images/gallery/redisp.jpg' %}" title="Lady Shoes"><img
-                        src="{% static 'images/gallery/redisp.jpg' %}" alt="Image 10"/></a>
+                <a rel="lightbox[portfolio]" href="{% static 'images/gallery/pc_block.jpg' %}" title="Lady Shoes"><img
+                        src="{% static 'images/gallery/pc_block.jpg' %}" alt="Image 10"/></a>
             </div>
-             <div class="col col_13 no_margin_right">
+            <div class="col col_13 no_margin_right">
                 <div class="cleaner h20"></div>
                 <div class="Box2">
                     <h2><b>Цена: 99999.99 BYN</b></h2>
@@ -471,20 +487,23 @@
                 </div>
 
             </div>
+
             <div class="cleaner h20"></div>
+            <div class="alert info">
+                <span class="closebtn">&times;</span>
+                <strong>Внимание!</strong> В основном, ремонт комплектующих ПК подразумевает их замену.
+            </div>
             <h3><strong>Описание:</strong></h3>
-            <h5>Матрица (дисплей, экран) – одна из самых важных и чувствительных к повреждениям деталей ноутбука.
-                Необходимость замены дефектной матрицы или шлейфа матрицы - одна из самых частых причин обращения в нашу
-                мастерскую.
+            <h5>Блок питания только в редких случаях подлежит ремонту.
 
-                <br><h3>Симптомы:</h3>
+                <br>
+                <h3>Симптомы:</h3>
 
-                <li>Наличие полос на дисплее (вертикальных либо горизонтальных);</li>
-                <li>Пропадание изображения, полное либо частичное;</li>
-                <li>Наличие царапин, сколов;</li>
-                <li>Наличие пятен, полное отсутствие изображения.</li>
+                <li>При нажатии на кнопку запуска ничего не происходит;</li>
+                <li>Включается через раз;</li>
+                <li>Самопроизвольно выключается.</li>
 
-                 <br>
+                <br>
                 <h3>Сроки ремонта:</h3>Замена дисплея ноутбука производится в короткие сроки, как правило,
                 <b>в течение суток</b>.
                 Зависит от сложности сборки-разборки вашего ноутбука и наличия комплектующих.
@@ -541,6 +560,22 @@
 
 
 </div>
+
+
+<script>
+    var close = document.getElementsByClassName("closebtn");
+    var i;
+
+    for (i = 0; i < close.length; i++) {
+        close[i].onclick = function () {
+            var div = this.parentElement;
+            div.style.opacity = "0";
+            setTimeout(function () {
+                div.style.display = "none";
+            }, 600);
+        }
+    }
+</script>
 
 </body>
 </html>

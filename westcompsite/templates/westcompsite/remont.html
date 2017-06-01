@@ -203,12 +203,12 @@
     <nav class="top-menu">
         <ul class="menu-main">
             <li class="left-item"><a href="/" class="selected">Главная</a></li>
-            <li class="left-item"><a href="/remont">Услуги</a></li>
+            <li class="left-item"><a href="">Услуги</a></li>
             <li class="left-item"><a href="/shop">Продажа</a></li>
             <li class="left-item"><a href="/shop">Б/У</a></li>
-            <li class="left-item"><a href="">Наш магазин</a></li>
-            <li class="left-item"><a href="">Кредит</a></li>
-            <li class="left-item"><a href="">Контакты</a></li>
+            <li class="left-item"><a href="/price">Прейскурант</a></li>
+            <li class="left-item"><a href="/credit">Кредит</a></li>
+            <li class="left-item"><a href="/contacts">Контакты</a></li>
 
         </ul>
 
@@ -263,6 +263,7 @@
                 <li><a href="{% static '/periphery' %}">Перферия</a></li>
                 <li><a href="{% static '/access' %}">Аксессуары</a></li>
                 <li><a href="{% static '/shop' %}">Скидки</a></li>
+                <li><a href="{% static '/price' %}">Прейскурант</a></li>
                 <li><a href="#">Новинки</a></li>
             </ul>
             <h3>Не нашли, что искали?</h3>
@@ -281,6 +282,7 @@
 
         <div id="content">
             <h1>Услуги</h1>
+            <a href="/price"><h3>Прейскурант</h3></a>
             <h2>Ремонт ноутбуков</h2>
             <div class="col col_14">
                 <a href="/remont_note_vent"><img src="{% static 'images/gallery/greetsa_note.jpg' %}" alt="Product 01"/>

@@ -11,6 +11,9 @@ urlpatterns = [
     url(r'^access/$', views.access, name='access'),
     url(r'^remont/$', views.remont, name='remont'),
     url(r'^productdetail/$', views.product_detail, name='productdetail'),
+    url(r'^contacts/$', views.contacts, name='contacts'),
+    url(r'^price/$', views.price, name='price'),
+    url(r'^credit/$', views.credit, name='credit'),
 
     url(r'^detail_kart/$', views.detail_kart, name='detail_kart'),
     url(r'^detail_print/$', views.detail_print, name='detail_print'),

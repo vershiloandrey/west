@@ -173,7 +173,6 @@
             background: #2e9419;
         }
 
-
         .Box2 {
             margin-bottom: 15px;
             width: 95%;
@@ -420,9 +419,9 @@
             <li class="left-item"><a href="/remont">Услуги</a></li>
             <li class="left-item"><a href="/shop">Продажа</a></li>
             <li class="left-item"><a href="/shop">Б/У</a></li>
-            <li class="left-item"><a href="">Наш магазин</a></li>
-            <li class="left-item"><a href="">Кредит</a></li>
-            <li class="left-item"><a href="">Контакты</a></li>
+            <li class="left-item"><a href="/price">Прейскурант</a></li>
+            <li class="left-item"><a href="/credit">Кредит</a></li>
+            <li class="left-item"><a href="/contacts">Контакты</a></li>
 
         </ul>
 
@@ -464,17 +463,19 @@
                         src="{% static 'images/gallery/reprint1.png' %}" alt="Image 10"/></a>
             </div>
             <div class="col col_13 no_margin_right">
-              <div class="Box2">
-                    <h2><b><div id="aaa">Цена:</div></b></h2>
+                <div class="Box2">
+                    <h2><b>
+                        <div id="aaa">Цена:</div>
+                    </b></h2>
                     <h3>Вид ремонта:</h3>
                     <div class="styled-select green rounded">
                         <select onchange="window.document.getElementById('aaa').textContent=this.options[this.selectedIndex].value">
                             <option value="Цена:">Не выбрано</option>
-                            <option value="Цена: 99999.99 BYN">Замена фотобарабана</option>
+                            <option value="Цена: 10.00-25.00 BYN">Замена фотобарабана</option>
                             <option value="Цена: 99999.99 BYN">Устранение блеклой печати</option>
-                            <option value="Цена: 99999.99 BYN">Ремонт механизмов принтера</option>
-                            <option value="Цена: 99999.99 BYN">Замена магнитного вала</option>
-                            <option value="Цена: 99999.99 BYN">Перепрошивка чипа</option>
+                            <option value="Цена: 10.00-25.00 BYN">Ремонт механизмов принтера</option>
+                            <option value="Цена: 10.00-25.00 BYN">Замена магнитного вала</option>
+                            <option value="Цена: 20.00-100.00 BYN">Перепрошивка чипа</option>
                         </select>
                     </div>
                 </div>
@@ -482,14 +483,16 @@
             </div>
             <div class="cleaner h10"></div>
             <h3><strong>Описание:</strong></h3>
-            <h5>При использовании гаджета, на него через интернет, через sd-карты могут проникать вирусы, которые будут
-                тормозить работу утсройства. Убрать вирусы Вам помогут наши специалисты.
+            <h5>При продолжительном использовании принтера, со временем, он может выйти из строя. Купить новый вы всегда
+                успеете. Попробуйте принести его к нам в мастерскую, мы сделаем все возможное.
 
                 <br>
                 <h3>Симптомы:</h3>
 
-                <li>медленная работа;</li>
-                <li>зависания;</li>
+                <li>не включается;</li>
+                <li>не берет бумагу;</li>
+                <li>не подключается к компьютеру;</li>
+                <li>не печатает;</li>
 
                 <br>
                 <h3>Сроки ремонта:</h3>

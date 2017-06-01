@@ -8,6 +8,18 @@ def post_list(request):
     return render(request, 'westcompsite/post_list.html', {})
 
 
+def contacts(request):
+    return render(request, 'westcompsite/contacts.html', {})
+
+
+def price(request):
+    return render(request, 'westcompsite/price.html', {})
+
+
+def credit(request):
+    return render(request, 'westcompsite/credit.html', {})
+
+
 def shop(request):
     products = Notes.objects.all()
     return render(request, 'westcompsite/shop.html', {'products': products})
