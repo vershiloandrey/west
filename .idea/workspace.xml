@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b784f8c-35c0-4ecd-a7eb-3ea809d7116b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/by.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/calculator.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/creditb.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/ecredit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/hp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/lenovo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/news.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/rassrochka.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/raznoe_detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/sales.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/westcompsite/static/css/contacts_style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/admin.py" afterPath="$PROJECT_DIR$/westcompsite/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/models.py" afterPath="$PROJECT_DIR$/westcompsite/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/by.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/by.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/calculator.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/calculator.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/contacts.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/contacts.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/credit.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/credit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/creditb.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/creditb.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_kart.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_kart.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_note_cabel.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_note_cabel.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_note_cabel_1.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_note_cabel_1.html" />
@@ -49,8 +41,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_phone_tach.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_phone_tach.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_phone_virus.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_phone_virus.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_print.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_print.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/ecredit.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/ecredit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/hp.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/hp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/lenovo.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/lenovo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/news.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/news.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/post_list.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/post_list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/price.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/price.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/rassrochka.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/rassrochka.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/raznoe_detail.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/raznoe_detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_note_2.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_note_2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_note_3.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_note_3.html" />
@@ -60,9 +58,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_phone_1.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_phone_1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_phone_2.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_phone_2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_phone_3.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_phone_3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/sales.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/sales.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/templates/westcompsite/shop.html" afterPath="$PROJECT_DIR$/westcompsite/templates/westcompsite/shop.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/urls.py" afterPath="$PROJECT_DIR$/westcompsite/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/westcompsite/views.py" afterPath="$PROJECT_DIR$/westcompsite/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -89,65 +86,103 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="by.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/by.html">
+      <file leaf-file-name="post_detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/post_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5024">
-              <caret line="314" column="26" lean-forward="false" selection-start-line="314" selection-start-column="26" selection-end-line="314" selection-end-column="26" />
+            <state relative-caret-position="8720">
+              <caret line="545" column="0" lean-forward="false" selection-start-line="545" selection-start-column="0" selection-end-line="545" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pcs.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/pcs.html">
+      <file leaf-file-name="credit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/credit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5008">
-              <caret line="313" column="36" lean-forward="false" selection-start-line="313" selection-start-column="36" selection-end-line="313" selection-end-column="36" />
+            <state relative-caret-position="208">
+              <caret line="285" column="12" lean-forward="false" selection-start-line="285" selection-start-column="12" selection-end-line="289" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lenovo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/lenovo.html">
+      <file leaf-file-name="rassrochka.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/rassrochka.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5280">
-              <caret line="330" column="24" lean-forward="false" selection-start-line="313" selection-start-column="12" selection-end-line="330" selection-end-column="24" />
+            <state relative-caret-position="320">
+              <caret line="261" column="17" lean-forward="false" selection-start-line="261" selection-start-column="17" selection-end-line="261" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/westcompsite/urls.py">
+      <file leaf-file-name="creditb.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/creditb.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            <state relative-caret-position="224">
+              <caret line="261" column="17" lean-forward="false" selection-start-line="261" selection-start-column="17" selection-end-line="261" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ecredit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/ecredit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="264" column="17" lean-forward="false" selection-start-line="264" selection-start-column="17" selection-end-line="264" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contacts.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/contacts.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="267" column="93" lean-forward="false" selection-start-line="267" selection-start-column="93" selection-end-line="267" selection-end-column="93" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/westcompsite/views.py">
+      <file leaf-file-name="post_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/post_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="81" column="28" lean-forward="false" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#64#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1273">
+              <caret line="446" column="0" lean-forward="false" selection-start-line="446" selection-start-column="0" selection-end-line="446" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/westcompsite/models.py">
+      <file leaf-file-name="contacts_style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/westcompsite/static/css/contacts_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3952">
-              <caret line="247" column="29" lean-forward="false" selection-start-line="247" selection-start-column="29" selection-end-line="247" selection-end-column="29" />
+            <state relative-caret-position="-224">
+              <caret line="160" column="17" lean-forward="true" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sales.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/sales.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="294" column="39" lean-forward="false" selection-start-line="294" selection-start-column="39" selection-end-line="294" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shop.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/shop.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="264" column="39" lean-forward="false" selection-start-line="264" selection-start-column="39" selection-end-line="264" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -165,17 +200,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bottom</find>
-      <find>border-bottom</find>
-      <find>h3</find>
-      <find>h4</find>
-      <find>pro</find>
-      <find>import</find>
-      <find>h2</find>
-      <find>&lt;ul class=&quot;sidebar_menu&quot;&gt;                &lt;li&gt;&lt;a href=&quot;{% static '/remont/#content' %}&quot;&gt;Ремонт ноутбуков&lt;/a&gt;&lt;/li&gt;                &lt;li&gt;&lt;a href=&quot;{% static '/remont/#phones' %}&quot;&gt;Ремонт телефонов и планшетов&lt;/a&gt;&lt;/li&gt;                &lt;li&gt;&lt;a href=&quot;{% static '/remont/#prints' %}&quot;&gt;Ремонт принтеров&lt;/a&gt;&lt;/li&gt;                &lt;li&gt;&lt;a href=&quot;{% static '/remont/#karts' %}&quot;&gt;Заправка картриджей&lt;/a&gt;&lt;/li&gt;                &lt;li&gt;&lt;a href=&quot;{% static '/remont/#comps' %}&quot;&gt;Ремонт компьютеров&lt;/a&gt;&lt;/li&gt;                &lt;li&gt;&lt;a href=&quot;{% static '/price' %}&quot;&gt;Прейскурант&lt;/a&gt;&lt;/li&gt;            &lt;/ul&gt;</find>
-      <find>&lt;li&gt;&lt;a href=&quot;{% static '/remont/#content' %}&quot;&gt;Ремонт ноутбуков&lt;/a&gt;&lt;/li&gt;                &lt;li&gt;&lt;a href=&quot;{% static '/remont/#phones' %}&quot;&gt;Ремонт телефонов и планшетов&lt;/a&gt;&lt;/li&gt;                &lt;li&gt;&lt;a href=&quot;{% static '/remont/#prints' %}&quot;&gt;Ремонт принтеров&lt;/a&gt;&lt;/li&gt;                &lt;li&gt;&lt;a href=&quot;{% static '/remont/#karts' %}&quot;&gt;Заправка картриджей&lt;/a&gt;&lt;/li&gt;                &lt;li&gt;&lt;a href=&quot;{% static '/remont/#comps' %}&quot;&gt;Ремонт компьютеров&lt;/a&gt;&lt;/li&gt;                &lt;li&gt;&lt;a href=&quot;{% static '/price' %}&quot;&gt;Прейскурант&lt;/a&gt;&lt;/li&gt;            &lt;/ul&gt;</find>
-      <find>{% static '/remont/#content' %}&quot;&gt;Ремонт ноутбуков&lt;/a&gt;&lt;/li&gt;                &lt;li&gt;&lt;a href=&quot;{% static '/remont/#phones' %}&quot;&gt;Ремонт телефонов и планшетов&lt;/a&gt;&lt;/li&gt;                &lt;li&gt;&lt;a href=&quot;{% static '/remont/#prints' %}&quot;&gt;Ремонт принтеров&lt;/a&gt;&lt;/li&gt;                &lt;li&gt;&lt;a href=&quot;{% static '/remont/#karts' %}&quot;&gt;Заправка картриджей&lt;/a&gt;&lt;/li&gt;                &lt;li&gt;&lt;a href=&quot;{% static '/remont/#comps' %}&quot;&gt;Ремонт компьютеров&lt;/a&gt;&lt;/li&gt;                &lt;li&gt;&lt;a href=&quot;{% static '/price' %}&quot;&gt;Прейскурант&lt;/a&gt;&lt;/li&gt;            &lt;/ul&gt;</find>
-      <find>{% static '/remont/#content' %}</find>
       <find>{% static '/remont/#phones' %}</find>
       <find>{% static '/remont/#prints' %}</find>
       <find>{% static '/remont/#karts' %}</find>
@@ -195,6 +219,17 @@
       <find>}</find>
       <find>}}</find>
       <find>}}0</find>
+      <find>href=&quot;/shop&quot;&gt;Б/У</find>
+      <find>O</find>
+      <find>Oth</find>
+      <find>Other</find>
+      <find>Others</find>
+      <find>Others p</find>
+      <find>Others</find>
+      <find>href=&quot;#&quot;&gt;Новинки</find>
+      <find>'/shop' %}&quot;&gt;Скидки</find>
+      <find>content</find>
+      <find>tem</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -206,6 +241,9 @@
       <replace>#prints</replace>
       <replace>notes</replace>
       <replace>}}</replace>
+      <replace>href=&quot;/by&quot;&gt;Б/У</replace>
+      <replace>href=&quot;{% static '/news'%}&quot;&gt;Новинки</replace>
+      <replace>'/sales' %}&quot;&gt;Скидки</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -214,16 +252,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_note_cabel_1.html" />
-        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_note_cabel_2.html" />
-        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_note_cooler.html" />
-        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_note_disp.html" />
-        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_note_hdd.html" />
-        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_note_klav.html" />
-        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_note_klav_1.html" />
-        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_note_klav_2.html" />
-        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_note_mat.html" />
-        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_note_modern.html" />
         <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_note_razem.html" />
         <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_note_sh.html" />
         <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_note_vent.html" />
@@ -243,28 +271,38 @@
         <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_phone_tach.html" />
         <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_phone_virus.html" />
         <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_print.html" />
+        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_note_3.html" />
+        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_phone_1.html" />
+        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/price.html" />
+        <option value="$PROJECT_DIR$/westcompsite/models.py" />
         <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont.html" />
         <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_note_2.html" />
-        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_note_3.html" />
         <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_note_vent.html" />
         <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_pc_1.html" />
         <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_pc_2.html" />
-        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_phone_1.html" />
-        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_phone_2.html" />
-        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_phone_3.html" />
         <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/access.html" />
+        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/by.html" />
+        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/calculator.html" />
         <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/complect.html" />
         <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/hp.html" />
         <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/lenovo.html" />
         <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/news.html" />
+        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/notes.html" />
         <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/pcs.html" />
         <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/periphery.html" />
-        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/post_detail.html" />
+        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/raznoe_detail.html" />
+        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_phone_2.html" />
+        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_phone_3.html" />
         <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/sales.html" />
-        <option value="$PROJECT_DIR$/westcompsite/urls.py" />
-        <option value="$PROJECT_DIR$/westcompsite/models.py" />
-        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/by.html" />
-        <option value="$PROJECT_DIR$/westcompsite/views.py" />
+        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/shop.html" />
+        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/post_detail.html" />
+        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/credit.html" />
+        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/rassrochka.html" />
+        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/creditb.html" />
+        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/ecredit.html" />
+        <option value="$PROJECT_DIR$/westcompsite/static/css/contacts_style.css" />
+        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/post_list.html" />
+        <option value="$PROJECT_DIR$/westcompsite/templates/westcompsite/contacts.html" />
       </list>
     </option>
   </component>
@@ -365,6 +403,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="westcomp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="westcomp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="westcompsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -377,6 +437,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/westcompsite/static/css" />
       <recent name="$PROJECT_DIR$/westcompsite/templates/westcompsite" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/static/images" />
@@ -653,7 +714,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496317547837</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="No deploy on hoster v3.0.&#10;~v2.0 published&#10;- Update database&#10;- Sync DB&#10;- Added functional for shop">
+      <created>1497271294000</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1497271294000</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -677,15 +745,16 @@
     <frame x="0" y="-4" width="1366" height="729" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28257576" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289256" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29187396" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28257576" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39966834" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -694,7 +763,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="manage.py@westcomp" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -709,7 +777,8 @@
     <MESSAGE value="Deploy on hoster&#10;Fix design on homepage&#10;Added section &quot;shop&quot;" />
     <MESSAGE value="Deploy on hoster v2.0&#10;- Added section &quot;Услуги&quot;&#10;- Update databases (url for images)&#10;&#10;It's need for update databases (unicoding)!" />
     <MESSAGE value="No deploy on hoster v2.0&#10;- Update navbar&#10;- Added Contacts&#10;- Modify section Услуги&#10;  * added pc&#10;  * added printers&#10;  * added phones&#10;- Upload Prices&#10;&#10;It's need for update databases (unicoding)!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="No deploy on hoster v2.0&#10;- Update navbar&#10;- Added Contacts&#10;- Modify section Услуги&#10;  * added pc&#10;  * added printers&#10;  * added phones&#10;- Upload Prices&#10;&#10;It's need for update databases (unicoding)!!!" />
+    <MESSAGE value="No deploy on hoster v3.0.&#10;~v2.0 published&#10;- Update database&#10;- Sync DB&#10;- Added functional for shop" />
+    <option name="LAST_COMMIT_MESSAGE" value="No deploy on hoster v3.0.&#10;~v2.0 published&#10;- Update database&#10;- Sync DB&#10;- Added functional for shop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -718,106 +787,414 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/by.html">
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_note_zalit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5024">
-          <caret line="314" column="26" lean-forward="false" selection-start-line="314" selection-start-column="26" selection-end-line="314" selection-end-column="26" />
+        <state relative-caret-position="7472">
+          <caret line="467" column="37" lean-forward="false" selection-start-line="467" selection-start-column="37" selection-end-line="467" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/pcs.html">
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_oc.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5008">
-          <caret line="313" column="36" lean-forward="true" selection-start-line="313" selection-start-column="36" selection-end-line="313" selection-end-column="36" />
+        <state relative-caret-position="6720">
+          <caret line="420" column="37" lean-forward="false" selection-start-line="420" selection-start-column="37" selection-end-line="420" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_pc_block.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6992">
+          <caret line="437" column="37" lean-forward="false" selection-start-line="437" selection-start-column="37" selection-end-line="437" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_pc_clear.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7216">
+          <caret line="451" column="37" lean-forward="false" selection-start-line="451" selection-start-column="37" selection-end-line="451" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_pc_hdd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7216">
+          <caret line="451" column="37" lean-forward="false" selection-start-line="451" selection-start-column="37" selection-end-line="451" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_pc_mat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7280">
+          <caret line="455" column="37" lean-forward="false" selection-start-line="455" selection-start-column="37" selection-end-line="455" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_pc_modern.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7232">
+          <caret line="452" column="37" lean-forward="false" selection-start-line="452" selection-start-column="37" selection-end-line="452" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_pc_video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7216">
+          <caret line="451" column="37" lean-forward="false" selection-start-line="451" selection-start-column="37" selection-end-line="451" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_phone_bat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6720">
+          <caret line="420" column="37" lean-forward="false" selection-start-line="420" selection-start-column="37" selection-end-line="420" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_phone_disp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6720">
+          <caret line="420" column="37" lean-forward="false" selection-start-line="420" selection-start-column="37" selection-end-line="420" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_phone_oc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6720">
+          <caret line="420" column="37" lean-forward="false" selection-start-line="420" selection-start-column="37" selection-end-line="420" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_phone_raz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6720">
+          <caret line="420" column="37" lean-forward="false" selection-start-line="420" selection-start-column="37" selection-end-line="420" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_phone_sim.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6736">
+          <caret line="421" column="37" lean-forward="false" selection-start-line="421" selection-start-column="37" selection-end-line="421" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_phone_tach.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6720">
+          <caret line="420" column="37" lean-forward="false" selection-start-line="420" selection-start-column="37" selection-end-line="420" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_phone_virus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6720">
+          <caret line="420" column="37" lean-forward="false" selection-start-line="420" selection-start-column="37" selection-end-line="420" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/detail_print.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6720">
+          <caret line="420" column="37" lean-forward="false" selection-start-line="420" selection-start-column="37" selection-end-line="420" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_note_3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="197" column="37" lean-forward="false" selection-start-line="197" selection-start-column="37" selection-end-line="197" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_phone_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="420" column="37" lean-forward="false" selection-start-line="420" selection-start-column="37" selection-end-line="420" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/price.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="635" column="43" lean-forward="false" selection-start-line="635" selection-start-column="43" selection-end-line="635" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1248">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="148" column="22" lean-forward="true" selection-start-line="148" selection-start-column="22" selection-end-line="148" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualenv/lib64/python3.5/site-packages/django/contrib/gis/gdal/libgdal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="46" column="35" lean-forward="true" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/remont.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="239" column="27" lean-forward="false" selection-start-line="239" selection-start-column="27" selection-end-line="239" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_note_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="239" column="27" lean-forward="false" selection-start-line="239" selection-start-column="27" selection-end-line="239" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_note_vent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="239" column="27" lean-forward="false" selection-start-line="239" selection-start-column="27" selection-end-line="239" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_pc_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="239" column="27" lean-forward="false" selection-start-line="239" selection-start-column="27" selection-end-line="239" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_pc_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="239" column="27" lean-forward="false" selection-start-line="239" selection-start-column="27" selection-end-line="239" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/access.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="294" column="39" lean-forward="false" selection-start-line="294" selection-start-column="39" selection-end-line="294" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/by.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="294" column="39" lean-forward="false" selection-start-line="294" selection-start-column="39" selection-end-line="294" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/calculator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5440">
+          <caret line="340" column="39" lean-forward="false" selection-start-line="340" selection-start-column="39" selection-end-line="340" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/complect.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4704">
+          <caret line="294" column="39" lean-forward="false" selection-start-line="294" selection-start-column="39" selection-end-line="294" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/hp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4688">
+          <caret line="293" column="39" lean-forward="false" selection-start-line="293" selection-start-column="39" selection-end-line="293" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/lenovo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5280">
-          <caret line="330" column="24" lean-forward="true" selection-start-line="313" selection-start-column="12" selection-end-line="330" selection-end-column="24" />
+        <state relative-caret-position="4704">
+          <caret line="294" column="39" lean-forward="false" selection-start-line="294" selection-start-column="39" selection-end-line="294" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/westcompsite/urls.py">
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4704">
+          <caret line="294" column="39" lean-forward="false" selection-start-line="294" selection-start-column="39" selection-end-line="294" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/notes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="264" column="39" lean-forward="false" selection-start-line="264" selection-start-column="39" selection-end-line="264" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/pcs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="294" column="39" lean-forward="false" selection-start-line="294" selection-start-column="39" selection-end-line="294" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/periphery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="294" column="39" lean-forward="false" selection-start-line="294" selection-start-column="39" selection-end-line="294" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/raznoe_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="355" column="39" lean-forward="false" selection-start-line="355" selection-start-column="39" selection-end-line="355" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_phone_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="261" column="39" lean-forward="false" selection-start-line="261" selection-start-column="39" selection-end-line="261" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/remont_phone_3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="262" column="39" lean-forward="false" selection-start-line="262" selection-start-column="39" selection-end-line="262" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/sales.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="294" column="39" lean-forward="false" selection-start-line="294" selection-start-column="39" selection-end-line="294" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/shop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="264" column="39" lean-forward="false" selection-start-line="264" selection-start-column="39" selection-end-line="264" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/post_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8720">
+          <caret line="545" column="0" lean-forward="false" selection-start-line="545" selection-start-column="0" selection-end-line="545" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/credit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="285" column="12" lean-forward="false" selection-start-line="285" selection-start-column="12" selection-end-line="289" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/rassrochka.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="261" column="17" lean-forward="false" selection-start-line="261" selection-start-column="17" selection-end-line="261" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/creditb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="261" column="17" lean-forward="false" selection-start-line="261" selection-start-column="17" selection-end-line="261" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/static/css/templatemo_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/ecredit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <caret line="264" column="17" lean-forward="false" selection-start-line="264" selection-start-column="17" selection-end-line="264" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/static/css/contacts_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-224">
+          <caret line="160" column="17" lean-forward="true" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/post_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="446" column="0" lean-forward="false" selection-start-line="446" selection-start-column="0" selection-end-line="446" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/contacts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="267" column="93" lean-forward="false" selection-start-line="267" selection-start-column="93" selection-end-line="267" selection-end-column="93" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/westcompsite/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3952">
-          <caret line="247" column="29" lean-forward="false" selection-start-line="247" selection-start-column="29" selection-end-line="247" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/westcompsite/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1520">
-          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/by.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5024">
-          <caret line="314" column="26" lean-forward="false" selection-start-line="314" selection-start-column="26" selection-end-line="314" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/pcs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5008">
-          <caret line="313" column="36" lean-forward="false" selection-start-line="313" selection-start-column="36" selection-end-line="313" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/westcompsite/templates/westcompsite/lenovo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5280">
-          <caret line="330" column="24" lean-forward="false" selection-start-line="313" selection-start-column="12" selection-end-line="330" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/westcompsite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/westcompsite/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3952">
-          <caret line="247" column="29" lean-forward="false" selection-start-line="247" selection-start-column="29" selection-end-line="247" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/westcompsite/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="81" column="28" lean-forward="false" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

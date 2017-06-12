@@ -235,7 +235,7 @@
             <li class="left-item"><a href="/" class="selected">Главная</a></li>
             <li class="left-item"><a href="/remont">Услуги</a></li>
             <li class="left-item"><a href="/shop">Продажа</a></li>
-            <li class="left-item"><a href="/shop">Б/У</a></li>
+            <li class="left-item"><a href="/by">Б/У</a></li>
             <li class="left-item"><a href="/price">Прейскурант</a></li>
             <li class="left-item"><a href="/credit">Кредит</a></li>
             <li class="left-item"><a href="/contacts">Контакты</a></li>
@@ -267,7 +267,7 @@
             <li><a href="about.html">Продажа</a>
                 <ul>
                     <li><a href="#">Скидки</a></li>
-                    <li><a href="#">Новинки</a></li>
+                    <li><a href="{% static '/news'%}">Новинки</a></li>
                     <li><a href="#">Ноутбуки</a></li>
                     <li><a href="#">Комплектующие</a></li>
                     <li><a href="#">Б/У товары</a></li>
@@ -292,8 +292,8 @@
                 <li><a href="{% static '/complex' %}">Комплектующие</a></li>
                 <li><a href="{% static '/periphery' %}">Перферия</a></li>
                 <li><a href="{% static '/access' %}">Аксессуары</a></li>
-                <li><a href="{% static '/shop' %}">Скидки</a></li>
-                <li><a href="#">Новинки</a></li>
+                <li><a href="{% static '/sales' %}">Скидки</a></li>
+                <li><a href="{% static '/news'%}">Новинки</a></li>
             </ul>
             <h3>Не нашли, что искали?</h3>
             <p>Попробуйте поискать здесь</p>

@@ -331,7 +331,7 @@
             <li class="left-item"><a href="/" class="selected">Главная</a></li>
             <li class="left-item"><a href="/remont">Услуги</a></li>
             <li class="left-item"><a href="/shop">Продажа</a></li>
-            <li class="left-item"><a href="/shop">Б/У</a></li>
+            <li class="left-item"><a href="/by">Б/У</a></li>
             <li class="left-item"><a href="">Прейскурант</a></li>
             <li class="left-item"><a href="/credit">Кредит</a></li>
             <li class="left-item"><a href="/contacts">Контакты</a></li>
@@ -348,13 +348,10 @@
         <div id="sidebar">
             <h3>Категории</h3>
             <ul class="sidebar_menu">
-                <li><a href="{% static '/notes' %}">Ноутбуки</a></li>
-                <li><a href="{% static '/pcs' %}">Компьютеры</a></li>
-                <li><a href="{% static '/complex' %}">Комплектующие</a></li>
-                <li><a href="{% static '/periphery' %}">Перферия</a></li>
-                <li><a href="{% static '/access' %}">Аксессуары</a></li>
-                <li><a href="{% static '/shop' %}">Скидки</a></li>
-                <li><a href="#">Новинки</a></li>
+                <li><a href="/price/#notes">Ноутбуки</a></li>
+                <li><a href="/price/#phones">Телефоны</a></li>
+                <li><a href="/price/#comps">Компьютеры</a></li>
+                <li><a href="/price/#prints">Принтеры</a></li>
             </ul>
             <h3>Не нашли, что искали?</h3>
             <p>Попробуйте поискать здесь</p>
@@ -413,6 +410,8 @@
 
 
             </table>
+
+            <div id="notes"></div>
             <br>
             <h2>Ноутбуки</h2>
             <table>
@@ -489,6 +488,8 @@
                 </tr>
 
             </table>
+
+            <div id="phones"></div>
             <br>
             <h2>Телефоны</h2>
             <table>
@@ -519,6 +520,8 @@
                 </tr>
 
             </table>
+
+            <div id="comps"></div>
             <br>
              <h2>Компьютеры</h2>
             <table>
@@ -585,6 +588,7 @@
             </table>
             <h5><b><br>*Стоимость услуги и сроки выполнения зависят от характеристик устанавливаемой комплектующей.</b></h5>
 
+            <div id="prints"></div>
             <br>
              <h2>Принтеры</h2>
             <table>
@@ -630,31 +634,6 @@
             **Сроки ремонта устанавливаются после проведения диагностики.<br>
                 ***При замене возможна установка любой модификации.</b></h5>
             <div class="cleaner h30"></div>
-
-
-            <div class="cleaner h50"></div>
-
-            <h4>Other Products</h4>
-            <div class="col col_14 product_gallery">
-                <a href="post_detail.html"><img src="images/product/01.jpg" alt="Product 01"/></a>
-                <h3>Ut eu feugiat</h3>
-                <p class="product_price">$ 100</p>
-                <a href="shoppingcart.html" class="add_to_cart">Add to Cart</a>
-            </div>
-            <div class="col col_14 product_gallery">
-                <a href="post_detail.html"><img src="images/product/02.jpg" alt="Product 02"/></a>
-                <h3>Curabitur et turpis</h3>
-                <p class="product_price">$ 200</p>
-                <a href="shoppingcart.html" class="add_to_cart">Add to Cart</a>
-            </div>
-            <div class="col col_14 product_gallery no_margin_right">
-                <a href="post_detail.html"><img src="images/product/03.jpg" alt="Product 03"/></a>
-                <h3>Mauris consectetur</h3>
-                <p class="product_price">$ 120</p>
-                <a href="shoppingcart.html" class="add_to_cart">Add to Cart</a>
-            </div>
-            <a href="#" class="more float_r">View all</a>
-
             <div class="cleaner"></div>
         </div> <!-- END of content -->
         <div class="cleaner"></div>

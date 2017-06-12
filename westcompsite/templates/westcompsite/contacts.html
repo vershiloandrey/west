@@ -9,7 +9,7 @@
     <meta name="description" content=""/>
 
 
-    <link href="{% static 'css/templatemo_style.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'css/contacts_style.css' %}" rel="stylesheet" type="text/css"/>
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/ddsmoothmenu.css' %}"/>
 
@@ -205,7 +205,7 @@
             <li class="left-item"><a href="/" class="selected">Главная</a></li>
             <li class="left-item"><a href="/remont">Услуги</a></li>
             <li class="left-item"><a href="/shop">Продажа</a></li>
-            <li class="left-item"><a href="/shop">Б/У</a></li>
+            <li class="left-item"><a href="/by">Б/У</a></li>
             <li class="left-item"><a href="/price">Прейскурант</a></li>
             <li class="left-item"><a href="/credit">Кредит</a></li>
             <li class="left-item"><a href="">Контакты</a></li>
@@ -236,7 +236,7 @@
             <li><a href="about.html">Продажа</a>
                 <ul>
                     <li><a href="#">Скидки</a></li>
-                    <li><a href="#">Новинки</a></li>
+                    <li><a href="{% static '/news'%}">Новинки</a></li>
                     <li><a href="#">Ноутбуки</a></li>
                     <li><a href="#">Комплектующие</a></li>
                     <li><a href="#">Б/У товары</a></li>
@@ -254,55 +254,41 @@
 
 
         <div id="sidebar">
-            <h3>Категории</h3>
-            <ul class="sidebar_menu">
-                <li><a href="{% static '/notes' %}">Ноутбуки</a></li>
-                <li><a href="{% static '/pcs' %}">Компьютеры</a></li>
-                <li><a href="{% static '/complex' %}">Комплектующие</a></li>
-                <li><a href="{% static '/periphery' %}">Перферия</a></li>
-                <li><a href="{% static '/access' %}">Аксессуары</a></li>
-                <li><a href="{% static '/shop' %}">Скидки</a></li>
-                <li><a href="#">Новинки</a></li>
-            </ul>
-            <h3>Не нашли, что искали?</h3>
-            <p>Попробуйте поискать здесь</p>
-            <div id="newsletter">
-                <form action="#" method="get">
-                    <input type="text" value="Искать" name="email_newsletter" id="email_newsletter"
-                           title="email_newsletter" onfocus="clearText(this)" onblur="clearText(this)"
-                           class="txt_field"/>
-                    <input type="submit" name="subscribe" value="Искать" alt="Subscribe" id="subscribebtn"
-                           title="Искать" class="subscribebtn"/>
-                </form>
-                <div class="cleaner"></div>
+<h1>Контактная информация</h1>
+
+
+            <div class="col col_13">
+                <h4><b>Юридический адрес:</b><br>
+                Минский р-н, д. Богатырево, <br>ул. Полесская, д. 1-180</h4>
+                <h4><b>Адрес торгового объекта:</b><br>
+                г. Минск, ул. Ленинградская, <br>д. 3/пом. 1</h4>
+                <h4><b>Телефоны: </b><br>(017)327-10-97<br>(029)144-89-06<br>(029)563-42-15<br/></h4>
+                <h4><br><b>Почта: </b><a href="mailto:westcomp.biz@tut.by">westcomp.biz@tut.by</a><br/></h4>
+                <div class="cleaner h10"></div>
+                      <center><img src="{% static 'images/1_3.png' %}" width="100"></center>
             </div>
         </div> <!-- END of sidebar -->
 
         <div id="content">
-            <h1>Контактная информация</h1>
 
 
-            <div class="col col_13">
-                <strong>Юридический адрес:</strong>
-                <br>Минский р-н, д. Богатырево, <br>ул. Полесская, д. 1-180<br><br>
-                <strong>Адрес торгового объекта:</strong>
-                <br>г. Минск, ул. Ленинградская, <br>д. 3/пом. 1<br><br>
-                <strong>Телефоны: </strong>(017)327-10-97<br>
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(029)144-89-06<br>
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(029)563-42-15<br/>
-                <strong><br>Почта:</strong> <a href="mailto:westcomp.biz@tut.by">westcomp.biz@tut.by</a><br/>
-                <div class="cleaner divider"></div>
-                <div class="cleaner h30"></div>
-            </div>
-
-            <div class="col col_13 no_margin_right">
-                <div class="cleaner h10"></div>
-
-                <div class="Box2">
-                    <img src="{% static 'images/shop.jpg' %}">
+                <div>
+                    <img src="{% static 'images/gallery/view_shop.jpg' %}" width="350">
                 </div>
-            </div>
-            <div class="cleaner h10"></div>
+
+
+                <iframe
+                        width="350"
+                        height="256"
+                        frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAH2AF3WZ-J4SSwlz_4SYWNeRcRmzpozwI
+								&q=ул.+Ленинградская+3,+Минск" allowfullscreen>
+                </iframe>
+
+        </div> <!-- END of content -->
+        <div class="cleaner"></div>
+         <div class="cleaner h10"></div>
+
             <h7><b>В магазине-мастерской "ВестСервис"</b> представлен спектр услуг по <b>обслуживанию и ремонту</b>
                 персональных компьютеров и ноутбуков, от <b>переустановки ОС</b>, обновления антивируса и ремонта
                 зарядных устройств до <b>восстановления</b> материнских плат после залития и <b>замены чипсета</b> с
@@ -315,18 +301,6 @@
                 официальную гарантию.<br>Мы ждём вас по адресу: <b>г. Минск, ул. Ленинградская, 3 (м. Площадь
                     Ленина, ж/д Вокзал), магазин-мастерская "ВестСервис".</b>
             </h7>
-            <div class="cleaner h10"></div>
-            <center>
-                <iframe
-                        width="660"
-                        height="330"
-                        frameborder="0" style="border:0"
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAH2AF3WZ-J4SSwlz_4SYWNeRcRmzpozwI
-								&q=ул.+Ленинградская+3,+Минск" allowfullscreen>
-                </iframe>
-            </center>
-        </div> <!-- END of content -->
-        <div class="cleaner"></div>
     </div> <!-- END of main -->
 
     <div id="templatemo_footer">
@@ -352,49 +326,6 @@
 
 </div>
 
-
-<script type="text/javascript"> var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-23131825-1']);
-_gaq.push(['_trackPageview']);
-(function () {
-    var ga = document.createElement('script');
-    ga.type = 'text/javascript';
-    ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(ga, s);
-})(); </script>
-
-
-<script type="text/javascript">(function (d, w, c) {
-    (w[c] = w[c] || []).push(function () {
-        try {
-            w.yaCounter20963398 = new Ya.Metrika({
-                id: 20963398,
-                webvisor: true,
-                clickmap: true,
-                trackLinks: true,
-                accurateTrackBounce: true,
-                trackHash: true
-            });
-        } catch (e) {
-        }
-    });
-    var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
-        n.parentNode.insertBefore(s, n);
-    };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-    if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-    } else {
-        f();
-    }
-})(document, window, "yandex_metrika_callbacks");</script>
-<noscript>
-    <div><img src="//mc.yandex.ru/watch/20963398" style="position:absolute; left:-9999px;" alt=""></div>
-</noscript>
 
 
 </body>

@@ -235,7 +235,7 @@
             <li class="left-item"><a href="/" class="selected">Главная</a></li>
             <li class="left-item"><a href="/remont">Услуги</a></li>
             <li class="left-item"><a href="/shop">Продажа</a></li>
-            <li class="left-item"><a href="/shop">Б/У</a></li>
+            <li class="left-item"><a href="/by">Б/У</a></li>
             <li class="left-item"><a href="/price">Прейскурант</a></li>
             <li class="left-item"><a href="/credit">Кредит</a></li>
             <li class="left-item"><a href="/contacts">Контакты</a></li>
@@ -267,7 +267,7 @@
             <li><a href="about.html">Продажа</a>
                 <ul>
                     <li><a href="#">Скидки</a></li>
-                    <li><a href="#">Новинки</a></li>
+                    <li><a href="{% static '/news'%}">Новинки</a></li>
                     <li><a href="#">Ноутбуки</a></li>
                     <li><a href="#">Комплектующие</a></li>
                     <li><a href="#">Б/У товары</a></li>
@@ -292,8 +292,8 @@
                 <li><a href="{% static '/complect' %}">Комплектующие</a></li>
                 <li><a href="{% static '/periphery' %}">Перферия</a></li>
                 <li><a href="{% static '/access' %}">Аксессуары</a></li>
-                <li><a href="{% static '/shop' %}">Скидки</a></li>
-                <li><a href="#">Новинки</a></li>
+                <li><a href="{% static '/sales' %}">Скидки</a></li>
+                <li><a href="{% static '/news'%}">Новинки</a></li>
             </ul>
             <h3>Не нашли, что искали?</h3>
             <p>Попробуйте поискать здесь</p>
@@ -311,18 +311,59 @@
 
         <div id="content">
             <h1>Новинки</h1>
+            {% for note in notes %}
+
+                <div class="col col_14 no_margin_right">
+
+                    <center>
+                        <br>
+                        <a href="{% url 'post_detail' pk=note.pk %}">
+                            <div style="height: 200px"><img src="{{ note.Image_URL }}" height="120"
+                                                            alt="{{ note.Model }}"/>
+                                <h3>{{ note.Proizv }} {{ note.Model }}</h3>
+                            </div>
+                            <h7>{{ note.cena }} BYN</h7>
+                            <br><br>
+                            <div class="second_block"> Подробнее...</div>
+                        </a>
+                    </center>
+                </div>
+
+            {% endfor %}
+
+            {% for pc in pcs %}
+
+                <div class="col col_14 no_margin_right">
+
+                    <center>
+                        <br>
+                        <a href="{% url 'raznoe_detail' pk=pc.pk %}">
+                            <div style="height: 200px"><img src="{{ pc.Image_URL }}" height="120"
+                                                            alt="{{ pc.Model }}"/>
+                                <h3>{{ pc.Model }}</h3>
+                            </div>
+                            <h7>{{ pc.cena }} BYN</h7>
+                            <br><br>
+                            <div class="second_block"> Подробнее...</div>
+                        </a>
+                    </center>
+                </div>
+
+            {% endfor %}
+
             {% for product in products %}
 
                 <div class="col col_14 no_margin_right">
 
                     <center>
                         <br>
-                        <a href="{% url 'post_detail' pk=product.pk %}">
+                        <a href="{% url 'raznoe_detail' pk=product.pk %}">
                             <div style="height: 200px"><img src="{{ product.Image_URL }}" height="120"
                                                             alt="{{ product.Name }}"/>
                                 <h3>{{ product.Name }}</h3>
                             </div>
-                            <h7>{{ product.cena }} BYN</h7><br><br>
+                            <h7>{{ product.cena }} BYN</h7>
+                            <br><br>
                             <div class="second_block"> Подробнее...</div>
                         </a>
                     </center>
