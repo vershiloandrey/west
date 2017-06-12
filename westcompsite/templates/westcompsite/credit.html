@@ -65,21 +65,6 @@
         }
     </script>
     <style type="text/css">
-        .wrapper {
-            background: #fff;
-            width: 700px;
-            padding: 1px 15px 15px;
-            margin: 0 auto;
-        }
-
-        .slider {
-            z-index: 9;
-            width: 705px;
-            height: 225px;
-            overflow: hidden;
-            margin: 0 0 7px;
-            position: relative;
-        }
 
         .slider ul,
         .slider li {
@@ -123,15 +108,6 @@
             background: #2e9419;
         }
 
-        .slider2 {
-            z-index: 9;
-            width: 850px;
-            height: 225px;
-            overflow: hidden;
-            margin: 0 0 7px;
-            position: relative;
-        }
-
         .slider2 ul,
         .slider2 li {
             padding: 0;
@@ -150,12 +126,6 @@
             height: 225px;
         }
 
-        .slider2 .nav {
-            position: absolute;
-            left: 15px;
-            bottom: 12px;
-        }
-
         .slider2 .nav span {
             opacity: 0.9;
             background: #fff;
@@ -172,6 +142,64 @@
 
         .slider2 .nav span.on {
             background: #2e9419;
+        }
+
+        .thumb img {
+            margin-right: 100px; /* Отступ справа */
+            padding: 0;
+            margin: 0;
+            font-size: 0;
+            vertical-align: top;
+            vertical-align: bottom;
+            horiz-align: left;
+            horiz-align: right;
+            display: inline-block;
+        }
+
+        .img {
+            float: left;
+            -webkit-transition-duration: 0.5s;
+        }
+
+        .img img {
+            padding: 10px;
+            border: 1px solid #fff;
+        }
+
+        .img:hover {
+            -webkit-transform: scale(1.1);
+        }
+
+        #img-1:hover .mask {
+            height: 0%;
+        }
+
+        #img-2:hover .mask {
+            height: 0%;
+            margin-top: 130px;
+        }
+
+        #img-4:hover .mask {
+            margin-left: 219px;
+            margin-top: 135px;
+            height: 0%;
+            width: 0%;
+        }
+
+        #img-5:hover .mask {
+            margin-left: 219px;
+            margin-top: 135px;
+            height: 0%;
+            width: 0%;
+            -webkit-transform: rotateX(360deg);
+        }
+
+        #img-6:hover .mask {
+            margin-left: 219px;
+            margin-top: 135px;
+            height: 0%;
+            width: 0%;
+            -webkit-transform: rotateZ(750deg);
         }
 
 
@@ -200,7 +228,7 @@
     </div> <!-- END of header -->
 
 
-   <nav class="top-menu">
+    <nav class="top-menu">
         <ul class="menu-main">
             <li class="left-item"><a href="/" class="selected">Главная</a></li>
             <li class="left-item"><a href="/remont">Услуги</a></li>
@@ -279,52 +307,33 @@
         </div> <!-- END of sidebar -->
 
         <div id="content">
-            <h2>Контактная информация</h2>
+            <h1>Кредит</h1>
 
-
-            <div class="col col_13">
-                <strong>Юридический адрес:</strong>
-                <br>Минский р-н, д. Богатырево, <br>ул. Полесская, д. 1-180<br><br>
-                <strong>Адрес торгового объекта:</strong>
-                <br>г. Минск, ул. Ленинградская, <br>д. 3/пом. 1<br><br>
-                <strong>Телефоны: </strong>(017)327-10-97<br>
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(029)144-89-06<br>
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(029)563-42-15<br/>
-                <strong><br>Почта:</strong> <a href="mailto:westcomp.biz@tut.by">westcomp.biz@tut.by</a><br/>
-                <div class="cleaner divider"></div>
-                <div class="cleaner h30"></div>
+            <h4>Для наших покупателей мы рады предоставить возможность купить товар в <b>рассрочку, кредит или
+                лизинг</b>.</h4>
+            <h4>А также можно оформить в кредит или рассрочку <b>сложный ремонт</b>.</h4>
+            <h4>Расчет выплат можно уточнить по телефонам:<br>(017)327-10-97
+                       <br>(029)144-89-06
+                       <br>(029)563-42-15</h4>
+            <div class='img' id='img-1'>
+                <div class='mask'></div>
+                <a href="{% static '/ecredit' %}"><img src="{% static 'images/gallery/32_310x124.png' %}"></a>
+            </div>
+            <div class="cleaner"></div>
+            <div class='img' id='img-1'>
+                <div class='mask'></div>
+                <a href="{% static '/creditb' %}"><img src="{% static 'images/gallery/12_310x124.png' %}"></a>
+            </div>
+            <div class="cleaner"></div>
+            <div class='img' id='img-1'>
+                <div class='mask'></div>
+                <a href="{% static '/rassrochka' %}"><img src="{% static 'images/gallery/22_310x124.png' %}"></a>
             </div>
 
-            <div class="col col_13 no_margin_right">
-                <div class="cleaner h10"></div>
-
-                <div class="Box2">
-                    <img src="{% static 'images/shop.jpg' %}">
-                </div>
-            </div>
-            <div class="cleaner h10"></div>
-            <h7><b>В магазине-мастерской "ВестСервис"</b> представлен спектр услуг по <b>обслуживанию и ремонту</b>
-                персональных компьютеров и ноутбуков, от <b>переустановки ОС</b>, обновления антивируса и ремонта
-                зарядных устройств до <b>восстановления</b> материнских плат после залития и <b>замены чипсета</b> с
-                предоставлением <b>гарантии</b> на сложный ремонт до 6 месяцев. Кроме того, мы можем
-                <b>заправить</b> и вернуть в строй ваши <b>струйные и лазерные картриджи</b>, а также при
-                необходимости <b>отремонтировать или перепрошить принтер</b>. Также мы представляем широкий выбор
-                <b>ноутбуков, компьютеров, комплектующих</b> и аксессуаров к ним. Мы рады предложить вам безупречный
-                сервис и выгодные условия для покупки техники в <b>кредит, рассточку, лизинг без справки о
-                    заработной плате, за наличный и безналичный расчёт</b>. Весь товар <b>сертифицирован</b> и имеет
-                официальную гарантию.<br>Мы ждём вас по адресу: <b>г. Минск, ул. Ленинградская, 3 (м. Площадь
-                    Ленина, ж/д Вокзал), магазин-мастерская "ВестСервис".</b>
-            </h7>
-            <div class="cleaner h10"></div>
-            <center>
-                <iframe
-                        width="660"
-                        height="330"
-                        frameborder="0" style="border:0"
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAH2AF3WZ-J4SSwlz_4SYWNeRcRmzpozwI
-								&q=ул.+Ленинградская+3,+Минск" allowfullscreen>
-                </iframe>
             </center>
+            <br>
+
+
         </div> <!-- END of content -->
         <div class="cleaner"></div>
     </div> <!-- END of main -->

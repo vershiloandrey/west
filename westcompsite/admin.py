@@ -26,6 +26,10 @@ from .models import PCProizv
 from .models import PCVent
 from .models import PCVideo
 
+from .models import Raznoe
+from .models import TypePer
+
+
 admin.site.register(Notes)
 admin.site.register(NoteType)
 admin.site.register(NoteHHD)
@@ -53,3 +57,6 @@ admin.site.register(PCPam)
 admin.site.register(PCOC)
 admin.site.register(PCHDD)
 admin.site.register(PCBlock)
+
+admin.site.register(Raznoe)
+admin.site.register(TypePer)

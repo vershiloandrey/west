@@ -174,6 +174,35 @@
             background: #2e9419;
         }
 
+    div.col {
+            height: 300px;
+        }
+
+        div.col:hover {
+            background-color: #bad8f7;
+            border-radius: 10px;
+
+        }
+
+        .second_block {
+            display: none;
+        }
+
+        div.col:hover .second_block {
+            display: block;
+        }
+
+        h7 {
+            color: red;
+
+            font-weight: bold;
+            font-size: 26px;
+            padding: 5px;
+            margin-top: 0px;
+            font-size: 24px;
+            border-bottom: 1px solid #0d0035;
+            bottom: 0;
+        }
 
     </style>
     <script type="text/javascript" src="{% static 'js/jquery1.js' %}"></script>
@@ -201,16 +230,19 @@
 
 
     <nav class="top-menu">
-         <ul class="sidebar_menu">
-                <li><a href="/remont/#content">Ремонт ноутбуков</a></li>
-                <li><a href="/remont/#phones">Ремонт телефонов и планшетов</a></li>
-                <li><a href="/remont/#prints">Ремонт принтеров</a></li>
-                <li><a href="/remont/#prints">Заправка картриджей</a></li>
-                <li><a href="/remont/#comps">Ремонт компьютеров</a></li>
-                <li><a href="{% static '/price' %}">Прейскурант</a></li>
-            </ul>
+        <ul class="menu-main">
+            <li class="left-item"><a href="/" class="selected">Главная</a></li>
+            <li class="left-item"><a href="/remont">Услуги</a></li>
+            <li class="left-item"><a href="/shop">Продажа</a></li>
+            <li class="left-item"><a href="/shop">Б/У</a></li>
+            <li class="left-item"><a href="/price">Прейскурант</a></li>
+            <li class="left-item"><a href="/credit">Кредит</a></li>
+            <li class="left-item"><a href="/contacts">Контакты</a></li>
+
+        </ul>
 
     </nav>
+
 
     <!--
     <div id="templatemo_menu" class="ddsmoothmenu">
@@ -277,28 +309,26 @@
         </div> <!-- END of sidebar -->
 
         <div id="content">
-            <h1>Услуги</h1>
-            <h2>Ремонт телефонов</h2>
+            <h1>Ноутбуки Hewlett-Packard</h1>
 
-            <div class="col col_14">
-                <a href="/detail_phone_raz"><img src="{% static 'images/gallery/phone_raz.jpg' %}" alt="Product 01"/>
-                    <h3>Замена разъема</h3></a>
-            </div>
+            {% for product in notes %}
 
-            <div class="col col_14 no_margin_right">
-                <a href="/detail_phone_sim"><img src="{% static 'images/gallery/phone_sim_small.png' %}" alt="Product 0311"/>
-                    <h3>Замена sim/card слота</h3>
-                </a>
-            </div>
-            <!--<a href="#" class="more float_r">View all</a>-->
-            <div class="cleaner h50"></div>
+                <div class="col col_14 no_margin_right">
 
+                    <center>
+                        <br>
+                        <a href="{% url 'post_detail' pk=product.pk %}">
+                            <div style="height: 200px"><img src="{{ product.Image_URL }}" height="120"
+                                                            alt="{{ product.Model }}"/>
+                                <h3>{{ product.Proizv }} {{ product.Model }}</h3>
+                            </div>
+                            <h7>{{ product.cena }} BYN</h7><br><br>
+                            <div class="second_block"> Подробнее...</div>
+                        </a>
+                    </center>
+                </div>
 
-            <!--<a href="#" class="more float_r">View all</a>-->
-            <div class="cleaner h50"></div>
-
-
-
+            {% endfor %}
             <div class="cleaner"></div>
         </div> <!-- END of content -->
         <div class="cleaner"></div>

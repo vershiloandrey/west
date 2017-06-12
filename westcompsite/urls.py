@@ -3,17 +3,32 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
+    url(r'^shop/(?P<pk>[0-9]+)/$', views.raznoe_detail, name='raznoe_detail'),
     url(r'^shop/$', views.shop, name='shop'),
     url(r'^notes/$', views.notes, name='notes'),
+
+    url(r'^hp/$', views.hp, name='hp'),
+    url(r'^lenovo/$', views.lenovo, name='lenovo'),
+
     url(r'^pcs/$', views.pcs, name='pcs'),
     url(r'^complect/$', views.complect, name='complect'),
     url(r'^periphery/$', views.periphery, name='peryphery'),
     url(r'^access/$', views.access, name='access'),
+
+    url(r'^by/$', views.by, name='by'),
+    url(r'^sales/$', views.sales, name='sales'),
+    url(r'^news/$', views.news, name='news'),
+
     url(r'^remont/$', views.remont, name='remont'),
-    url(r'^productdetail/$', views.product_detail, name='productdetail'),
     url(r'^contacts/$', views.contacts, name='contacts'),
     url(r'^price/$', views.price, name='price'),
+
+    url(r'^calculator/$', views.calculator, name='calculator'),
     url(r'^credit/$', views.credit, name='credit'),
+    url(r'^ecredit/$', views.ecredit, name='ecredit'),
+    url(r'^creditb/$', views.creditb, name='creditb'),
+    url(r'^rassrochka/$', views.rassrochka, name='rassrochka'),
 
     url(r'^detail_kart/$', views.detail_kart, name='detail_kart'),
     url(r'^detail_print/$', views.detail_print, name='detail_print'),

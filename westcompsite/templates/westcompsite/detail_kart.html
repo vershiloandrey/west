@@ -549,13 +549,12 @@
         <div id="sidebar">
             <h3>Категории</h3>
             <ul class="sidebar_menu">
-                <li><a href="{% static '/notes' %}">Ноутбуки</a></li>
-                <li><a href="{% static '/pcs' %}">Компьютеры</a></li>
-                <li><a href="{% static '/complex' %}">Комплектующие</a></li>
-                <li><a href="{% static '/periphery' %}">Перферия</a></li>
-                <li><a href="{% static '/access' %}">Аксессуары</a></li>
-                <li><a href="{% static '/shop' %}">Скидки</a></li>
-                <li><a href="#">Новинки</a></li>
+                <li><a href="/remont/#content">Ремонт ноутбуков</a></li>
+                <li><a href="/remont/#phones">Ремонт телефонов и планшетов</a></li>
+                <li><a href="/remont/#prints">Ремонт принтеров</a></li>
+                <li><a href="/remont/#prints">Заправка картриджей</a></li>
+                <li><a href="/remont/#comps">Ремонт компьютеров</a></li>
+                <li><a href="{% static '/price' %}">Прейскурант</a></li>
             </ul>
             <h3>Не нашли, что искали?</h3>
             <p>Попробуйте поискать здесь</p>
@@ -617,17 +616,17 @@
 
             <h4>Популярные услуги</h4>
             <div class="col col_14 product_gallery">
-                <a href="productdetail.html"><img src="{% static 'images/product/01.jpg' %}" alt="Product 01"/></a>
+                <a href="post_detail.html"><img src="{% static 'images/product/01.jpg' %}" alt="Product 01"/></a>
                 <h3>Название услуги</h3>
                 <p class="product_price">$ 100</p>
             </div>
             <div class="col col_14 product_gallery">
-                <a href="productdetail.html"><img src="{% static 'images/product/01.jpg' %}" alt="Product 02"/></a>
+                <a href="post_detail.html"><img src="{% static 'images/product/01.jpg' %}" alt="Product 02"/></a>
                 <h3>Название услуги</h3>
                 <p class="product_price">$ 200</p>
             </div>
             <div class="col col_14 product_gallery no_margin_right">
-                <a href="productdetail.html"><img src="{% static 'images/product/01.jpg' %}" alt="Product 03"/></a>
+                <a href="post_detail.html"><img src="{% static 'images/product/01.jpg' %}" alt="Product 03"/></a>
                 <h3>Название услуги</h3>
                 <p class="product_price">$ 120</p>
             </div>

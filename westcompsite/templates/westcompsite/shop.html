@@ -11,10 +11,10 @@
 
     <link href="{% static 'css/templatemo_style.css' %}" rel="stylesheet" type="text/css"/>
 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/ddsmoothmenu.css'%}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ddsmoothmenu.css' %}"/>
 
-    <script type="text/javascript" src="{% static 'js/jquery.min.js'%}"></script>
-    <script type="text/javascript" src="{% static 'js/ddsmoothmenu.js'%}">
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/ddsmoothmenu.js' %}">
 
         /***********************************************
          * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
@@ -36,10 +36,10 @@
 
     </script>
 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css'%}"/>
-    <script language="javascript" type="text/javascript" src="{% static 'scripts/mootools-1.2.1-core.js'%}"></script>
-    <script language="javascript" type="text/javascript" src="{% static 'scripts/mootools-1.2-more.js'%}"></script>
-    <script language="javascript" type="text/javascript" src="{% static 'scripts/slideitmoo-1.1.js'%}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+    <script language="javascript" type="text/javascript" src="{% static 'scripts/mootools-1.2.1-core.js' %}"></script>
+    <script language="javascript" type="text/javascript" src="{% static 'scripts/mootools-1.2-more.js' %}"></script>
+    <script language="javascript" type="text/javascript" src="{% static 'scripts/slideitmoo-1.1.js' %}"></script>
     <script language="javascript" type="text/javascript">
         window.addEvents({
             'domready': function () {
@@ -176,7 +176,7 @@
 
 
     </style>
-    <script type="text/javascript" src="{% static 'js/jquery1.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery1.js' %}"></script>
 
 
 </head>
@@ -185,7 +185,7 @@
 
 <div id="templatemo_wrapper">
     <div id="templatemo_header">
-        <center><img src="{% static 'images/newlogo.png'%}" alt="Image 01"/></center>
+        <center><img src="{% static 'images/newlogo.png' %}" alt="Image 01"/></center>
         <!-- <div id="header_right">
              <div class="cleaner"></div>
              <div id="templatemo_search">
@@ -256,13 +256,13 @@
 
         <div id="sidebar">
             <h3>Категории</h3>
-             <ul class="sidebar_menu">
-                <li><a href="{%  static '/notes' %}">Ноутбуки</a></li>
-                <li><a href="{%  static '/pcs' %}">Компьютеры</a></li>
-                <li><a href="{%  static '/complex' %}">Комплектующие</a></li>
-                <li><a href="{%  static '/periphery' %}">Перферия</a></li>
+            <ul class="sidebar_menu">
+                <li><a href="{% static '/notes' %}">Ноутбуки</a></li>
+                <li><a href="{% static '/pcs' %}">Компьютеры</a></li>
+                <li><a href="{% static '/complex' %}">Комплектующие</a></li>
+                <li><a href="{% static '/periphery' %}">Перферия</a></li>
                 <li><a href="{% static '/access' %}">Аксессуары</a></li>
-                <li><a href="{%  static '/shop' %}">Скидки</a></li>
+                <li><a href="{% static '/shop' %}">Скидки</a></li>
                 <li><a href="#">Новинки</a></li>
             </ul>
             <h3>Не нашли, что искали?</h3>
@@ -280,15 +280,53 @@
         </div> <!-- END of sidebar -->
 
         <div id="content">
-            <h1>Товары со скидкой</h1>
-            {% for product in products %}
-            <div class="col col_14 product_gallery">
-                <a href="productdetail.html"><img src="{% static 'images/product/01.jpg' %}" alt="Product 01"/></a>
-                <h3>{{ product.Proizv }}</h3>
-                <a href="" class="add_to_cart">{{ product.Model }}</a>
-            </div>
-            {% endfor %}
+            <h1>Продажа</h1>
+            <div class="cleaner"></div>
 
+            <div class="col col_14">
+
+                <a href="/notes">
+                    <center><img src="{% static 'images/gallery/note.jpeg' %}" alt="Product 01"/>
+                        <h3>Ноутбуки</h3></center>
+                </a>
+            </div>
+            <div class="col col_14">
+                <a href="/pcs">
+                    <center><img src="{% static 'images/gallery/pc.jpeg' %}" alt="Product 02"/>
+                        <h3>Компьютеры</h3></center>
+                </a>
+            </div>
+            <div class="col col_14 no_margin_right">
+                <a href="/complect"><center><img src="{% static 'images/gallery/complect.jpeg' %}" alt="Product 0311"/>
+                    <h3>Комплектующие</h3></center>
+                </a>
+            </div>
+            <div class="cleaner h50"></div>
+            <div class="col col_14">
+                <a href="/periphery"><center><img src="{% static 'images/gallery/perif.jpeg' %}" alt="Product 01"/>
+                    <h3>Периферия</h3></center></a>
+            </div>
+            <div class="col col_14">
+                <a href="/access"><center><img src="{% static 'images/gallery/aks.jpeg' %}" alt="Product 02"/>
+                    <h3>Аксессуары</h3></center>
+                </a>
+            </div>
+            <div class="col col_14 no_margin_right">
+                <a href="/by"><center><img src="{% static 'images/gallery/nevkl.jpg' %}" alt="Product 0311"/>
+                    <h3>Б/У товары</h3></center>
+                </a>
+            </div>
+            <div class="col col_14">
+                <a href="/sales"><center><img src="{% static 'images/gallery/nevkl.jpg' %}" alt="Product 01"/>
+                    <h3>Скидки</h3></center></a>
+            </div>
+            <div class="col col_14">
+                <a href="/news"><center><img src="{% static 'images/gallery/nevkl.jpg' %}" alt="Product 02"/>
+                    <h3>Новинки</h3></center>
+                </a>
+            </div>
+
+            <div class="cleaner"></div>
         </div> <!-- END of content -->
         <div class="cleaner"></div>
     </div> <!-- END of main -->

@@ -1,5 +1,4 @@
 {% load staticfiles %}
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -178,7 +177,134 @@
     </style>
     <script type="text/javascript" src="{% static 'js/jquery1.js' %}"></script>
 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".slider").each(function () {
 
+                var repeats = 5, // кількість повторювань автоматичного прокручування
+                    interval = 10, // інтервал в секундах
+                    repeat = true, // чи треба автоматично прокручувати (true/false)
+                    slider = $(this),
+                    repeatCount = 0,
+                    elements = $(slider).find("li").length;
+
+                $(slider)
+                    .append("<div class='nav'></div>")
+                    .find("li").each(function () {
+                    $(slider).find(".nav").append("<span data-slide='" + $(this).index() + "'></span>");
+                    $(this).attr("data-slide", $(this).index());
+                })
+                    .end()
+                    .find("span").first().addClass("on");
+
+                // add timeout
+
+                if (repeat) {
+                    repeat = setInterval(function () {
+                        if (repeatCount >= repeats - 1) {
+                            window.clearInterval(repeat);
+                        }
+
+                        var index = $(slider).find('.on').data("slide"),
+                            nextIndex = index + 1 < elements ? index + 1 : 0;
+
+                        sliderJS(nextIndex, slider);
+
+                        repeatCount += 1;
+                    }, interval * 1000);
+                }
+
+            });
+
+
+            // для второго слайдера
+            $(".slider2").each(function () {
+
+                var repeats = 5, // кількість повторювань автоматичного прокручування
+                    interval = 10, // інтервал в секундах
+                    repeat = true, // чи треба автоматично прокручувати (true/false)
+                    slider2 = $(this),
+                    repeatCount = 0,
+                    elements = $(slider2).find("li").length;
+
+                $(slider2)
+                    .append("<div class='nav'></div>")
+                    .find("li").each(function () {
+                    $(slider2).find(".nav").append("<span data-slide='" + $(this).index() + "'></span>");
+                    $(this).attr("data-slide", $(this).index());
+                })
+                    .end()
+                    .find("span").first().addClass("on");
+
+                // add timeout
+
+                if (repeat) {
+                    repeat = setInterval(function () {
+                        if (repeatCount >= repeats - 1) {
+                            window.clearInterval(repeat);
+                        }
+
+                        var index = $(slider2).find('.on').data("slide"),
+                            nextIndex = index + 1 < elements ? index + 1 : 0;
+
+                        sliderJS2(nextIndex, slider2);
+
+                        repeatCount += 1;
+                    }, interval * 1000);
+                }
+
+            });
+
+        });
+
+
+        function sliderJS(index, slider) { // slide
+            var ul = $(slider).find("ul"),
+                bl = $(slider).find("li[data-slide=" + index + "]"),
+                step = $(bl).width();
+
+            $(slider)
+                .find("span").removeClass("on")
+                .end()
+                .find("span[data-slide=" + index + "]").addClass("on");
+
+            $(ul).animate({
+                marginLeft: "-" + step * index
+            }, 500);
+        }
+
+        $(document).on("click", ".slider .nav span", function (e) { // slider click navigate
+            e.preventDefault();
+            var slider = $(this).closest(".slider"),
+                index = $(this).data("slide");
+
+            sliderJS(index, slider);
+        });
+
+
+        function sliderJS2(index, slider2) { // slide
+            var ul = $(slider2).find("ul"),
+                bl = $(slider2).find("li[data-slide=" + index + "]"),
+                step = $(bl).width();
+
+            $(slider2)
+                .find("span").removeClass("on")
+                .end()
+                .find("span[data-slide=" + index + "]").addClass("on");
+
+            $(ul).animate({
+                marginLeft: "-" + step * index
+            }, 500);
+        }
+
+        $(document).on("click", ".slider2 .nav span", function (e) { // slider click navigate
+            e.preventDefault();
+            var slider2 = $(this).closest(".slider2"),
+                index = $(this).data("slide");
+
+            sliderJS2(index, slider2);
+        });
+    </script>
 </head>
 
 <body id="home">
@@ -201,52 +327,20 @@
 
 
     <nav class="top-menu">
-         <ul class="sidebar_menu">
-                <li><a href="/remont/#content">Ремонт ноутбуков</a></li>
-                <li><a href="/remont/#phones">Ремонт телефонов и планшетов</a></li>
-                <li><a href="/remont/#prints">Ремонт принтеров</a></li>
-                <li><a href="/remont/#prints">Заправка картриджей</a></li>
-                <li><a href="/remont/#comps">Ремонт компьютеров</a></li>
-                <li><a href="{% static '/price' %}">Прейскурант</a></li>
-            </ul>
+        <ul class="menu-main">
+            <li class="left-item"><a href="/" class="selected">Главная</a></li>
+            <li class="left-item"><a href="/remont">Услуги</a></li>
+            <li class="left-item"><a href="/shop">Продажа</a></li>
+            <li class="left-item"><a href="/shop">Б/У</a></li>
+            <li class="left-item"><a href="/price">Прейскурант</a></li>
+            <li class="left-item"><a href="/credit">Кредит</a></li>
+            <li class="left-item"><a href="/contacts">Контакты</a></li>
+
+        </ul>
 
     </nav>
 
-    <!--
-    <div id="templatemo_menu" class="ddsmoothmenu">
-        <ul>
-            <li><a href="index.html" class="selected">Главная</a></li>
-            <li><a href="products.html">Услуги</a>
-                <ul>
-                    <li><a href="#">Ремонт ноутбуков</a></li>
-                    <li><a href="#">Ремонт телефонов</a></li>
-                    <li><a href="#">Ремонт принтеров</a></li>
-                    <li><a href="#">Ремонт мониторов</a></li>
-                    <li><a href="#">Заправка картриджей</a>
-                        <ul>
-                            <li><a href="#">Лазерный принтер</a></li>
-                            <li><a href="#">Струйный принтер</a></li>
-                            <li><a href="#">Прошивка чипа</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="about.html">Продажа</a>
-                <ul>
-                    <li><a href="#">Скидки</a></li>
-                    <li><a href="#">Новинки</a></li>
-                    <li><a href="#">Ноутбуки</a></li>
-                    <li><a href="#">Комплектующие</a></li>
-                    <li><a href="#">Б/У товары</a></li>
-                </ul>
-            </li>
-            <li><a href="checkout.html">Кредит</a></li>
-            <li><a href="contact.html">Контакты</a></li>
-        </ul>
-        <br style="clear: left"/>
-    </div> <!-- end of templatemo_menu -->
-
-    <br><br>
+    <div class="cleaner h20"></div>
     <div id="templatemo_main_top"></div>
     <div id="templatemo_main">
 
@@ -275,34 +369,33 @@
                 <div class="cleaner"></div>
             </div>
         </div> <!-- END of sidebar -->
-
         <div id="content">
-            <h1>Услуги</h1>
-            <h2>Ремонт телефонов</h2>
+            <h2>{{ post.Name }}</h2>
+            <div class="col col_13">
+                <a rel="lightbox[portfolio]" href="{{ post.Image_URL }}" title="Lady Shoes"><img
+                        src="{{ post.Image_URL }}" width="300" alt="{{ post.Name }}"/></a>
+            </div>
+            <div class="col col_13 no_margin_right">
+                <h1>Цена: {{ post.cena }} BYN</h1>
+                <div class="cleaner h20"></div>
+                <div class="cleaner h20"></div>
+                <div class="cleaner h20"></div>
+                <div class="cleaner h20"></div>
 
-            <div class="col col_14">
-                <a href="/detail_phone_raz"><img src="{% static 'images/gallery/phone_raz.jpg' %}" alt="Product 01"/>
-                    <h3>Замена разъема</h3></a>
             </div>
 
-            <div class="col col_14 no_margin_right">
-                <a href="/detail_phone_sim"><img src="{% static 'images/gallery/phone_sim_small.png' %}" alt="Product 0311"/>
-                    <h3>Замена sim/card слота</h3>
-                </a>
-            </div>
-            <!--<a href="#" class="more float_r">View all</a>-->
+            <div class="cleaner h30"></div>
+            <h3>Описание:</h3>
+            <h5>{{ post.Text }}</h5>
+
             <div class="cleaner h50"></div>
-
-
-            <!--<a href="#" class="more float_r">View all</a>-->
-            <div class="cleaner h50"></div>
-
 
 
             <div class="cleaner"></div>
         </div> <!-- END of content -->
         <div class="cleaner"></div>
     </div> <!-- END of main -->
+
 
     <div id="templatemo_footer">
 
@@ -325,52 +418,8 @@
         </center>
     </div> <!-- END of footer -->
 
+
 </div>
-
-
-<script type="text/javascript"> var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-23131825-1']);
-_gaq.push(['_trackPageview']);
-(function () {
-    var ga = document.createElement('script');
-    ga.type = 'text/javascript';
-    ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(ga, s);
-})(); </script>
-
-
-<script type="text/javascript">(function (d, w, c) {
-    (w[c] = w[c] || []).push(function () {
-        try {
-            w.yaCounter20963398 = new Ya.Metrika({
-                id: 20963398,
-                webvisor: true,
-                clickmap: true,
-                trackLinks: true,
-                accurateTrackBounce: true,
-                trackHash: true
-            });
-        } catch (e) {
-        }
-    });
-    var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
-        n.parentNode.insertBefore(s, n);
-    };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-    if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-    } else {
-        f();
-    }
-})(document, window, "yandex_metrika_callbacks");</script>
-<noscript>
-    <div><img src="//mc.yandex.ru/watch/20963398" style="position:absolute; left:-9999px;" alt=""></div>
-</noscript>
-
 
 </body>
 </html>

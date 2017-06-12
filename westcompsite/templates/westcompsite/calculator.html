@@ -174,6 +174,83 @@
             background: #2e9419;
         }
 
+        .thumb img {
+            margin-right: 100px; /* Отступ справа */
+            padding: 0;
+            margin: 0;
+            font-size: 0;
+            vertical-align: top;
+            vertical-align: bottom;
+            horiz-align: left;
+            horiz-align: right;
+            display: inline-block;
+        }
+
+        .img {
+            float: left;
+            -webkit-transition-duration: 0.5s;
+        }
+
+        .img img {
+            padding: 10px;
+            border: 1px solid #fff;
+        }
+
+        .img:hover {
+            -webkit-transform: scale(1.2);
+            -webkit-box-shadow: 0px 0px 30px #ccc;
+        }
+
+        #img-1:hover .mask {
+            height: 0%;
+        }
+
+        #img-2:hover .mask {
+            height: 0%;
+            margin-top: 130px;
+        }
+
+        #img-3 #mask-1 {
+            width: 50%;
+        }
+
+        #img-3 #mask-2 {
+            width: 50%;
+            margin-left: 211px;
+        }
+
+        #img-3:hover #mask-1 {
+            width: 0%;
+        }
+
+        #img-3:hover #mask-2 {
+            margin-left: 430px;
+            width: 0%;
+        }
+
+        #img-4:hover .mask {
+            margin-left: 219px;
+            margin-top: 135px;
+            height: 0%;
+            width: 0%;
+        }
+
+        #img-5:hover .mask {
+            margin-left: 219px;
+            margin-top: 135px;
+            height: 0%;
+            width: 0%;
+            -webkit-transform: rotateX(360deg);
+        }
+
+        #img-6:hover .mask {
+            margin-left: 219px;
+            margin-top: 135px;
+            height: 0%;
+            width: 0%;
+            -webkit-transform: rotateZ(750deg);
+        }
+
 
     </style>
     <script type="text/javascript" src="{% static 'js/jquery1.js' %}"></script>
@@ -201,14 +278,16 @@
 
 
     <nav class="top-menu">
-         <ul class="sidebar_menu">
-                <li><a href="/remont/#content">Ремонт ноутбуков</a></li>
-                <li><a href="/remont/#phones">Ремонт телефонов и планшетов</a></li>
-                <li><a href="/remont/#prints">Ремонт принтеров</a></li>
-                <li><a href="/remont/#prints">Заправка картриджей</a></li>
-                <li><a href="/remont/#comps">Ремонт компьютеров</a></li>
-                <li><a href="{% static '/price' %}">Прейскурант</a></li>
-            </ul>
+        <ul class="menu-main">
+            <li class="left-item"><a href="/" class="selected">Главная</a></li>
+            <li class="left-item"><a href="/remont">Услуги</a></li>
+            <li class="left-item"><a href="/shop">Продажа</a></li>
+            <li class="left-item"><a href="/shop">Б/У</a></li>
+            <li class="left-item"><a href="/price">Прейскурант</a></li>
+            <li class="left-item"><a href="/credit">Кредит</a></li>
+            <li class="left-item"><a href="/contacts">Контакты</a></li>
+
+        </ul>
 
     </nav>
 
@@ -275,31 +354,20 @@
                 <div class="cleaner"></div>
             </div>
         </div> <!-- END of sidebar -->
-
         <div id="content">
-            <h1>Услуги</h1>
-            <h2>Ремонт телефонов</h2>
-
-            <div class="col col_14">
-                <a href="/detail_phone_raz"><img src="{% static 'images/gallery/phone_raz.jpg' %}" alt="Product 01"/>
-                    <h3>Замена разъема</h3></a>
-            </div>
-
-            <div class="col col_14 no_margin_right">
-                <a href="/detail_phone_sim"><img src="{% static 'images/gallery/phone_sim_small.png' %}" alt="Product 0311"/>
-                    <h3>Замена sim/card слота</h3>
-                </a>
-            </div>
-            <!--<a href="#" class="more float_r">View all</a>-->
-            <div class="cleaner h50"></div>
+            <h2>Калькулятор</h2>
+            <form id="calc"
+                  onsubmit="sum = document.getElementById('sum'); mes = document.getElementById('mes'); if(mes.value >= 12 && mes.value <= 18 ) {result = sum.value/mes.value + 0.0235*sum.value;} else if(mes.value >=4 && mes.value <= 11){result = sum.value/mes.value + 0.0249*sum.value;} alert('Вам нужно платить каждый месяц по: ' + result.toFixed(2) + ' BYN'); return false">
+                Сумма кредита:<br>
+                <input id="sum" name="sum" placeholder="Сумма кредита">
+                <br>Срок пользования:<br>
+                <input id="mes" name="mes" placeholder="Срок пользования"><br>
+                <input type="submit" value="Рассчитать">
+            </form>
+            </center>
+            <br>
 
 
-            <!--<a href="#" class="more float_r">View all</a>-->
-            <div class="cleaner h50"></div>
-
-
-
-            <div class="cleaner"></div>
         </div> <!-- END of content -->
         <div class="cleaner"></div>
     </div> <!-- END of main -->

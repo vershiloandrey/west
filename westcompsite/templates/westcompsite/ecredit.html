@@ -174,6 +174,9 @@
             background: #2e9419;
         }
 
+        div.clc {
+            background-color: #B5B2C2;
+        }
 
     </style>
     <script type="text/javascript" src="{% static 'js/jquery1.js' %}"></script>
@@ -201,14 +204,16 @@
 
 
     <nav class="top-menu">
-         <ul class="sidebar_menu">
-                <li><a href="/remont/#content">Ремонт ноутбуков</a></li>
-                <li><a href="/remont/#phones">Ремонт телефонов и планшетов</a></li>
-                <li><a href="/remont/#prints">Ремонт принтеров</a></li>
-                <li><a href="/remont/#prints">Заправка картриджей</a></li>
-                <li><a href="/remont/#comps">Ремонт компьютеров</a></li>
-                <li><a href="{% static '/price' %}">Прейскурант</a></li>
-            </ul>
+        <ul class="menu-main">
+            <li class="left-item"><a href="/" class="selected">Главная</a></li>
+            <li class="left-item"><a href="/remont">Услуги</a></li>
+            <li class="left-item"><a href="/shop">Продажа</a></li>
+            <li class="left-item"><a href="/shop">Б/У</a></li>
+            <li class="left-item"><a href="/price">Прейскурант</a></li>
+            <li class="left-item"><a href="/credit">Кредит</a></li>
+            <li class="left-item"><a href="/contacts">Контакты</a></li>
+
+        </ul>
 
     </nav>
 
@@ -277,29 +282,61 @@
         </div> <!-- END of sidebar -->
 
         <div id="content">
-            <h1>Услуги</h1>
-            <h2>Ремонт телефонов</h2>
+            <h2>Лизинг eCredit</h2>
+            <div class="col col_13">
 
-            <div class="col col_14">
-                <a href="/detail_phone_raz"><img src="{% static 'images/gallery/phone_raz.jpg' %}" alt="Product 01"/>
-                    <h3>Замена разъема</h3></a>
+
+                <li>Сумма: от <b>150 руб.</b> до <b>10 000 руб.</b>
+                </li>
+                <li>Возраст: с <b>18</b> до <b>78</b> лет.</li>
+                <li>Документы: Паспорт (Вид на жительство).</li>
+                <li>Для <b>ИП копия свидетельства государственной регистрации.</b></li>
+                <li>Стаж работы: от 1 месяца, пенсионеры, ИП.</b>
+                </li>
+                <li>Без справки о доходах.</li>
+                <li>Без поручителей.</li>
+                <li>Без страховки.</li>
+                <li>Без первоначального взноса.</li>
+                <li>Срок Лизинга: от 4 до 18 месяцев.</li>
+
+
             </div>
 
-            <div class="col col_14 no_margin_right">
-                <a href="/detail_phone_sim"><img src="{% static 'images/gallery/phone_sim_small.png' %}" alt="Product 0311"/>
-                    <h3>Замена sim/card слота</h3>
-                </a>
+            <div class="col col_13 no_margin_right">
+
+                <div class="Box2">
+                    <img src="{% static 'images/gallery/ecredit_small.jpg' %}">
+                </div>
+
             </div>
-            <!--<a href="#" class="more float_r">View all</a>-->
-            <div class="cleaner h50"></div>
+            <div class="cleaner h20"></div>
+            <center>
+                <div class="col col_13 no_margin_right clc">
+                    <form id="calc"
+                          onsubmit="sum = document.getElementById('sum'); mes = document.getElementById('mes'); if(mes.value >= 12 && mes.value <= 18 ) {result = sum.value/mes.value + 0.0235*sum.value;} else if(mes.value >=4 && mes.value <= 11){result = sum.value/mes.value + 0.0249*sum.value;} alert('Вам нужно платить каждый месяц по: ' + result.toFixed(2) + ' BYN'); return false">
+                        <b>Калькулятор кредита:</b><br>
+                        <input id="sum" name="sum" placeholder="Сумма кредита">
+                        <br>
+                        <input id="mes" name="mes" placeholder="Срок пользования"><br>
+                        <input type="submit" value="Рассчитать">
+                    </form>
+                </div>
+            </center>
+            <div class="cleaner h10"></div>
+            <h4><br>
+                <center><b>Ежемесячная оплата
+                    производиться через систему «Расчет» ЕРИП в любом БАНКЕ, с помощью мобильного банкинга и т.п. по
+                    графику,
+                    без досрочного погашения и перерасчета процентов.</b></center>
+            </h4>
+            <br>Для проведения платежа необходимо:<br>
 
+            1. Выбрать пункт “Система “Расчет” (ЕРИП)<br>
+            2. Выбрать последовательно вкладки: г. Минск - Прочие Услуги - ООО «Изи Кредит»<br>
+            3. Выбрать необходимую услугу: «Лизинговый платеж»<br>
+            4. Ввести Номер договора финансового лизинга (9 цифр)<br>
+            5. Совершить платеж<br>
 
-            <!--<a href="#" class="more float_r">View all</a>-->
-            <div class="cleaner h50"></div>
-
-
-
-            <div class="cleaner"></div>
         </div> <!-- END of content -->
         <div class="cleaner"></div>
     </div> <!-- END of main -->

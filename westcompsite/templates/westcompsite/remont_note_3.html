@@ -186,17 +186,7 @@
 <div id="templatemo_wrapper">
     <div id="templatemo_header">
         <center><img src="{% static 'images/newlogo.png' %}" alt="Image 01"/></center>
-        <!-- <div id="header_right">
-             <div class="cleaner"></div>
-             <div id="templatemo_search">
-                 <form action="#" method="get">
-                     <input type="text" value="Search" name="keyword" id="keyword" title="keyword"
-                            onfocus="clearText(this)" onblur="clearText(this)" class="txt_field"/>
-                     <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search"
-                            class="sub_btn"/>
-                 </form>
-             </div>
-         </div> <!-- END -->
+
     </div> <!-- END of header -->
 
 
@@ -214,41 +204,6 @@
 
     </nav>
 
-
-    <!--
-    <div id="templatemo_menu" class="ddsmoothmenu">
-        <ul>
-            <li><a href="index.html" class="selected">Главная</a></li>
-            <li><a href="products.html">Услуги</a>
-                <ul>
-                    <li><a href="#">Ремонт ноутбуков</a></li>
-                    <li><a href="#">Ремонт телефонов</a></li>
-                    <li><a href="#">Ремонт принтеров</a></li>
-                    <li><a href="#">Ремонт мониторов</a></li>
-                    <li><a href="#">Заправка картриджей</a>
-                        <ul>
-                            <li><a href="#">Лазерный принтер</a></li>
-                            <li><a href="#">Струйный принтер</a></li>
-                            <li><a href="#">Прошивка чипа</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="about.html">Продажа</a>
-                <ul>
-                    <li><a href="#">Скидки</a></li>
-                    <li><a href="#">Новинки</a></li>
-                    <li><a href="#">Ноутбуки</a></li>
-                    <li><a href="#">Комплектующие</a></li>
-                    <li><a href="#">Б/У товары</a></li>
-                </ul>
-            </li>
-            <li><a href="checkout.html">Кредит</a></li>
-            <li><a href="contact.html">Контакты</a></li>
-        </ul>
-        <br style="clear: left"/>
-    </div> <!-- end of templatemo_menu -->
-
     <br><br>
     <div id="templatemo_main_top"></div>
     <div id="templatemo_main">
@@ -256,14 +211,13 @@
 
         <div id="sidebar">
             <h3>Категории</h3>
-            <ul class="sidebar_menu">
-                <li><a href="{% static '/notes' %}">Ноутбуки</a></li>
-                <li><a href="{% static '/pcs' %}">Компьютеры</a></li>
-                <li><a href="{% static '/complex' %}">Комплектующие</a></li>
-                <li><a href="{% static '/periphery' %}">Перферия</a></li>
-                <li><a href="{% static '/access' %}">Аксессуары</a></li>
-                <li><a href="{% static '/shop' %}">Скидки</a></li>
-                <li><a href="#">Новинки</a></li>
+             <ul class="sidebar_menu">
+                <li><a href="/remont/#content">Ремонт ноутбуков</a></li>
+                <li><a href="/remont/#phones">Ремонт телефонов и планшетов</a></li>
+                <li><a href="/remont/#prints">Ремонт принтеров</a></li>
+                <li><a href="/remont/#prints">Заправка картриджей</a></li>
+                <li><a href="/remont/#comps">Ремонт компьютеров</a></li>
+                <li><a href="{% static '/price' %}">Прейскурант</a></li>
             </ul>
             <h3>Не нашли, что искали?</h3>
             <p>Попробуйте поискать здесь</p>

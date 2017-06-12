@@ -4,7 +4,7 @@ from django.db import models
 # Create your models here.
 
 class Import(models.Model):
-    i = models.CharField(max_length=50, default='')
+    i = models.CharField(max_length=200, default='')
 
     def __str__(self):
         return self.i
@@ -143,7 +143,8 @@ class Notes(models.Model):
     sale = models.BooleanField()
     by = models.BooleanField()
     cena = models.CharField(max_length=10)
-    o_proizv = models.CharField(max_length=100)
+    o_proizv = models.CharField(max_length=200)
+    new = models.BooleanField(default=False)
 
     def __str__(self):
         return (self.Proizv.pr + " " + self.Model)
@@ -206,6 +207,7 @@ class PCBlock(models.Model):
 
 
 class PC(models.Model):
+    Image_URL = models.CharField(max_length=300)
     Proizv = models.ForeignKey(PCProizv)
     Processor = models.ForeignKey(PCProc)
     kol_yader = models.CharField(max_length=10)
@@ -222,6 +224,28 @@ class PC(models.Model):
     by = models.BooleanField()
     o_proizv = models.CharField(max_length=100)
     cena = models.CharField(max_length=10)
+    new = models.BooleanField()
 
     def __str__(self):
         return (self.Proizv.pr + " " + self.Processor)
+
+
+class TypePer(models.Model):
+    t = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.t
+
+
+class Raznoe(models.Model):
+    Image_URL = models.CharField(max_length=300)
+    Name = models.CharField(max_length=100)
+    Type = models.ForeignKey(TypePer)
+    Text = models.TextField()
+    cena = models.CharField(max_length=20)
+    new = models.BooleanField()
+    sale = models.BooleanField()
+    by = models.BooleanField()
+
+    def __str__(self):
+        return (self.Type.t )

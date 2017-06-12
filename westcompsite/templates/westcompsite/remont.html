@@ -257,14 +257,12 @@
         <div id="sidebar">
             <h3>Категории</h3>
             <ul class="sidebar_menu">
-                <li><a href="{% static '/notes' %}">Ноутбуки</a></li>
-                <li><a href="{% static '/pcs' %}">Компьютеры</a></li>
-                <li><a href="{% static '/complex' %}">Комплектующие</a></li>
-                <li><a href="{% static '/periphery' %}">Перферия</a></li>
-                <li><a href="{% static '/access' %}">Аксессуары</a></li>
-                <li><a href="{% static '/shop' %}">Скидки</a></li>
+                <li><a href="#content">Ремонт ноутбуков</a></li>
+                <li><a href="#phones">Ремонт телефонов и планшетов</a></li>
+                <li><a href="#prints">Ремонт принтеров</a></li>
+                <li><a href="#prints">Заправка картриджей</a></li>
+                <li><a href="#comps">Ремонт компьютеров</a></li>
                 <li><a href="{% static '/price' %}">Прейскурант</a></li>
-                <li><a href="#">Новинки</a></li>
             </ul>
             <h3>Не нашли, что искали?</h3>
             <p>Попробуйте поискать здесь</p>
@@ -299,7 +297,7 @@
                 </a>
             </div>
             <!--<a href="#" class="more float_r">View all</a>-->
-            <div class="cleaner h50"></div>
+            <div class="cleaner h50" id="phones"></div>
 
             <h2>Ремонт телефонов и планшетов</h2>
             <div class="col col_14">
@@ -316,7 +314,7 @@
                     <h3>Тормозит<br>Не включается</h3>
                 </a>
             </div>
-            <div class="cleaner h50"></div>
+            <div class="cleaner h50" id="prints"></div>
 
 
             <h2>Ремонт принтеров</h2>
@@ -329,7 +327,7 @@
                     <h3>Заправка картриджей</h3>
                 </a>
             </div>
-            <div class="cleaner h50"></div>
+            <div class="cleaner h50" id="comps"></div>
 
             <h2>Ремонт компьютеров</h2>
             <div class="col col_14">

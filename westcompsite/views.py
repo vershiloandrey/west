@@ -1,11 +1,23 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import authenticate
 from django.contrib import auth
 from .models import Notes
+from .models import PC
+from .models import Raznoe
 
 
 def post_list(request):
     return render(request, 'westcompsite/post_list.html', {})
+
+
+def post_detail(request, pk):
+    post = get_object_or_404(Notes, pk=pk)
+    return render(request, 'westcompsite/post_detail.html', {'post': post})
+
+
+def raznoe_detail(request, pk):
+    post = get_object_or_404(Raznoe, pk=pk)
+    return render(request, 'westcompsite/raznoe_detail.html', {'post': post})
 
 
 def contacts(request):
@@ -20,34 +32,80 @@ def credit(request):
     return render(request, 'westcompsite/credit.html', {})
 
 
+def calculator(request):
+    return render(request, 'westcompsite/calculator.html', {})
+
+
+def ecredit(request):
+    return render(request, 'westcompsite/ecredit.html', {})
+
+
+def creditb(request):
+    return render(request, 'westcompsite/creditb.html', {})
+
+
+def rassrochka(request):
+    return render(request, 'westcompsite/rassrochka.html', {})
+
+
 def shop(request):
-    products = Notes.objects.all()
-    return render(request, 'westcompsite/shop.html', {'products': products})
+    return render(request, 'westcompsite/shop.html', {})
 
 
 def notes(request):
-    products = Notes.objects.all()
-    return render(request, 'westcompsite/notes.html', {'products': products})
+    notes = Notes.objects.all()
+    return render(request, 'westcompsite/notes.html', {'notes': notes})
+
+
+def hp(request):
+    notes = Notes.objects.filter(Proizv__pr='HP').order_by('cena')
+    return render(request, 'westcompsite/hp.html', {'notes': notes})
+
+
+def lenovo(request):
+    notes = Notes.objects.filter(Proizv__pr='Lenovo').order_by('cena')
+    return render(request, 'westcompsite/lenovo.html', {'notes': notes})
 
 
 def pcs(request):
-    products = Notes.objects.all()
+    products = PC.objects.all().order_by('Proizv')
     return render(request, 'westcompsite/pcs.html', {'products': products})
 
 
 def access(request):
-    products = Notes.objects.all()
+    products = Raznoe.objects.filter(Type__t='Аксессуары').order_by('Text')
     return render(request, 'westcompsite/access.html', {'products': products})
 
 
 def periphery(request):
-    products = Notes.objects.all()
+    products = Raznoe.objects.filter(Type__t='Периферия').order_by('Text')
     return render(request, 'westcompsite/periphery.html', {'products': products})
 
 
 def complect(request):
-    products = Notes.objects.all()
+    products = Raznoe.objects.filter(Type__t='Комплектующие').order_by('Text')
     return render(request, 'westcompsite/complect.html', {'products': products})
+
+
+def by(request):
+    notes = Notes.objects.filter(by=True).order_by('cena')
+    pcs = PC.objects.filter(by=True).order_by('cena')
+    products = Raznoe.objects.filter(by=True).order_by('cena')
+    return render(request, 'westcompsite/by.html', {'notes': notes, 'products': products, 'pcs': pcs})
+
+
+def sales(request):
+    notes = Notes.objects.filter(sale=True).order_by('cena')
+    pcs = PC.objects.filter(sale=True).order_by('cena')
+    products = Raznoe.objects.filter(sale=True).order_by('cena')
+    return render(request, 'westcompsite/sales.html', {'notes': notes, 'products': products, 'pcs': pcs})
+
+
+def news(request):
+    notes = Notes.objects.filter(new=True).order_by('cena')
+    pcs = PC.objects.filter(new=True).order_by('cena')
+    products = Raznoe.objects.filter(new=True).order_by('cena')
+    return render(request, 'westcompsite/news.html', {'notes': notes, 'products': products, 'pcs': pcs})
 
 
 def remont(request):
@@ -55,7 +113,7 @@ def remont(request):
 
 
 def product_detail(request):
-    return render(request, 'westcompsite/productdetail.html', {})
+    return render(request, 'westcompsite/post_detail.html', {})
 
 
 def detail_kart(request):
@@ -106,10 +164,8 @@ def detail_note_klav_1(request):
     return render(request, 'westcompsite/detail_note_klav_1.html', {})
 
 
-
 def detail_note_klav_2(request):
     return render(request, 'westcompsite/detail_note_klav_2.html', {})
-
 
 
 def detail_note_razem(request):
