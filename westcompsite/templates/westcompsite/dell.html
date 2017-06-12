@@ -1,0 +1,406 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>ВестСервис</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+
+
+    <link href="{% static 'css/templatemo_style.css' %}" rel="stylesheet" type="text/css"/>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ddsmoothmenu.css' %}"/>
+
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/ddsmoothmenu.js' %}">
+
+        /***********************************************
+         * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+         * This notice MUST stay intact for legal use
+         * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+         ***********************************************/
+
+    </script>
+
+    <script type="text/javascript">
+
+        ddsmoothmenu.init({
+            mainmenuid: "templatemo_menu", //menu DIV id
+            orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+            classname: 'ddsmoothmenu', //class added to menu's outer DIV
+            //customtheme: ["#1c5a80", "#18374a"],
+            contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+        })
+
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+    <script language="javascript" type="text/javascript" src="{% static 'scripts/mootools-1.2.1-core.js' %}"></script>
+    <script language="javascript" type="text/javascript" src="{% static 'scripts/mootools-1.2-more.js' %}"></script>
+    <script language="javascript" type="text/javascript" src="{% static 'scripts/slideitmoo-1.1.js' %}"></script>
+    <script language="javascript" type="text/javascript">
+        window.addEvents({
+            'domready': function () {
+                /* thumbnails example , div containers */
+                new SlideItMoo({
+                    overallContainer: 'SlideItMoo_outer',
+                    elementScrolled: 'SlideItMoo_inner',
+                    thumbsContainer: 'SlideItMoo_items',
+                    itemsVisible: 5,
+                    elemsSlide: 2,
+                    duration: 200,
+                    itemsSelector: '.SlideItMoo_element',
+                    itemWidth: 171,
+                    showControls: 1
+                });
+            },
+
+        });
+
+        function clearText(field) {
+            if (field.defaultValue == field.value) field.value = '';
+            else if (field.value == '') field.value = field.defaultValue;
+        }
+    </script>
+    <style type="text/css">
+        .wrapper {
+            background: #fff;
+            width: 700px;
+            padding: 1px 15px 15px;
+            margin: 0 auto;
+        }
+
+        .slider {
+            z-index: 9;
+            width: 705px;
+            height: 225px;
+            overflow: hidden;
+            margin: 0 0 7px;
+            position: relative;
+        }
+
+        .slider ul,
+        .slider li {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .slider ul {
+            width: 9999px;
+        }
+
+        .slider ul li {
+            list-style-type: none;
+            float: left;
+            width: 705px;
+            height: 225px;
+        }
+
+        .slider .nav {
+            position: absolute;
+            left: 15px;
+            bottom: 12px;
+        }
+
+        .slider .nav span {
+            opacity: 0.9;
+            background: #fff;
+            margin: 0 8px 0 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            overflow: hidden;
+            display: block;
+            float: left;
+            box-shadow: 0 1px 2px #000;
+        }
+
+        .slider .nav span.on {
+            background: #2e9419;
+        }
+
+        .slider2 {
+            z-index: 9;
+            width: 850px;
+            height: 225px;
+            overflow: hidden;
+            margin: 0 0 7px;
+            position: relative;
+        }
+
+        .slider2 ul,
+        .slider2 li {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .slider2 ul {
+            width: 9999px;
+        }
+
+        .slider2 ul li {
+            list-style-type: none;
+            float: left;
+            width: 850px;
+            height: 225px;
+        }
+
+        .slider2 .nav {
+            position: absolute;
+            left: 15px;
+            bottom: 12px;
+        }
+
+        .slider2 .nav span {
+            opacity: 0.9;
+            background: #fff;
+            margin: 0 8px 0 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            overflow: hidden;
+            display: block;
+            float: left;
+            box-shadow: 0 1px 2px #000;
+        }
+
+        .slider2 .nav span.on {
+            background: #2e9419;
+        }
+
+    div.col {
+            height: 300px;
+        }
+
+        div.col:hover {
+            background-color: #bad8f7;
+            border-radius: 10px;
+
+        }
+
+        .second_block {
+            display: none;
+        }
+
+        div.col:hover .second_block {
+            display: block;
+        }
+
+        h7 {
+            color: red;
+
+            font-weight: bold;
+            font-size: 26px;
+            padding: 5px;
+            margin-top: 0px;
+            font-size: 24px;
+            border-bottom: 1px solid #0d0035;
+            bottom: 0;
+        }
+
+    </style>
+    <script type="text/javascript" src="{% static 'js/jquery1.js' %}"></script>
+
+
+</head>
+
+<body id="home">
+
+<div id="templatemo_wrapper">
+    <div id="templatemo_header">
+        <center><img src="{% static 'images/newlogo.png' %}" alt="Image 01"/></center>
+        <!-- <div id="header_right">
+             <div class="cleaner"></div>
+             <div id="templatemo_search">
+                 <form action="#" method="get">
+                     <input type="text" value="Search" name="keyword" id="keyword" title="keyword"
+                            onfocus="clearText(this)" onblur="clearText(this)" class="txt_field"/>
+                     <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search"
+                            class="sub_btn"/>
+                 </form>
+             </div>
+         </div> <!-- END -->
+    </div> <!-- END of header -->
+
+
+    <nav class="top-menu">
+        <ul class="menu-main">
+            <li class="left-item"><a href="/" class="selected">Главная</a></li>
+            <li class="left-item"><a href="/remont">Услуги</a></li>
+            <li class="left-item"><a href="/shop">Продажа</a></li>
+            <li class="left-item"><a href="/by">Б/У</a></li>
+            <li class="left-item"><a href="/price">Прейскурант</a></li>
+            <li class="left-item"><a href="/credit">Кредит</a></li>
+            <li class="left-item"><a href="/contacts">Контакты</a></li>
+
+        </ul>
+
+    </nav>
+
+
+    <!--
+    <div id="templatemo_menu" class="ddsmoothmenu">
+        <ul>
+            <li><a href="index.html" class="selected">Главная</a></li>
+            <li><a href="products.html">Услуги</a>
+                <ul>
+                    <li><a href="#">Ремонт ноутбуков</a></li>
+                    <li><a href="#">Ремонт телефонов</a></li>
+                    <li><a href="#">Ремонт принтеров</a></li>
+                    <li><a href="#">Ремонт мониторов</a></li>
+                    <li><a href="#">Заправка картриджей</a>
+                        <ul>
+                            <li><a href="#">Лазерный принтер</a></li>
+                            <li><a href="#">Струйный принтер</a></li>
+                            <li><a href="#">Прошивка чипа</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="about.html">Продажа</a>
+                <ul>
+                    <li><a href="#">Скидки</a></li>
+                    <li><a href="{% static '/news'%}">Новинки</a></li>
+                    <li><a href="#">Ноутбуки</a></li>
+                    <li><a href="#">Комплектующие</a></li>
+                    <li><a href="#">Б/У товары</a></li>
+                </ul>
+            </li>
+            <li><a href="checkout.html">Кредит</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <br style="clear: left"/>
+    </div> <!-- end of templatemo_menu -->
+
+    <br><br>
+    <div id="templatemo_main_top"></div>
+    <div id="templatemo_main">
+
+
+        <div id="sidebar">
+            <h3>Категории</h3>
+            <ul class="sidebar_menu">
+                <li><a href="{% static '/notes' %}">Ноутбуки</a></li>
+                <li><a href="{% static '/pcs' %}">Компьютеры</a></li>
+                <li><a href="{% static '/complex' %}">Комплектующие</a></li>
+                <li><a href="{% static '/periphery' %}">Перферия</a></li>
+                <li><a href="{% static '/access' %}">Аксессуары</a></li>
+                <li><a href="{% static '/sales' %}">Скидки</a></li>
+                <li><a href="{% static '/news'%}">Новинки</a></li>
+            </ul>
+            <h3>Не нашли, что искали?</h3>
+            <p>Попробуйте поискать здесь</p>
+            <div id="newsletter">
+                <form action="#" method="get">
+                    <input type="text" value="Искать" name="email_newsletter" id="email_newsletter"
+                           title="email_newsletter" onfocus="clearText(this)" onblur="clearText(this)"
+                           class="txt_field"/>
+                    <input type="submit" name="subscribe" value="Искать" alt="Subscribe" id="subscribebtn"
+                           title="Искать" class="subscribebtn"/>
+                </form>
+                <div class="cleaner"></div>
+            </div>
+        </div> <!-- END of sidebar -->
+
+        <div id="content">
+            <h1>Ноутбуки Dell</h1>
+
+            {% for product in notes %}
+
+                <div class="col col_14 no_margin_right">
+
+                    <center>
+                        <br>
+                        <a href="{% url 'post_detail' pk=product.pk %}">
+                            <div style="height: 200px"><img src="{{ product.Image_URL }}" height="120"
+                                                            alt="{{ product.Model }}"/>
+                                <h3>{{ product.Proizv }} {{ product.Model }}</h3>
+                            </div>
+                            <h7>{{ product.cena }} BYN</h7><br><br>
+                            <div class="second_block"> Подробнее...</div>
+                        </a>
+                    </center>
+                </div>
+
+            {% endfor %}
+            <div class="cleaner"></div>
+        </div> <!-- END of content -->
+        <div class="cleaner"></div>
+    </div> <!-- END of main -->
+
+    <div id="templatemo_footer">
+
+        <div>
+
+            <h4>ЧТУП «Весткомпьютер</h4>
+            <p> 223021, Минский р-н, д. Богатырево, ул. Полесская, д.1-180
+                р/сч 3012165410019 в «МТБанк» ЗАО, код 117
+                <br>г. Минск, ул. Толстого, 10
+                <br>УНП 690633058
+                <br>Свидетельство о гос. регистрации выдано 30.01.2008г. Минским облисполкомом
+                <br>Внесены в Торговый реестр РБ за №359513
+                <br>Внесены в Реестр бытовых услуг РБ за №000000065572
+            </p>
+        </div>
+
+        <div class="cleaner h40"></div>
+        <center>
+            © 2017 WESTCOMP.BY. Все права защищены.
+        </center>
+    </div> <!-- END of footer -->
+
+</div>
+
+
+<script type="text/javascript"> var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-23131825-1']);
+_gaq.push(['_trackPageview']);
+(function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})(); </script>
+
+
+<script type="text/javascript">(function (d, w, c) {
+    (w[c] = w[c] || []).push(function () {
+        try {
+            w.yaCounter20963398 = new Ya.Metrika({
+                id: 20963398,
+                webvisor: true,
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                trackHash: true
+            });
+        } catch (e) {
+        }
+    });
+    var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+        n.parentNode.insertBefore(s, n);
+    };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else {
+        f();
+    }
+})(document, window, "yandex_metrika_callbacks");</script>
+<noscript>
+    <div><img src="//mc.yandex.ru/watch/20963398" style="position:absolute; left:-9999px;" alt=""></div>
+</noscript>
+
+
+</body>
+</html>

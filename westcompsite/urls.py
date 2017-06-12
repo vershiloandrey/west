@@ -9,6 +9,9 @@ urlpatterns = [
     url(r'^notes/$', views.notes, name='notes'),
 
     url(r'^hp/$', views.hp, name='hp'),
+    url(r'^acer/$', views.acer, name='acer'),
+    url(r'^asus/$', views.asus, name='asus'),
+    url(r'^dell/$', views.dell, name='dell'),
     url(r'^lenovo/$', views.lenovo, name='lenovo'),
 
     url(r'^pcs/$', views.pcs, name='pcs'),

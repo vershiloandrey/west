@@ -62,6 +62,21 @@ def hp(request):
     return render(request, 'westcompsite/hp.html', {'notes': notes})
 
 
+def acer(request):
+    notes = Notes.objects.filter(Proizv__pr='Acer').order_by('cena')
+    return render(request, 'westcompsite/acer.html', {'notes': notes})
+
+
+def asus(request):
+    notes = Notes.objects.filter(Proizv__pr='ASUS').order_by('cena')
+    return render(request, 'westcompsite/asus.html', {'notes': notes})
+
+
+def dell(request):
+    notes = Notes.objects.filter(Proizv__pr='Dell').order_by('cena')
+    return render(request, 'westcompsite/dell.html', {'notes': notes})
+
+
 def lenovo(request):
     notes = Notes.objects.filter(Proizv__pr='Lenovo').order_by('cena')
     return render(request, 'westcompsite/lenovo.html', {'notes': notes})
