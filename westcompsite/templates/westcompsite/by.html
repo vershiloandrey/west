@@ -267,7 +267,7 @@
             <li><a href="about.html">Продажа</a>
                 <ul>
                     <li><a href="#">Скидки</a></li>
-                    <li><a href="{% static '/news'%}">Новинки</a></li>
+                    <li><a href="/news">Новинки</a></li>
                     <li><a href="#">Ноутбуки</a></li>
                     <li><a href="#">Комплектующие</a></li>
                     <li><a href="#">Б/У товары</a></li>
@@ -287,13 +287,13 @@
         <div id="sidebar">
             <h3>Категории</h3>
             <ul class="sidebar_menu">
-                <li><a href="{% static '/notes' %}">Ноутбуки</a></li>
-                <li><a href="{% static '/pcs' %}">Компьютеры</a></li>
-                <li><a href="{% static '/complect' %}">Комплектующие</a></li>
-                <li><a href="{% static '/periphery' %}">Перферия</a></li>
-                <li><a href="{% static '/access' %}">Аксессуары</a></li>
-                <li><a href="{% static '/sales' %}">Скидки</a></li>
-                <li><a href="{% static '/news'%}">Новинки</a></li>
+                <li><a href="/notes">Ноутбуки</a></li>
+                <li><a href="/pcs">Компьютеры</a></li>
+                <li><a href="/complect">Комплектующие</a></li>
+                <li><a href="/periphery">Перферия</a></li>
+                <li><a href="/access">Аксессуары</a></li>
+                <li><a href="/sales">Скидки</a></li>
+                <li><a href="/news">Новинки</a></li>
             </ul>
             <h3>Не нашли, что искали?</h3>
             <p>Попробуйте поискать здесь</p>
@@ -323,7 +323,7 @@
                                                             alt="{{ note.Model }}"/>
                                 <h3>{{ note.Proizv }} {{ note.Model }}</h3>
                             </div>
-                            <h7>{{ note.cena }} BYN</h7>
+                            <h7>{{ note.cena }}0 BYN</h7>
                             <br><br>
                             <div class="second_block"> Подробнее...</div>
                         </a>

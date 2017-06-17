@@ -11,7 +11,7 @@
     <link href="{% static 'css/templatemo_style.css' %}" rel="stylesheet" type="text/css"/>
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/ddsmoothmenu.css' %}"/>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
     <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/ddsmoothmenu.js' %}">
 
@@ -34,139 +34,6 @@
         })
 
     </script>
-    <style type="text/css">
-        .bulletsBlock:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        .bulletsBlock > div {
-            width: 100%;
-            float: left;
-            background: rgba(13, 0, 53, 0.3);
-            margin-left: 5%;
-            text-align: center;
-            position: relative;
-            padding-bottom: 31.7%;
-            cursor: pointer;
-            -webkit-transition: all 0.35s linear;
-            transition: all 0.35s linear;
-        }
-
-        .bulletsBlock > div:first-child {
-            margin-left: 0;
-        }
-
-        /*Тень снизу у блока при наведении*/
-        .bulletsBlock > div:hover {
-            -webkit-box-shadow: 0 35px 35px -35px #000000;
-            -moz-box-shadow: 0 35px 35px -35px #000000;
-            box-shadow: 0 35px 35px -35px #000000;
-        }
-
-        /*Анимация при наведении видимого текстового блока*/
-        .bulletsBlock > div:hover p.titleBullet {
-
-            background: #100049;
-        }
-
-        /*Анимация при наведении скрытого текстового блока*/
-        .bulletsBlock > div:hover p.hideText {
-            bottom: -120px;
-            height: 100px;
-        }
-
-        .Box2 {
-            margin-bottom: 15px;
-            width: 95%;
-            height: 200px;
-            background-color: #ffffff;
-            position: relative;
-            border: 2px solid #D4D4D4;
-            border-radius: 50px;
-            box-shadow: 0 0 5px #0d0035;
-            padding: 20px 40px;
-        }
-
-        select {
-            width: 300px; /* Ширина списка в пикселах */
-        }
-
-        .styled-select {
-            background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
-            height: 29px;
-            overflow: hidden;
-            width: 240px;
-        }
-
-        .styled-select select {
-            background: transparent;
-            border: none;
-            font-size: 16px;
-            height: 29px;
-            padding: 5px; /* If you add too much padding here, the options won't show in IE */
-            width: 268px;
-        }
-
-        .styled-select.slate select {
-            border: 1px solid #0d0035;
-            font-size: 18px;
-            height: 34px;
-            width: 268px;
-        }
-
-        /* -------------------- Rounded Corners */
-        .rounded {
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            border-radius: 20px;
-        }
-
-        /* -------------------- Colors: Background */
-
-        .green {
-            background-color: #bbbbbb;
-        }
-
-        /* -------------------- Colors: Text */
-        .slate select {
-            color: #000;
-        }
-
-        .green select {
-            color: #0d0035;
-        }
-
-        .blue select {
-            color: #0d0035;
-        }
-
-        .yellow select {
-            color: #000;
-        }
-
-        .black select {
-            color: #fff;
-        }
-
-        /* -------------------- Select Box Styles: danielneumann.com Method */
-        /* -------------------- Source: http://danielneumann.com/blog/how-to-style-dropdown-with-css-only/ */
-        #mainselection select {
-            border: 0;
-            color: #0d0035;
-            background: transparent;
-            font-size: 20px;
-            font-weight: bold;
-            padding: 2px 10px;
-            width: 378px;
-            *width: 350px;
-            *background: #0d0035;
-            -webkit-appearance: none;
-        }
-
-
-    </style>
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
     <script language="javascript" type="text/javascript" src="{% static 'scripts/mootools-1.2.1-core.js' %}"></script>
@@ -438,8 +305,6 @@
             sliderJS2(index, slider2);
         });
     </script>
-
-
 </head>
 
 <body id="home">
@@ -461,7 +326,7 @@
     </div> <!-- END of header -->
 
 
-  <nav class="top-menu">
+    <nav class="top-menu">
         <ul class="menu-main">
             <li class="left-item"><a href="/" class="selected">Главная</a></li>
             <li class="left-item"><a href="/remont">Услуги</a></li>
@@ -483,12 +348,13 @@
         <div id="sidebar">
             <h3>Категории</h3>
              <ul class="sidebar_menu">
-                <li><a href="/remont/#content">Ремонт ноутбуков</a></li>
-                <li><a href="/remont/#phones">Ремонт телефонов и планшетов</a></li>
-                <li><a href="/remont/#prints">Ремонт принтеров</a></li>
-                <li><a href="/remont/#prints">Заправка картриджей</a></li>
-                <li><a href="/remont/#comps">Ремонт компьютеров</a></li>
-                <li><a href="/price">Прейскурант</a></li>
+                <li><a href="{%  static '/notes' %}">Ноутбуки</a></li>
+                <li><a href="{%  static '/pcs' %}">Компьютеры</a></li>
+                <li><a href="{%  static '/complect' %}">Комплектующие</a></li>
+                <li><a href="{%  static '/periphery' %}">Перферия</a></li>
+                <li><a href="/access">Аксессуары</a></li>
+                <li><a href="{%  static '/sales' %}">Скидки</a></li>
+                <li><a href="/news">Новинки</a></li>
             </ul>
             <h3>Не нашли, что искали?</h3>
             <p>Попробуйте поискать здесь</p>
@@ -504,64 +370,72 @@
             </div>
         </div> <!-- END of sidebar -->
         <div id="content">
-            <h2>Ремонт зарядного устройства:</h2>
+            <h2>{{ post.Name }}</h2>
             <div class="col col_13">
-                <a rel="lightbox[portfolio]" href="{% static 'images/gallery/cabel0.jpg' %}" title="Lady Shoes"><img
-                        src="{% static 'images/gallery/cabel0.jpg' %}" alt="Image 10"/></a>
+                <a rel="lightbox[portfolio]" href="{{ post.Image_URL }}" title="{{ post.Name }}"><img
+                        src="{{ post.Image_URL }}" width="300" alt="{{ post.Name }}"/></a>
             </div>
             <div class="col col_13 no_margin_right">
+                <h1 style="color: red; font-weight: bold;">Цена: <br><br>{{ post.cena }}0 BYN</h1>
+
+                <div class="cleaner h20"></div>
+                <div class="cleaner h20"></div>
+                <div class="cleaner h20"></div>
+                <div class="cleaner h20"></div>
+                <div class="cleaner h20"></div>
+                <div class="cleaner h20"></div>
+                <div class="cleaner h20"></div>
                 <div class="cleaner h20"></div>
 
-                <div class="Box2">
-                    <h1 style="color: red; font-weight: bold;">Цена: <br></h1>
-                    <h3>Вид ремонта:</h3>
-                    <div class="styled-select green rounded">
-                        <select onchange="window.location.href=this.options[this.selectedIndex].value">
-                            <option value="/detail_note_cabel">Не выбрано</option>
-                            <option value="/detail_note_cabel_1">Ремонт шнура или штекера питания без замены</option>
-                            <option value="/detail_note_cabel_2">Замена шнура питания вместе со штекером</option>
-                        </select>
-                    </div>
-                </div>
-
             </div>
-            <div class="cleaner h20"></div>
-            <h3><strong>Описание:</strong></h3>
-            <h5>
-                Зарядное устройство ноутбуков часто выходит из строя. Причиной может быть много факторов-
-                ломаются из-за скачков напряжения в сети либо перегрузки по питанию, шнуры зарядок часто небрежно
-                скручиваются, переламываются либо перегрызаются домашними питомцами, что приводит к короткому замыканию
-                или нарушению целостности цепи. Не стоит торопиться выбрасывать неисправное ЗУ!
+            <table>
+                <tr>
+                    <td height="30" width="160">Материнская плата:</td>
+                    <td>{{ post.Mat_plata }}</td>
+                </tr>
+                <tr>
+                    <td height="30">Процессор:</td>
+                    <td> {{ post.Processor }}</td>
+                </tr>
+                <tr>
+                    <td height="30">Оперативная память:</td>
+                    <td>{{ post.OMemory }}</td>
+                </tr>
+                <tr>
+                    <td height="30">Жесткий диск:</td>
+                    <td>{{ post.HDD }}</td>
+                </tr>
+                <tr>
+                    <td height="30">CD-ROM:</td>
+                    <td>{{ post.CDROM }}</td>
+                </tr>
+                <tr>
+                    <td height="30">Видеокарта:</td>
+                    <td>{{ post.Graph }}</td>
+                </tr>
+                <tr>
+                    <td height="30">Корпус:</td>
+                    <td>{{ post.Box }}</td>
+                </tr>
+                <tr>
+                    <td height="30">Блок питания:</td>
+                    <td>{{ post.power_box }}</td>
+                </tr>
+                <tr>
+                    <td height="30">Монитор:</td>
+                    <td>{{ post.Monitor }}</td>
+                </tr>
+                <tr>
+                    <td height="30" width="480">Импортер:</td>
+                    <td width="70">{{ post.Importer }}</td>
+                </tr>
+                <tr>
+                    <td height="30" width="480">О производителе:</td>
+                    <td width="70">{{ post.o_proizv }}</td>
+                </tr>
+            </table>
+            <div class="cleaner h30"></div>
 
-                <h3>Симптомы:</h3>
-                <li>зарядное устройство не включается (не загорается индикатор);</li>
-                <li>зарядное устройство искрит и/или трещит при подключении к ноутбуку;</li>
-                <li>зарядка ноутбука идет только при определенном положении кабеля или штекера зарядного устройства;
-                </li>
-                <li>индикатор на зарядном устройстве горит, но на питание на ноутбук не подаётся;</li>
-                <li>при подключении зарядного устройства к ноутбуку тот резко выключается;</li>
-                <li>кабель питания физически повреждён (перегрызен, переломлен, сдавлен).</li>
-                <br><h3>Сроки ремонта:</h3><b>От 30 минут до 1 рабочего дня.</b>
-                    <br><br><b>Указаны ориентировочные цены, для более точной оценки обращайтесь по телефонам.
-                </b>
-            </h5>
-
-            <div class="cleaner h50"></div>
-
-            <h3>Популярные услуги</h3>
-            <div class="col col_14 no_margin_right">
-                <a href="/detail_note_disp"><img src="{% static 'images/gallery/bitnote.jpg' %}" alt="Product 0311"/>
-                    <h3>Замена дисплея</h3>
-                </a>
-            </div>
-             <div class="col col_14">
-                <a href="/detail_note_vent"><img src="{% static 'images/gallery/revent_small.jpg' %}" alt="Product 01"/>
-                    <h3>Чистка системы охлаждения</h3></a>
-            </div>
-             <div class="col col_14">
-                <a href="/detail_oc"><img src="{% static 'images/gallery/reoc_small.jpg' %}" alt="Product 01"/>
-                    <h3>Переустановка ОС</h3></a>
-            </div>
 
             <div class="cleaner"></div>
         </div> <!-- END of content -->

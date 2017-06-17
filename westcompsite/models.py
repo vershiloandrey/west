@@ -142,7 +142,7 @@ class Notes(models.Model):
     Importer = models.ForeignKey(Import)
     sale = models.BooleanField()
     by = models.BooleanField()
-    cena = models.CharField(max_length=10)
+    cena = models.IntegerField()
     o_proizv = models.CharField(max_length=200)
     new = models.BooleanField(default=False)
 
@@ -158,35 +158,35 @@ class PCProizv(models.Model):
 
 
 class PCOC(models.Model):
-    oc = models.CharField(max_length=20)
+    oc = models.CharField(max_length=50)
 
     def __str__(self):
         return self.oc
 
 
 class PCProc(models.Model):
-    p = models.CharField(max_length=20)
+    p = models.CharField(max_length=50)
 
     def __str__(self):
         return self.p
 
 
 class PCVent(models.Model):
-    v = models.CharField(max_length=20)
+    v = models.CharField(max_length=50)
 
     def __str__(self):
         return self.v
 
 
 class PCPam(models.Model):
-    p = models.CharField(max_length=10)
+    p = models.CharField(max_length=50)
 
     def __str__(self):
         return self.p
 
 
 class PCHDD(models.Model):
-    h = models.CharField(max_length=20)
+    h = models.CharField(max_length=50)
 
     def __str__(self):
         return self.h
@@ -200,7 +200,7 @@ class PCVideo(models.Model):
 
 
 class PCBlock(models.Model):
-    b = models.CharField(max_length=20)
+    b = models.CharField(max_length=50)
 
     def __str__(self):
         return self.b
@@ -208,26 +208,27 @@ class PCBlock(models.Model):
 
 class PC(models.Model):
     Image_URL = models.CharField(max_length=300)
-    Proizv = models.ForeignKey(PCProizv)
-    Processor = models.ForeignKey(PCProc)
-    kol_yader = models.CharField(max_length=10)
-    Ventilator = models.ForeignKey(PCVent)
-    Mat_plata = models.CharField(max_length=20)
-    OMemory = models.ForeignKey(PCPam)
-    HDD = models.ForeignKey(PCHDD)
-    Graph = models.ForeignKey(PCVideo)
-    Color_box = models.ForeignKey(Color)
-    Block_pitaniya = models.ForeignKey(PCBlock)
-    Importer = models.ForeignKey(Import)
-    OS = models.ForeignKey(PCOC)
+    Name = models.CharField(max_length=100)
+    Processor = models.CharField(max_length=100)
+    Mat_plata = models.CharField(max_length=100)
+    OMemory = models.CharField(max_length=100)
+    power_box = models.CharField(max_length=100)
+    HDD = models.CharField(max_length=100)
+    CDROM = models.CharField(max_length=100)
+    Graph = models.CharField(max_length=100)
+    Color_box = models.CharField(max_length=100)
+    Box = models.CharField(max_length=100)
+    Monitor = models.CharField(max_length=100)
+    Importer = models.CharField(max_length=100)
+    o_proizv = models.CharField(max_length=100)
     sale = models.BooleanField()
     by = models.BooleanField()
-    o_proizv = models.CharField(max_length=100)
-    cena = models.CharField(max_length=10)
+    cena = models.IntegerField()
     new = models.BooleanField()
 
+
     def __str__(self):
-        return (self.Proizv.pr + " " + self.Processor)
+        return (self.Name)
 
 
 class TypePer(models.Model):
@@ -248,4 +249,4 @@ class Raznoe(models.Model):
     by = models.BooleanField()
 
     def __str__(self):
-        return (self.Type.t )
+        return (self.Type.t + " " + self.Name)

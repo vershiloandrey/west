@@ -4,6 +4,7 @@ from . import views
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
     url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
+    url(r'^pc/(?P<pk>[0-9]+)/$', views.pc_detail, name='pc_detail'),
     url(r'^shop/(?P<pk>[0-9]+)/$', views.raznoe_detail, name='raznoe_detail'),
     url(r'^shop/$', views.shop, name='shop'),
     url(r'^notes/$', views.notes, name='notes'),
@@ -24,6 +25,11 @@ urlpatterns = [
     url(r'^news/$', views.news, name='news'),
 
     url(r'^remont/$', views.remont, name='remont'),
+    url(r'^remont_note/$', views.remont_note, name='remont_note'),
+    url(r'^remont_phone/$', views.remont_phone, name='remont_phone'),
+    url(r'^remont_print/$', views.remont_print, name='remont_print'),
+    url(r'^remont_comp/$', views.remont_comp, name='remont_comp'),
+
     url(r'^contacts/$', views.contacts, name='contacts'),
     url(r'^price/$', views.price, name='price'),
 

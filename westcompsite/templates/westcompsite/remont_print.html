@@ -199,10 +199,11 @@
          </div> <!-- END -->
     </div> <!-- END of header -->
 
-<nav class="top-menu">
+
+    <nav class="top-menu">
         <ul class="menu-main">
             <li class="left-item"><a href="/" class="selected">Главная</a></li>
-            <li class="left-item"><a href="/remont">Услуги</a></li>
+            <li class="left-item"><a href="">Услуги</a></li>
             <li class="left-item"><a href="/shop">Продажа</a></li>
             <li class="left-item"><a href="/by">Б/У</a></li>
             <li class="left-item"><a href="/price">Прейскурант</a></li>
@@ -256,11 +257,11 @@
         <div id="sidebar">
             <h3>Категории</h3>
             <ul class="sidebar_menu">
-                <li><a href="/remont/#content">Ремонт ноутбуков</a></li>
-                <li><a href="/remont/#phones">Ремонт телефонов и планшетов</a></li>
-                <li><a href="/remont/#prints">Ремонт принтеров</a></li>
-                <li><a href="/remont/#prints">Заправка картриджей</a></li>
-                <li><a href="/remont/#comps">Ремонт компьютеров</a></li>
+                <li><a href="#content">Ремонт ноутбуков</a></li>
+                <li><a href="#phones">Ремонт телефонов и планшетов</a></li>
+                <li><a href="#prints">Ремонт принтеров</a></li>
+                <li><a href="#prints">Заправка картриджей</a></li>
+                <li><a href="#comps">Ремонт компьютеров</a></li>
                 <li><a href="/price">Прейскурант</a></li>
             </ul>
             <h3>Не нашли, что искали?</h3>
@@ -279,23 +280,20 @@
 
         <div id="content">
             <h1>Услуги</h1>
-            <h2>Ремонт телефонов</h2>
+            <a href="/price"><h3>Прейскурант</h3></a>
 
+
+            <h2>Ремонт принтеров</h2>
             <div class="col col_14">
-                <a href="/detail_phone_raz"><img src="{% static 'images/gallery/phone_raz.jpg' %}" alt="Product 01"/>
-                    <h3>Замена разъема</h3></a>
+                <a href="/detail_print"><img src="{% static 'images/gallery/reprint_small.png' %}" alt="Product 01"/>
+                    <h3>Обслуживание и ремонт принтеров</h3></a>
             </div>
-
-            <div class="col col_14 no_margin_right">
-                <a href="/detail_phone_sim"><img src="{% static 'images/gallery/phone_sim_small.png' %}" alt="Product 0311"/>
-                    <h3>Замена sim/card слота</h3>
+            <div class="col col_14">
+                <a href="/detail_kart"><img src="{% static 'images/gallery/recart.jpg' %}" alt="Product 02"/>
+                    <h3>Заправка картриджей</h3>
                 </a>
             </div>
-
-            <!--<a href="#" class="more float_r">View all</a>-->
-            <div class="cleaner h50"></div>
-
-
+            <div class="cleaner h50" id="comps"></div>
 
             <div class="cleaner"></div>
         </div> <!-- END of content -->

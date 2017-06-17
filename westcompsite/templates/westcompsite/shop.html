@@ -65,6 +65,7 @@
         }
     </script>
     <style type="text/css">
+
         .wrapper {
             background: #fff;
             width: 700px;
@@ -237,7 +238,7 @@
             <li><a href="about.html">Продажа</a>
                 <ul>
                     <li><a href="#">Скидки</a></li>
-                    <li><a href="{% static '/news'%}">Новинки</a></li>
+                    <li><a href="/news">Новинки</a></li>
                     <li><a href="#">Ноутбуки</a></li>
                     <li><a href="#">Комплектующие</a></li>
                     <li><a href="#">Б/У товары</a></li>
@@ -257,12 +258,12 @@
         <div id="sidebar">
             <h3>Категории</h3>
             <ul class="sidebar_menu">
-                <li><a href="{% static '/notes' %}">Ноутбуки</a></li>
-                <li><a href="{% static '/pcs' %}">Компьютеры</a></li>
-                <li><a href="{% static '/complex' %}">Комплектующие</a></li>
-                <li><a href="{% static '/periphery' %}">Перферия</a></li>
-                <li><a href="{% static '/access' %}">Аксессуары</a></li>
-                <li><a href="{% static '/sales' %}">Скидки</a></li>
+                <li><a href="/notes">Ноутбуки</a></li>
+                <li><a href="/pcs">Компьютеры</a></li>
+                <li><a href="/complect">Комплектующие</a></li>
+                <li><a href="/periphery">Перферия</a></li>
+                <li><a href="/access">Аксессуары</a></li>
+                <li><a href="/sales">Скидки</a></li>
                 <li><a href="{% static '/news'%}">Новинки</a></li>
             </ul>
             <h3>Не нашли, что искали?</h3>
@@ -312,17 +313,17 @@
                 </a>
             </div>
             <div class="col col_14 no_margin_right">
-                <a href="/by"><center><img src="{% static 'images/gallery/nevkl.jpg' %}" alt="Product 0311"/>
+                <a href="/by"><center><img src="{% static 'images/gallery/by.jpg' %}" alt="Product 0311"/>
                     <h3>Б/У товары</h3></center>
                 </a>
             </div>
             <div class="col col_14">
-                <a href="/sales"><center><img src="{% static 'images/gallery/nevkl.jpg' %}" alt="Product 01"/>
-                    <h3>Скидки</h3></center></a>
+                <a href="/sales"><center><img src="{% static 'images/gallery/sale.jpg' %}" alt="Product 01"/>
+                    </center></a>
             </div>
             <div class="col col_14">
-                <a href="/news"><center><img src="{% static 'images/gallery/nevkl.jpg' %}" alt="Product 02"/>
-                    <h3>Новинки</h3></center>
+                <a href="/news"><center><img src="{% static 'images/gallery/NEWS.jpg' %}" alt="Product 02"/>
+                    </center>
                 </a>
             </div>
 

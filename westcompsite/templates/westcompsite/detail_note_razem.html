@@ -241,7 +241,11 @@
             left: 15px;
             bottom: 12px;
         }
-
+#aaa {
+            color: red;
+            font-weight: bold;
+            font-size: 30px;
+        }
         .slider .nav span {
             opacity: 0.9;
             background: #fff;
@@ -491,7 +495,7 @@
                 <li><a href="/remont/#prints">Ремонт принтеров</a></li>
                 <li><a href="/remont/#prints">Заправка картриджей</a></li>
                 <li><a href="/remont/#comps">Ремонт компьютеров</a></li>
-                <li><a href="{% static '/price' %}">Прейскурант</a></li>
+                <li><a href="/price">Прейскурант</a></li>
             </ul>
             <h3>Не нашли, что искали?</h3>
             <p>Попробуйте поискать здесь</p>
@@ -516,15 +520,18 @@
                 <div class="cleaner h20"></div>
 
                 <div class="Box2">
-                    <h2><b><div id="aaa">Цена:</div></b></h2>
+                    <h2><b>
+                       <h1 style="color: red; font-weight: bold;">Цена: <br></h1>
+                        <div id="aaa"></div>
+                    </b></h2>
                     <h3>Вид ремонта:</h3>
                     <div class="styled-select green rounded">
                         <select onchange="window.document.getElementById('aaa').textContent=this.options[this.selectedIndex].value">
-                            <option value="Цена:">Не выбрано</option>
-                            <option value="Цена: 60.00-80.00 BYN">Ремонт разъема питания</option>
-                            <option value="Цена: 60.00-80.00 BYN">Замена разъема питания</option>
-                            <option value="Цена: 60.00-80.00 BYN">Замена USB порта</option>
-                            <option value="Цена: 60.00-80.00 BYN">Замена audio порта</option>
+                            <option value="">Не выбрано</option>
+                            <option value="60.00-80.00 BYN">Ремонт разъема питания</option>
+                            <option value="60.00-80.00 BYN">Замена разъема питания</option>
+                            <option value="60.00-80.00 BYN">Замена USB порта</option>
+                            <option value="60.00-80.00 BYN">Замена audio порта</option>
                         </select>
                     </div>
                 </div>

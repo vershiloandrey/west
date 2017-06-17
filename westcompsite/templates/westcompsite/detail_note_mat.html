@@ -308,7 +308,12 @@
             background: #2e9419;
         }
 
-
+#aaa {
+            color: red;
+            font-weight: bold;
+            font-size: 30px;
+    line-height: 25px;
+        }
     </style>
     <script type="text/javascript" src="{% static 'js/jquery1.js' %}"></script>
 
@@ -488,7 +493,7 @@
                 <li><a href="/remont/#prints">Ремонт принтеров</a></li>
                 <li><a href="/remont/#prints">Заправка картриджей</a></li>
                 <li><a href="/remont/#comps">Ремонт компьютеров</a></li>
-                <li><a href="{% static '/price' %}">Прейскурант</a></li>
+                <li><a href="/price">Прейскурант</a></li>
             </ul>
             <h3>Не нашли, что искали?</h3>
             <p>Попробуйте поискать здесь</p>
@@ -515,15 +520,16 @@
                 <div class="Box2">
 
                     <h2><b>
-                        <div id="aaa">Цена:</div>
+                       <h1 style="color: red; font-weight: bold;">Цена: <br></h1>
+                        <div id="aaa"></div>
                     </b></h2>
                     <h3>Размер матрицы:</h3>
                     <div class="styled-select green rounded">
                         <select onchange="window.document.getElementById('aaa').textContent=this.options[this.selectedIndex].value">
-                            <option value="Цена:">Не выбрано</option>
-                            <option value="Цена: 99999.99 BYN">Замена южного или северного моста</option>
-                            <option value="Цена: 99999.99 BYN">Замена видеочипа</option>
-                            <option value="Цена: 99999.99 BYN">Восстановление цепей питания</option>
+                            <option value="">Не выбрано</option>
+                            <option value="180.00-220.00 BYN">Замена южного или северного моста</option>
+                            <option value="180.00-220.00 BYN">Замена видеочипа</option>
+                            <option value="180.00-220.00 BYN">Восстановление цепей питания</option>
                         </select>
                     </div>
                 </div>

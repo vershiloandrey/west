@@ -15,6 +15,12 @@ def post_detail(request, pk):
     return render(request, 'westcompsite/post_detail.html', {'post': post})
 
 
+def pc_detail(request, pk):
+    post = get_object_or_404(PC, pk=pk)
+    return render(request, 'westcompsite/pc_detail.html', {'post': post})
+
+
+
 def raznoe_detail(request, pk):
     post = get_object_or_404(Raznoe, pk=pk)
     return render(request, 'westcompsite/raznoe_detail.html', {'post': post})
@@ -83,7 +89,7 @@ def lenovo(request):
 
 
 def pcs(request):
-    products = PC.objects.all().order_by('Proizv')
+    products = PC.objects.all().order_by('cena')
     return render(request, 'westcompsite/pcs.html', {'products': products})
 
 
@@ -125,6 +131,22 @@ def news(request):
 
 def remont(request):
     return render(request, 'westcompsite/remont.html', {})
+
+
+def remont_phone(request):
+    return render(request, 'westcompsite/remont_phone.html', {})
+
+
+def remont_print(request):
+    return render(request, 'westcompsite/remont_print.html', {})
+
+
+def remont_comp(request):
+    return render(request, 'westcompsite/remont_comp.html', {})
+
+
+def remont_note(request):
+    return render(request, 'westcompsite/remont_note.html', {})
 
 
 def product_detail(request):

@@ -154,7 +154,11 @@
             left: 15px;
             bottom: 12px;
         }
-
+#aaa {
+            color: red;
+            font-weight: bold;
+            font-size: 30px;
+        }
         .slider2 .nav span {
             opacity: 0.9;
             background: #fff;
@@ -441,7 +445,7 @@
                 <li><a href="/remont/#prints">Ремонт принтеров</a></li>
                 <li><a href="/remont/#prints">Заправка картриджей</a></li>
                 <li><a href="/remont/#comps">Ремонт компьютеров</a></li>
-                <li><a href="{% static '/price' %}">Прейскурант</a></li>
+                <li><a href="/price">Прейскурант</a></li>
             </ul>
             <h3>Не нашли, что искали?</h3>
             <p>Попробуйте поискать здесь</p>
@@ -464,17 +468,20 @@
             </div>
              <div class="col col_13 no_margin_right">
                 <div class="Box2">
-                    <h2><b><div id="aaa">Цена:</div></b></h2>
+                    <h2><b>
+                       <h1 style="color: red; font-weight: bold;">Цена: <br></h1>
+                        <div id="aaa"></div>
+                    </b></h2>
                     <h3>Размер матрицы:</h3>
                     <div class="styled-select green rounded">
                         <select onchange="window.document.getElementById('aaa').textContent=this.options[this.selectedIndex].value">
-                            <option value="Цена:">Не выбрано</option>
+                            <option value="">Не выбрано</option>
 
-                            <option value="Цена: от 110.00 BYN">10.1"</option>
-                            <option value="Цена: от 125.00 BYN">11.6"</option>
-                            <option value="Цена: от 145.00 BYN">13.3"</option>
-                            <option value="Цена: от 125.00 BYN">15.6"</option>
-                            <option value="Цена: от 160.00 BYN">17.3"</option>
+                            <option value="oт 110.00 BYN">10.1"</option>
+                            <option value="от 125.00 BYN">11.6"</option>
+                            <option value="от 145.00 BYN">13.3"</option>
+                            <option value="от 125.00 BYN">15.6"</option>
+                            <option value="от 160.00 BYN">17.3"</option>
                         </select>
                     </div>
                 </div>
