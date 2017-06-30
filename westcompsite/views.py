@@ -64,118 +64,117 @@ def notes(request):
 
 
 def hp(request):
-    notes = Notes.objects.filter(Proizv__pr='HP').order_by('cena')
+    notes = Notes.objects.filter(Proizv__pr='HP').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/hp.html', {'notes': notes})
 
 
 def acer(request):
-    notes = Notes.objects.filter(Proizv__pr='Acer').order_by('cena')
+    notes = Notes.objects.filter(Proizv__pr='Acer').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/acer.html', {'notes': notes})
 
 
 def asus(request):
-    notes = Notes.objects.filter(Proizv__pr='ASUS').order_by('cena')
+    notes = Notes.objects.filter(Proizv__pr='ASUS').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/asus.html', {'notes': notes})
 
 
 def dell(request):
-    notes = Notes.objects.filter(Proizv__pr='Dell').order_by('cena')
+    notes = Notes.objects.filter(Proizv__pr='Dell').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/dell.html', {'notes': notes})
 
 
 def lenovo(request):
-    notes = Notes.objects.filter(Proizv__pr='Lenovo').order_by('cena')
+    notes = Notes.objects.filter(Proizv__pr='Lenovo').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/lenovo.html', {'notes': notes})
 
 
 def pcs(request):
-    products = PC.objects.all().order_by('cena')
+    products = PC.objects.all().filter(by=False).order_by('cena')
     return render(request, 'westcompsite/pcs.html', {'products': products})
 
 
 def access(request):
-    products = Raznoe.objects.filter(Type__t='Аксессуары').order_by('cena')
+    products = Raznoe.objects.filter(Type__t='Аксессуары').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/access.html', {'products': products})
 
 
 def access_mouse(request):
-    products = Raznoe.objects.filter(Type__t='Мышь').order_by('cena')
+    products = Raznoe.objects.filter(Type__t='Мышь').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/access_mouse.html', {'products': products})
 
 
 def access_klav(request):
-    products = Raznoe.objects.filter(Type__t='Клавиатура').order_by('cena')
+    products = Raznoe.objects.filter(Type__t='Клавиатура').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/access_klav.html', {'products': products})
 
 
 def access_cabel(request):
-    products = Raznoe.objects.filter(Type__t='Кабель').order_by('cena')
+    products = Raznoe.objects.filter(Type__t='Кабель').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/access_cabel.html', {'products': products})
 
 
 def access_naush(request):
-    products = Raznoe.objects.filter(Type__t='Наушники ПК').order_by('cena')
+    products = Raznoe.objects.filter(Type__t='Наушники ПК').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/access_naush.html', {'products': products})
 
 
 def access_web(request):
-    products = Raznoe.objects.filter(Type__t='Вебкамера').order_by('cena')
+    products = Raznoe.objects.filter(Type__t='Вебкамера').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/access_web.html', {'products': products})
 
 
 def access_usb(request):
-    products = Raznoe.objects.filter(Type__t='Флешка').order_by('cena')
+    products = Raznoe.objects.filter(Type__t='Флешка').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/access_usb.html', {'products': products})
 
 
-
 def periphery(request):
-    products = Raznoe.objects.filter(Type__t='Периферия').order_by('cena')
+    products = Raznoe.objects.filter(Type__t='Периферия').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/periphery.html', {'products': products})
 
 
 def complect(request):
-    products = Raznoe.objects.filter(Type__t='Комплектующие').order_by('cena')
+    products = Raznoe.objects.filter(Type__t='Комплектующие').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/complect.html', {'products': products})
 
 
 def complect_cooler(request):
-    products = Raznoe.objects.filter(Type__t='Кулер').order_by('cena')
+    products = Raznoe.objects.filter(Type__t='Кулер').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/complect_cooler.html', {'products': products})
 
 
 def complect_hdd(request):
-    products = Raznoe.objects.filter(Type__t='Жесткий диск').order_by('cena')
+    products = Raznoe.objects.filter(Type__t='Жесткий диск').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/complect_hdd.html', {'products': products})
 
 
 def complect_mem(request):
-    products = Raznoe.objects.filter(Type__t='Оперативная память').order_by('cena')
+    products = Raznoe.objects.filter(Type__t='Оперативная память').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/complect_mem.html', {'products': products})
 
 
 def complect_power_block(request):
-    products = Raznoe.objects.filter(Type__t='Блок питания').order_by('cena')
+    products = Raznoe.objects.filter(Type__t='Блок питания').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/complect_power_block.html', {'products': products})
 
 
 def complect_processor(request):
-    products = Raznoe.objects.filter(Type__t='Процессор').order_by('cena')
+    products = Raznoe.objects.filter(Type__t='Процессор').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/complect_processor.html', {'products': products})
 
 
 def complect_video(request):
-    products = Raznoe.objects.filter(Type__t='Видеокарта').order_by('cena')
+    products = Raznoe.objects.filter(Type__t='Видеокарта').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/complect_video.html', {'products': products})
 
 
 def complect_optical(request):
-    products = Raznoe.objects.filter(Type__t='Оптический привод').order_by('cena')
+    products = Raznoe.objects.filter(Type__t='Оптический привод').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/complect_optical.html', {'products': products})
 
 
 def complect_mat(request):
-    products = Raznoe.objects.filter(Type__t='Материнская плата').order_by('cena')
+    products = Raznoe.objects.filter(Type__t='Материнская плата').filter(by=False).order_by('cena')
     return render(request, 'westcompsite/complect_mat.html', {'products': products})
 
 
@@ -230,18 +229,6 @@ def detail_kart(request):
 
 def detail_print(request):
     return render(request, 'westcompsite/detail_print.html', {})
-
-
-def remont_note_vent(request):
-    return render(request, 'westcompsite/remont_note_vent.html', {})
-
-
-def remont_note_2(request):
-    return render(request, 'westcompsite/remont_note_2.html', {})
-
-
-def remont_note_3(request):
-    return render(request, 'westcompsite/remont_note_3.html', {})
 
 
 def detail_note_cabel(request):
@@ -304,18 +291,6 @@ def detail_note_sh(request):
     return render(request, 'westcompsite/detail_note_sh.html', {})
 
 
-def remont_phone_1(request):
-    return render(request, 'westcompsite/remont_phone_1.html', {})
-
-
-def remont_phone_2(request):
-    return render(request, 'westcompsite/remont_phone_2.html', {})
-
-
-def remont_phone_3(request):
-    return render(request, 'westcompsite/remont_phone_3.html', {})
-
-
 def detail_phone_tach(request):
     return render(request, 'westcompsite/detail_phone_tach.html', {})
 
@@ -346,10 +321,6 @@ def detail_phone_virus(request):
 
 def remont_pc_1(request):
     return render(request, 'westcompsite/remont_pc_1.html', {})
-
-
-def remont_pc_2(request):
-    return render(request, 'westcompsite/remont_pc_2.html', {})
 
 
 def detail_pc_block(request):

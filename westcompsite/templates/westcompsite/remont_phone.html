@@ -175,6 +175,16 @@
         }
 
 
+
+        div.col {
+            padding-top: 10px;
+        }
+
+        div.col:hover {
+            background-color: #bad8f7;
+            border-radius: 10px;
+        }
+
     </style>
     <script type="text/javascript" src="{% static 'js/jquery1.js' %}"></script>
 
@@ -203,7 +213,7 @@
     <nav class="top-menu">
         <ul class="menu-main">
             <li class="left-item"><a href="/" class="selected">Главная</a></li>
-            <li class="left-item"><a href="">Ремонт</a></li>
+            <li class="left-item"><a href="/remont">Ремонт</a></li>
             <li class="left-item"><a href="/shop">Продажа</a></li>
 
             <li class="left-item"><a href="/price">Прейскурант</a></li>
@@ -284,28 +294,28 @@
 
             <h2>Ремонт телефонов и планшетов</h2>
             <div class="col col_14">
-                <a href="/remont_phone_1"><img src="{% static 'images/gallery/razbtel.jpg' %}" alt="Product 01"/>
-                    <h3>Замена экрана<br></h3></a>
+                <a href="/remont_phone_1"><center><img src="{% static 'images/gallery/razbtel.jpg' %}" alt="Product 01"/>
+                    <h3>Замена экрана<br></h3></center></a>
             </div>
              <div class="col col_14">
-                <a href="/detail_phone_raz"><img src="{% static 'images/gallery/phone_raz.jpg' %}" alt="Product 01"/>
-                    <h3>Замена разъема</h3></a>
+                <a href="/detail_phone_raz"><center><img src="{% static 'images/gallery/phone_raz.jpg' %}" alt="Product 01"/>
+                    <h3>Замена разъема</h3></center></a>
             </div>
 
             <div class="col col_14 no_margin_right">
-                <a href="/detail_phone_sim"><img src="{% static 'images/gallery/phone_sim_small.png' %}" alt="Product 0311"/>
+                <a href="/detail_phone_sim"><center><img src="{% static 'images/gallery/phone_sim_small.png' %}" alt="Product 0311"/>
                     <h3>Замена sim/card слота</h3>
-                </a>
+                </center></a>
             </div>
             <div class="cleaner h50"></div>
  <div class="col col_14">
-                <a href="/detail_phone_oc"><img src="{% static 'images/gallery/phone_pro_small.jpg' %}" alt="Product 01"/>
-                    <h3>Перепрошивка</h3></a>
+                <a href="/detail_phone_oc"><center><img src="{% static 'images/gallery/phone_pro_small.jpg' %}" alt="Product 01"/>
+                    <h3>Перепрошивка</h3></center></a>
             </div>
             <div class="col col_14">
-                <a href="/detail_phone_virus"><img src="{% static 'images/gallery/phone_virus_small.jpg' %}" alt="Product 02"/>
+                <a href="/detail_phone_virus"><center><img src="{% static 'images/gallery/phone_virus_small.jpg' %}" alt="Product 02"/>
                     <h3>Чистка от вирусов</h3>
-                </a>
+                </center></a>
             </div>
 
 

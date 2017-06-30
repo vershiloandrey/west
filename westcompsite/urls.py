@@ -57,10 +57,6 @@ urlpatterns = [
     url(r'^detail_kart/$', views.detail_kart, name='detail_kart'),
     url(r'^detail_print/$', views.detail_print, name='detail_print'),
 
-    url(r'^remont_note_vent/$', views.remont_note_vent, name='remont_note_vent'),
-    url(r'^remont_note_2/$', views.remont_note_2, name='remont_note_2'),
-    url(r'^remont_note_3/$', views.remont_note_3, name='remont_note_3'),
-
     url(r'^detail_note_cabel/$', views.detail_note_cabel, name='detail_note_cabel'),
     url(r'^detail_note_cabel_1/$', views.detail_note_cabel_1, name='detail_note_cabel_1'),
     url(r'^detail_note_cabel_2/$', views.detail_note_cabel_2, name='detail_note_cabel_2'),
@@ -80,10 +76,6 @@ urlpatterns = [
     url(r'^detail_note_modern/$', views.detail_note_modern, name='detail_note_modern'),
     url(r'^detail_note_sh/$', views.detail_note_sh, name='detail_note_sh'),
 
-    url(r'^remont_phone_1/$', views.remont_phone_1, name='remont_phone_1'),
-    url(r'^remont_phone_2/$', views.remont_phone_2, name='remont_phone_2'),
-    url(r'^remont_phone_3/$', views.remont_phone_3, name='remont_phone_3'),
-
     url(r'^detail_phone_tach$', views.detail_phone_tach, name='detail_phone_tach'),
     url(r'^detail_phone_disp/$', views.detail_phone_disp, name='detail_phone_disp'),
     url(r'^detail_phone_raz/$', views.detail_phone_raz, name='detail_phone_raz'),
@@ -93,7 +85,6 @@ urlpatterns = [
     url(r'^detail_phone_virus/$', views.detail_phone_virus, name='detail_phone_virus'),
 
     url(r'^remont_pc_1/$', views.remont_pc_1, name='remont_pc_1'),
-    url(r'^remont_pc_2/$', views.remont_pc_2, name='remont_pc_2'),
 
     url(r'^detail_pc_block/$', views.detail_pc_block, name='detail_pc_block'),
     url(r'^detail_pc_clear/$', views.detail_pc_clear, name='detail_pc_clear'),
