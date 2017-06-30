@@ -94,18 +94,89 @@ def pcs(request):
 
 
 def access(request):
-    products = Raznoe.objects.filter(Type__t='Аксессуары').order_by('Text')
+    products = Raznoe.objects.filter(Type__t='Аксессуары').order_by('cena')
     return render(request, 'westcompsite/access.html', {'products': products})
 
 
+def access_mouse(request):
+    products = Raznoe.objects.filter(Type__t='Мышь').order_by('cena')
+    return render(request, 'westcompsite/access_mouse.html', {'products': products})
+
+
+def access_klav(request):
+    products = Raznoe.objects.filter(Type__t='Клавиатура').order_by('cena')
+    return render(request, 'westcompsite/access_klav.html', {'products': products})
+
+
+def access_cabel(request):
+    products = Raznoe.objects.filter(Type__t='Кабель').order_by('cena')
+    return render(request, 'westcompsite/access_cabel.html', {'products': products})
+
+
+def access_naush(request):
+    products = Raznoe.objects.filter(Type__t='Наушники ПК').order_by('cena')
+    return render(request, 'westcompsite/access_naush.html', {'products': products})
+
+
+def access_web(request):
+    products = Raznoe.objects.filter(Type__t='Вебкамера').order_by('cena')
+    return render(request, 'westcompsite/access_web.html', {'products': products})
+
+
+def access_usb(request):
+    products = Raznoe.objects.filter(Type__t='Флешка').order_by('cena')
+    return render(request, 'westcompsite/access_usb.html', {'products': products})
+
+
+
 def periphery(request):
-    products = Raznoe.objects.filter(Type__t='Периферия').order_by('Text')
+    products = Raznoe.objects.filter(Type__t='Периферия').order_by('cena')
     return render(request, 'westcompsite/periphery.html', {'products': products})
 
 
 def complect(request):
-    products = Raznoe.objects.filter(Type__t='Комплектующие').order_by('Text')
+    products = Raznoe.objects.filter(Type__t='Комплектующие').order_by('cena')
     return render(request, 'westcompsite/complect.html', {'products': products})
+
+
+def complect_cooler(request):
+    products = Raznoe.objects.filter(Type__t='Кулер').order_by('cena')
+    return render(request, 'westcompsite/complect_cooler.html', {'products': products})
+
+
+def complect_hdd(request):
+    products = Raznoe.objects.filter(Type__t='Жесткий диск').order_by('cena')
+    return render(request, 'westcompsite/complect_hdd.html', {'products': products})
+
+
+def complect_mem(request):
+    products = Raznoe.objects.filter(Type__t='Оперативная память').order_by('cena')
+    return render(request, 'westcompsite/complect_mem.html', {'products': products})
+
+
+def complect_power_block(request):
+    products = Raznoe.objects.filter(Type__t='Блок питания').order_by('cena')
+    return render(request, 'westcompsite/complect_power_block.html', {'products': products})
+
+
+def complect_processor(request):
+    products = Raznoe.objects.filter(Type__t='Процессор').order_by('cena')
+    return render(request, 'westcompsite/complect_processor.html', {'products': products})
+
+
+def complect_video(request):
+    products = Raznoe.objects.filter(Type__t='Видеокарта').order_by('cena')
+    return render(request, 'westcompsite/complect_video.html', {'products': products})
+
+
+def complect_optical(request):
+    products = Raznoe.objects.filter(Type__t='Оптический привод').order_by('cena')
+    return render(request, 'westcompsite/complect_optical.html', {'products': products})
+
+
+def complect_mat(request):
+    products = Raznoe.objects.filter(Type__t='Материнская плата').order_by('cena')
+    return render(request, 'westcompsite/complect_mat.html', {'products': products})
 
 
 def by(request):

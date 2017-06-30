@@ -203,9 +203,9 @@
     <nav class="top-menu">
         <ul class="menu-main">
             <li class="left-item"><a href="/" class="selected">Главная</a></li>
-            <li class="left-item"><a href="">Услуги</a></li>
+            <li class="left-item"><a href="">Ремонт</a></li>
             <li class="left-item"><a href="/shop">Продажа</a></li>
-            <li class="left-item"><a href="/by">Б/У</a></li>
+
             <li class="left-item"><a href="/price">Прейскурант</a></li>
             <li class="left-item"><a href="/credit">Кредит</a></li>
             <li class="left-item"><a href="/contacts">Контакты</a></li>
@@ -219,7 +219,7 @@
     <div id="templatemo_menu" class="ddsmoothmenu">
         <ul>
             <li><a href="index.html" class="selected">Главная</a></li>
-            <li><a href="products.html">Услуги</a>
+            <li><a href="products.html">Ремонт</a>
                 <ul>
                     <li><a href="#">Ремонт ноутбуков</a></li>
                     <li><a href="#">Ремонт телефонов</a></li>
@@ -279,25 +279,34 @@
         </div> <!-- END of sidebar -->
 
         <div id="content">
-            <h1>Услуги</h1>
+            <h1>Ремонт</h1>
             <a href="/price"><h3>Прейскурант</h3></a>
 
             <h2>Ремонт телефонов и планшетов</h2>
             <div class="col col_14">
                 <a href="/remont_phone_1"><img src="{% static 'images/gallery/razbtel.jpg' %}" alt="Product 01"/>
-                    <h3>Разбит экран<br></h3></a>
+                    <h3>Замена экрана<br></h3></a>
+            </div>
+             <div class="col col_14">
+                <a href="/detail_phone_raz"><img src="{% static 'images/gallery/phone_raz.jpg' %}" alt="Product 01"/>
+                    <h3>Замена разъема</h3></a>
+            </div>
+
+            <div class="col col_14 no_margin_right">
+                <a href="/detail_phone_sim"><img src="{% static 'images/gallery/phone_sim_small.png' %}" alt="Product 0311"/>
+                    <h3>Замена sim/card слота</h3>
+                </a>
+            </div>
+            <div class="cleaner h50"></div>
+ <div class="col col_14">
+                <a href="/detail_phone_oc"><img src="{% static 'images/gallery/phone_pro_small.jpg' %}" alt="Product 01"/>
+                    <h3>Перепрошивка</h3></a>
             </div>
             <div class="col col_14">
-                <a href="/remont_phone_2"><img src="{% static 'images/gallery/qqq.jpg' %}" alt="Product 02"/>
-                    <h3>Не заряжается<br>Не включается<br>Не видит сеть</h3>
+                <a href="/detail_phone_virus"><img src="{% static 'images/gallery/phone_virus_small.jpg' %}" alt="Product 02"/>
+                    <h3>Чистка от вирусов</h3>
                 </a>
             </div>
-            <div class="col col_14 no_margin_right">
-                <a href="/remont_phone_3"><img src="{% static 'images/gallery/nevkltel.jpg' %}" alt="Product 03"/>
-                    <h3>Тормозит<br>Не включается</h3>
-                </a>
-            </div>
-            <div class="cleaner h50" id="prints"></div>
 
 
             <div class="cleaner"></div>
@@ -309,7 +318,7 @@
 
         <div>
 
-            <h4>ЧТУП «Весткомпьютер</h4>
+            <h4>ЧТУП «Весткомпьютер»</h4>
             <p> 223021, Минский р-н, д. Богатырево, ул. Полесская, д.1-180
                 р/сч 3012165410019 в «МТБанк» ЗАО, код 117
                 <br>г. Минск, ул. Толстого, 10

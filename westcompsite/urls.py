@@ -17,8 +17,23 @@ urlpatterns = [
 
     url(r'^pcs/$', views.pcs, name='pcs'),
     url(r'^complect/$', views.complect, name='complect'),
+    url(r'^complect_cooler/$', views.complect_cooler, name='complect_cooler'),
+    url(r'^complect_optical/$', views.complect_optical, name='complect_optical'),
+    url(r'^complect_mat/$', views.complect_mat, name='complect_mat'),
+    url(r'^complect_hdd/$', views.complect_hdd, name='complect_hdd'),
+    url(r'^complect_mem/$', views.complect_mem, name='complect_mem'),
+    url(r'^complect_power_block/$', views.complect_power_block, name='complect_power_block'),
+    url(r'^complect_processor/$', views.complect_processor, name='complect_processor'),
+    url(r'^complect_video/$', views.complect_video, name='complect_video'),
+
     url(r'^periphery/$', views.periphery, name='peryphery'),
     url(r'^access/$', views.access, name='access'),
+    url(r'^access_mouse/$', views.access_mouse, name='access_mouse'),
+    url(r'^access_klav/$', views.access_klav, name='access_klav'),
+    url(r'^access_usb/$', views.access_usb, name='access_usb'),
+    url(r'^access_cabel/$', views.access_cabel, name='access_cabel'),
+    url(r'^access_naush/$', views.access_naush, name='access_naush'),
+    url(r'^access_web/$', views.access_web, name='access_web'),
 
     url(r'^by/$', views.by, name='by'),
     url(r'^sales/$', views.sales, name='sales'),

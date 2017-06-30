@@ -1,5 +1,4 @@
 {% load staticfiles %}
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -9,7 +8,7 @@
     <meta name="description" content=""/>
 
 
-    <link href="{% static 'css/templatemo_style.css' %}" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main_style.css' %}"/>
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/ddsmoothmenu.css' %}"/>
 
@@ -24,48 +23,17 @@
 
     </script>
 
-    <script type="text/javascript">
-
-        ddsmoothmenu.init({
-            mainmenuid: "templatemo_menu", //menu DIV id
-            orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
-            classname: 'ddsmoothmenu', //class added to menu's outer DIV
-            //customtheme: ["#1c5a80", "#18374a"],
-            contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
-        })
-
+    <script type="text/javascript" src="{% static 'scripts/init.js' %}">
     </script>
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+
     <script language="javascript" type="text/javascript" src="{% static 'scripts/mootools-1.2.1-core.js' %}"></script>
     <script language="javascript" type="text/javascript" src="{% static 'scripts/mootools-1.2-more.js' %}"></script>
     <script language="javascript" type="text/javascript" src="{% static 'scripts/slideitmoo-1.1.js' %}"></script>
-    <script language="javascript" type="text/javascript">
-        window.addEvents({
-            'domready': function () {
-                /* thumbnails example , div containers */
-                new SlideItMoo({
-                    overallContainer: 'SlideItMoo_outer',
-                    elementScrolled: 'SlideItMoo_inner',
-                    thumbsContainer: 'SlideItMoo_items',
-                    itemsVisible: 5,
-                    elemsSlide: 2,
-                    duration: 200,
-                    itemsSelector: '.SlideItMoo_element',
-                    itemWidth: 171,
-                    showControls: 1
-                });
-            },
-
-        });
-
-        function clearText(field) {
-            if (field.defaultValue == field.value) field.value = '';
-            else if (field.value == '') field.value = field.defaultValue;
-        }
+    <script language="javascript" type="text/javascript" src="{% static 'scripts/slider.js' %}">
     </script>
     <style type="text/css">
-
         .wrapper {
             background: #fff;
             width: 700px;
@@ -175,11 +143,23 @@
             background: #2e9419;
         }
 
+        div.col {
+            height: 200px;
+        }
+
+        div.col:hover {
+            -webkit-transform: scale(1.1, 1.1);
+            -webkit-transition-timing-function: ease-out;
+            -webkit-transition-duration: 200ms;
+            -moz-transform: scale(1.1, 1.1);
+            -moz-transition-timing-function: ease-out;
+            -moz-transition-duration: 200ms;
+        }
 
     </style>
     <script type="text/javascript" src="{% static 'js/jquery1.js' %}"></script>
 
-
+    <script type="text/javascript" src="{% static 'js/slider.js' %}"></script>
 </head>
 
 <body id="home">
@@ -204,9 +184,8 @@
     <nav class="top-menu">
         <ul class="menu-main">
             <li class="left-item"><a href="/" class="selected">Главная</a></li>
-            <li class="left-item"><a href="/remont">Услуги</a></li>
-            <li class="left-item"><a href="">Продажа</a></li>
-            <li class="left-item"><a href="/by">Б/У</a></li>
+            <li class="left-item"><a href="/remont">Ремонт</a></li>
+            <li class="left-item"><a href="/shop">Продажа</a></li>
             <li class="left-item"><a href="/price">Прейскурант</a></li>
             <li class="left-item"><a href="/credit">Кредит</a></li>
             <li class="left-item"><a href="/contacts">Контакты</a></li>
@@ -220,7 +199,7 @@
     <div id="templatemo_menu" class="ddsmoothmenu">
         <ul>
             <li><a href="index.html" class="selected">Главная</a></li>
-            <li><a href="products.html">Услуги</a>
+            <li><a href="products.html">Ремонт</a>
                 <ul>
                     <li><a href="#">Ремонт ноутбуков</a></li>
                     <li><a href="#">Ремонт телефонов</a></li>
@@ -250,93 +229,72 @@
         <br style="clear: left"/>
     </div> <!-- end of templatemo_menu -->
 
-    <br><br>
+    <div class="cleaner h50"></div>
+    <div class="cleaner h40"></div>
+
     <div id="templatemo_main_top"></div>
     <div id="templatemo_main">
 
+        <div class="cleaner h50"></div>
+        <div class="col col_14 no_margin_right">
+            <a href="/remont_note">
+                <center><img src="{% static 'images/index/note.png' %}" height="150px" alt="Product 01"/>
+                    <h2 style="color:white;">Ноутбуки</h2></center>
+            </a>
+        </div>
+        <div class="col col_14 no_margin_right">
+            <a href="/remont_phone">
+                <center><img src="{% static 'images/index/computer.png' %}" height="150px" alt="Product 01"/>
+                    <h2 style="color:white;">Компьютеры</h2></center>
+            </a>
+        </div>
+        <div class="col col_14 no_margin_right">
+            <a href="/remont_print">
+                <center><img src="{% static 'images/index/gear.png' %}" height="150px" alt="Product 01"/>
+                    <h2 style="color:white;">Комплектующие</h2></center>
+            </a>
+        </div>
+        <div class="col col_14 no_margin_right">
+            <a href="/remont_pc_1">
+                <center><img src="{% static 'images/index/print.png' %}" height="150px" alt="Product 01"/>
+                    <h2 style="color:white;">Периферия</h2></center>
+            </a>
+        </div>
 
-        <div id="sidebar">
-            <h3>Категории</h3>
-            <ul class="sidebar_menu">
-                <li><a href="/notes">Ноутбуки</a></li>
-                <li><a href="/pcs">Компьютеры</a></li>
-                <li><a href="/complect">Комплектующие</a></li>
-                <li><a href="/periphery">Перферия</a></li>
-                <li><a href="/access">Аксессуары</a></li>
-                <li><a href="/sales">Скидки</a></li>
-                <li><a href="{% static '/news'%}">Новинки</a></li>
-            </ul>
-            <h3>Не нашли, что искали?</h3>
-            <p>Попробуйте поискать здесь</p>
-            <div id="newsletter">
-                <form action="#" method="get">
-                    <input type="text" value="Искать" name="email_newsletter" id="email_newsletter"
-                           title="email_newsletter" onfocus="clearText(this)" onblur="clearText(this)"
-                           class="txt_field"/>
-                    <input type="submit" name="subscribe" value="Искать" alt="Subscribe" id="subscribebtn"
-                           title="Искать" class="subscribebtn"/>
-                </form>
-                <div class="cleaner"></div>
-            </div>
-        </div> <!-- END of sidebar -->
+<div class="cleaner h50"></div>
+        <div class="col col_14 no_margin_right">
+            <a href="/remont_note">
+                <center><img src="{% static 'images/index/note.png' %}" height="150px" alt="Product 01"/>
+                    <h2 style="color:white;">Аксессуары</h2></center>
+            </a>
+        </div>
+        <div class="col col_14 no_margin_right">
+            <a href="/remont_phone">
+                <center><img src="{% static 'images/index/shop.png' %}" height="150px" alt="Product 01"/>
+                    <h2 style="color:white;">Скидки</h2></center>
+            </a>
+        </div>
+        <div class="col col_14 no_margin_right">
+            <a href="/remont_print">
+                <center><img src="{% static 'images/index/star.png' %}" height="150px" alt="Product 01"/>
+                    <h2 style="color:white;">Новинки</h2></center>
+            </a>
+        </div>
+        <div class="col col_14 no_margin_right">
+            <a href="/remont_pc_1">
+                <center><img src="{% static 'images/index/note.png' %}" height="150px" alt="Product 01"/>
+                    <h2 style="color:white;">Б/У товары</h2></center>
+            </a>
+        </div>
+        <div class="cleaner h10"></div>
+    </div>
 
-        <div id="content">
-            <h1>Продажа</h1>
-            <div class="cleaner"></div>
-
-            <div class="col col_14">
-
-                <a href="/notes">
-                    <center><img src="{% static 'images/gallery/note.jpeg' %}" alt="Product 01"/>
-                        <h3>Ноутбуки</h3></center>
-                </a>
-            </div>
-            <div class="col col_14">
-                <a href="/pcs">
-                    <center><img src="{% static 'images/gallery/pc.jpeg' %}" alt="Product 02"/>
-                        <h3>Компьютеры</h3></center>
-                </a>
-            </div>
-            <div class="col col_14 no_margin_right">
-                <a href="/complect"><center><img src="{% static 'images/gallery/complect.jpeg' %}" alt="Product 0311"/>
-                    <h3>Комплектующие</h3></center>
-                </a>
-            </div>
-            <div class="cleaner h50"></div>
-            <div class="col col_14">
-                <a href="/periphery"><center><img src="{% static 'images/gallery/perif.jpeg' %}" alt="Product 01"/>
-                    <h3>Периферия</h3></center></a>
-            </div>
-            <div class="col col_14">
-                <a href="/access"><center><img src="{% static 'images/gallery/aks.jpeg' %}" alt="Product 02"/>
-                    <h3>Аксессуары</h3></center>
-                </a>
-            </div>
-            <div class="col col_14 no_margin_right">
-                <a href="/by"><center><img src="{% static 'images/gallery/by.jpg' %}" alt="Product 0311"/>
-                    <h3>Б/У товары</h3></center>
-                </a>
-            </div>
-            <div class="col col_14">
-                <a href="/sales"><center><img src="{% static 'images/gallery/sale.jpg' %}" alt="Product 01"/>
-                    </center></a>
-            </div>
-            <div class="col col_14">
-                <a href="/news"><center><img src="{% static 'images/gallery/NEWS.jpg' %}" alt="Product 02"/>
-                    </center>
-                </a>
-            </div>
-
-            <div class="cleaner"></div>
-        </div> <!-- END of content -->
-        <div class="cleaner"></div>
-    </div> <!-- END of main -->
 
     <div id="templatemo_footer">
 
         <div>
 
-            <h4>ЧТУП «Весткомпьютер</h4>
+            <h4>ЧТУП «Весткомпьютер»</h4>
             <p> 223021, Минский р-н, д. Богатырево, ул. Полесская, д.1-180
                 р/сч 3012165410019 в «МТБанк» ЗАО, код 117
                 <br>г. Минск, ул. Толстого, 10
@@ -356,49 +314,8 @@
 </div>
 
 
-<script type="text/javascript"> var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-23131825-1']);
-_gaq.push(['_trackPageview']);
-(function () {
-    var ga = document.createElement('script');
-    ga.type = 'text/javascript';
-    ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(ga, s);
-})(); </script>
+<script type="text/javascript" src="{% static 'scripts/footerInCode.js' %}"></script>
 
-
-<script type="text/javascript">(function (d, w, c) {
-    (w[c] = w[c] || []).push(function () {
-        try {
-            w.yaCounter20963398 = new Ya.Metrika({
-                id: 20963398,
-                webvisor: true,
-                clickmap: true,
-                trackLinks: true,
-                accurateTrackBounce: true,
-                trackHash: true
-            });
-        } catch (e) {
-        }
-    });
-    var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
-        n.parentNode.insertBefore(s, n);
-    };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-    if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-    } else {
-        f();
-    }
-})(document, window, "yandex_metrika_callbacks");</script>
-<noscript>
-    <div><img src="//mc.yandex.ru/watch/20963398" style="position:absolute; left:-9999px;" alt=""></div>
-</noscript>
-
-
+</div>
 </body>
 </html>

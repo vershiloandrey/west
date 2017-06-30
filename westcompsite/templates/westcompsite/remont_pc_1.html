@@ -203,9 +203,9 @@
     <nav class="top-menu">
         <ul class="menu-main">
             <li class="left-item"><a href="/" class="selected">Главная</a></li>
-            <li class="left-item"><a href="/remont">Услуги</a></li>
+            <li class="left-item"><a href="/remont">Ремонт</a></li>
             <li class="left-item"><a href="/shop">Продажа</a></li>
-            <li class="left-item"><a href="/by">Б/У</a></li>
+
             <li class="left-item"><a href="/price">Прейскурант</a></li>
             <li class="left-item"><a href="/credit">Кредит</a></li>
             <li class="left-item"><a href="/contacts">Контакты</a></li>
@@ -219,7 +219,7 @@
     <div id="templatemo_menu" class="ddsmoothmenu">
         <ul>
             <li><a href="index.html" class="selected">Главная</a></li>
-            <li><a href="products.html">Услуги</a>
+            <li><a href="products.html">Ремонт</a>
                 <ul>
                     <li><a href="#">Ремонт ноутбуков</a></li>
                     <li><a href="#">Ремонт телефонов</a></li>
@@ -256,12 +256,12 @@
 
         <div id="sidebar">
             <h3>Категории</h3>
-             <ul class="sidebar_menu">
-                <li><a href="/remont/#content">Ремонт ноутбуков</a></li>
-                <li><a href="/remont/#phones">Ремонт телефонов и планшетов</a></li>
-                <li><a href="/remont/#prints">Ремонт принтеров</a></li>
-                <li><a href="/remont/#prints">Заправка картриджей</a></li>
-                <li><a href="/remont/#comps">Ремонт компьютеров</a></li>
+            <ul class="sidebar_menu">
+                <li><a href="/remont_note">Ремонт ноутбуков</a></li>
+                <li><a href="/remont_phone">Ремонт телефонов и планшетов</a></li>
+                <li><a href="/remont_print">Ремонт принтеров</a></li>
+                <li><a href="/remont_print">Заправка картриджей</a></li>
+                <li><a href="/remont_pc_1">Ремонт компьютеров</a></li>
                 <li><a href="/price">Прейскурант</a></li>
             </ul>
             <h3>Не нашли, что искали?</h3>
@@ -279,7 +279,7 @@
         </div> <!-- END of sidebar -->
 
         <div id="content">
-            <h1>Услуги</h1>
+            <h1>Ремонт</h1>
             <h2>Ремонт компьютеров</h2>
 
             <div class="col col_14">
@@ -287,22 +287,37 @@
                     <h3>Ремонт/замена материнской платы</h3></a>
             </div>
             <div class="col col_14">
-                <a href="/detail_pc_video"><img src="{% static 'images/gallery/pc_video_small.jpg' %}" alt="Product 02"/>
+                <a href="/detail_pc_video"><img src="{% static 'images/gallery/pc_video_small.jpg' %}"
+                                                alt="Product 02"/>
                     <h3>Ремонт/замена видеокарты</h3>
                 </a>
             </div>
             <div class="col col_14 no_margin_right">
-                <a href="/detail_pc_block"><img src="{% static 'images/gallery/pc_block_small.jpg' %}" alt="Product 0311"/>
+                <a href="/detail_pc_block"><img src="{% static 'images/gallery/pc_block_small.jpg' %}"
+                                                alt="Product 0311"/>
                     <h3>Ремонт/замена блока питания</h3>
                 </a>
             </div>
             <!--<a href="#" class="more float_r">View all</a>-->
             <div class="cleaner h50"></div>
-
+            <div class="col col_14">
+                <a href="/detail_pc_clear"><img src="{% static 'images/gallery/pc_clear_small.png' %}"
+                                                alt="Product 01"/>
+                    <h3>Чистка от пыли</h3></a>
+            </div>
+            <div class="col col_14">
+                <a href="/detail_oc"><img src="{% static 'images/gallery/reoc_small.jpg' %}" alt="Product 02"/>
+                    <h3>Переустановка ОС</h3>
+                </a>
+            </div>
+            <div class="col col_14 no_margin_right">
+                <a href="/detail_pc_hdd"><img src="{% static 'images/gallery/pc_hdd_small.jpg' %}" alt="Product 0311"/>
+                    <h3>Ремонт/замена жесткого диска</h3>
+                </a>
+            </div>
 
             <!--<a href="#" class="more float_r">View all</a>-->
             <div class="cleaner h50"></div>
-
 
 
             <div class="cleaner"></div>
@@ -314,7 +329,7 @@
 
         <div>
 
-            <h4>ЧТУП «Весткомпьютер</h4>
+            <h4>ЧТУП «Весткомпьютер»</h4>
             <p> 223021, Минский р-н, д. Богатырево, ул. Полесская, д.1-180
                 р/сч 3012165410019 в «МТБанк» ЗАО, код 117
                 <br>г. Минск, ул. Толстого, 10

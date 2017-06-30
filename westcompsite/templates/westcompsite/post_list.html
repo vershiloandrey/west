@@ -8,7 +8,7 @@
     <meta name="description" content=""/>
 
 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/templatemo_style.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main_style.css' %}"/>
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/ddsmoothmenu.css' %}"/>
 
@@ -143,6 +143,18 @@
             background: #2e9419;
         }
 
+        div.col {
+            height: 200px;
+        }
+
+        div.col:hover {
+            -webkit-transform: scale(1.1, 1.1);
+            -webkit-transition-timing-function: ease-out;
+            -webkit-transition-duration: 200ms;
+            -moz-transform: scale(1.1, 1.1);
+            -moz-transition-timing-function: ease-out;
+            -moz-transition-duration: 200ms;
+        }
 
     </style>
     <script type="text/javascript" src="{% static 'js/jquery1.js' %}"></script>
@@ -172,9 +184,8 @@
     <nav class="top-menu">
         <ul class="menu-main">
             <li class="left-item"><a href="/" class="selected">Главная</a></li>
-            <li class="left-item"><a href="/remont">Услуги</a></li>
+            <li class="left-item"><a href="/remont">Ремонт</a></li>
             <li class="left-item"><a href="/shop">Продажа</a></li>
-            <li class="left-item"><a href="/by">Б/У</a></li>
             <li class="left-item"><a href="/price">Прейскурант</a></li>
             <li class="left-item"><a href="/credit">Кредит</a></li>
             <li class="left-item"><a href="/contacts">Контакты</a></li>
@@ -188,7 +199,7 @@
     <div id="templatemo_menu" class="ddsmoothmenu">
         <ul>
             <li><a href="index.html" class="selected">Главная</a></li>
-            <li><a href="products.html">Услуги</a>
+            <li><a href="products.html">Ремонт</a>
                 <ul>
                     <li><a href="#">Ремонт ноутбуков</a></li>
                     <li><a href="#">Ремонт телефонов</a></li>
@@ -217,128 +228,49 @@
         </ul>
         <br style="clear: left"/>
     </div> <!-- end of templatemo_menu -->
-    <center>
-        <div id="templatemo_middle">
-            <div class="slider">
-                <ul>
-                    <li><a href="/remont"><img src="{% static 'i/1.png' %}" alt="product 1"/></a></li>
-                    <li><a href="/shop"><img src="{% static 'i/2.png' %}" alt="product 2"/></a></li>
-                    <li><a href="/credit"><img src="{% static 'i/3.png' %}" alt="product 2"/></a></li>
-                    <li><a href="/shop"><img src="{% static 'i/4.png' %}" alt="product 2"/></a></li>
-                    <li><a href="/price"><img src="{% static 'i/5.png' %}" alt="product 2"/></a></li>
-                </ul>
-            </div>
-        </div> <!-- END of middle -->
-    </center>
+
+    <div class="cleaner h50"></div>
+    <div class="cleaner h50"></div>
+    <div class="cleaner h40"></div>
 
     <div id="templatemo_main_top"></div>
     <div id="templatemo_main">
 
-        <div id="product_slider">
-            <h3>Ремонт</h3>
-            <hr/>
-            <div id="SlideItMoo_outer">
-                <div id="SlideItMoo_inner">
-                    <div id="SlideItMoo_items">
-                        <div class="SlideItMoo_element">
-                            <a href="/remont_note" target="_parent">
-                                <img src="{% static 'images/gallery/Rnote.png' %}" alt="product 1"/></a>
-                        </div>
-                        <div class="SlideItMoo_element">
-                            <a href="/remont_comp" target="_parent">
-                                <img src="{% static 'images/gallery/Rcomp.png' %}" alt="product 3"/></a>
-                        </div>
-                        <div class="SlideItMoo_element">
-                            <a href="/remont_phone" target="_parent">
-                                <img src="{% static 'images/gallery/Rtel.png' %}" alt="product 4"/></a>
-                        </div>
-                        <div class="SlideItMoo_element">
-                            <a href="/detail_print" target="_parent">
-                                <img src="{% static 'images/gallery/Rprint.png' %}" alt="product 2"/></a>
-                        </div>
-                        <div class="SlideItMoo_element">
-                            <a href="/detail_kart" target="_parent">
-                                <img src="{% static 'images/gallery/Rcart.png' %}" alt="product 5"/></a>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-
-            <h3>Продажа</h3>
-            <hr/>
-            <div id="SlideItMoo_outer">
-                <div id="SlideItMoo_inner">
-                    <div id="SlideItMoo_items">
-                        <div class="SlideItMoo_element">
-                            <a href="{% static '/notes' %}" target="_parent">
-                                <img src="{% static 'images/gallery/comp.png' %}" alt="product 1"/></a>
-                        </div>
-                        <div class="SlideItMoo_element">
-                            <a href="/pcs" target="_parent">
-                                <img src="{% static 'images/gallery/pevm.png' %}" alt="product 3"/></a>
-                        </div>
-                        <div class="SlideItMoo_element">
-                            <a href="/complect" target="_parent">
-                                <img src="{% static 'images/gallery/kompl.png' %}" alt="product 4"/></a>
-                        </div>
-                        <div class="SlideItMoo_element">
-                            <a href="/periphery" target="_parent">
-                                <img src="{% static 'images/gallery/printer.png' %}" alt="product 2"/></a>
-                        </div>
-                        <div class="SlideItMoo_element">
-                            <a href="/access" target="_parent">
-                                <img src="{% static 'images/gallery/aks.png' %}" alt="product 5"/></a>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-            <h3>Предложения со скидкой</h3>
-            <hr/>
-            <div id="SlideItMoo_outer2"><center>
-                <div id="SlideItMoo_inner2">
-                    <center>
-                    <div id="SlideItMoo_items2">
-                        <center>
-                        <div class="col col_14">
-                            <a href="/sales">
-                                <center><img src="{% static 'images/gallery/sale.jpg' %}" alt="Product 01"/>
-                                </center>
-                            </a>
-                        </div>
-                        <div class="col col_14">
-                            <a href="/news">
-                                <center><img src="{% static 'images/gallery/NEWS.jpg' %}" alt="Product 02"/>
-                                </center>
-                            </a>
-                        </div>
-                        <div class="col col_14 no_margin_right">
-                            <a href="/by">
-                                <center><img src="{% static 'images/gallery/by.jpg' %}" alt="Product 0311"/>
-                                    </center>
-                            </a>
-                        </div>
-                        </center>
-                    </div>
-                    </center>
-                </div>
-            </center>
-            </div>
+        <div class="cleaner h50"></div>
+        <div class="col col_14 no_margin_right">
+            <a href="/remont">
+                <center><img src="{% static 'images/index/tools.png' %}" height="150px" alt="Product 01"/>
+                    <h2 style="color:white;">Ремонт</h2></center>
+            </a>
+        </div>
+        <div class="col col_14 no_margin_right">
+            <a href="/pcs">
+                <center><img src="{% static 'images/index/computer.png' %}" height="150px" alt="Product 01"/>
+                    <h2 style="color:white;">Компьютеры</h2></center>
+            </a>
+        </div>
+        <div class="col col_14 no_margin_right">
+            <a href="/notes">
+                <center><img src="{% static 'images/index/note.png' %}" height="150px" alt="Product 01"/>
+                    <h2 style="color:white;">Ноутбуки</h2></center>
+            </a>
+        </div>
+        <div class="col col_14 no_margin_right">
+            <a href="/complect">
+                <center><img src="{% static 'images/index/gear.png' %}" height="150px" alt="Product 01"/>
+                    <h2 style="color:white;">Комплектующие</h2></center>
+            </a>
         </div>
 
-
+        <div class="cleaner h10"></div>
     </div>
 
 
     <div id="templatemo_footer">
 
-
         <div>
-
-            <h4>ЧТУП «Весткомпьютер</h4>
+<div class="cleaner h50"></div><div class="cleaner h50"></div><div class="cleaner h50"></div><div class="cleaner h20"></div>
+            <h4>ЧТУП «Весткомпьютер»</h4>
             <p> 223021, Минский р-н, д. Богатырево, ул. Полесская, д.1-180
                 р/сч 3012165410019 в «МТБанк» ЗАО, код 117
                 <br>г. Минск, ул. Толстого, 10
