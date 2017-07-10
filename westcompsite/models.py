@@ -243,6 +243,7 @@ class Raznoe(models.Model):
     Name = models.CharField(max_length=100)
     Type = models.ForeignKey(TypePer)
     Text = models.TextField()
+    category = models.TextField()
     cena = models.CharField(max_length=20)
     new = models.BooleanField()
     sale = models.BooleanField()

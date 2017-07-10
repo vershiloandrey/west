@@ -20,11 +20,24 @@ urlpatterns = [
     url(r'^complect_cooler/$', views.complect_cooler, name='complect_cooler'),
     url(r'^complect_optical/$', views.complect_optical, name='complect_optical'),
     url(r'^complect_mat/$', views.complect_mat, name='complect_mat'),
+
+    url(r'^hdds/$', views.hdds, name='hdds'),
     url(r'^complect_hdd/$', views.complect_hdd, name='complect_hdd'),
+    url(r'^complect_hdd_note/$', views.complect_hdd_note, name='complect_hdd_note'),
+
     url(r'^complect_mem/$', views.complect_mem, name='complect_mem'),
     url(r'^complect_power_block/$', views.complect_power_block, name='complect_power_block'),
+
+    url(r'^processors/$', views.processors, name='processors'),
+
     url(r'^complect_processor/$', views.complect_processor, name='complect_processor'),
-    url(r'^complect_video/$', views.complect_video, name='complect_video'),
+    url(r'^complect_processor_amd/$', views.complect_processor_amd, name='complect_processor_amd'),
+
+    url(r'video/$', views.video, name='video'),
+    url(r'^complect_video_1/$', views.complect_video_1, name='complect_video_1'),
+    url(r'^complect_video_2/$', views.complect_video_2, name='complect_video_2'),
+    url(r'^complect_video_4/$', views.complect_video_4, name='complect_video_4'),
+    url(r'^complect_video_6/$', views.complect_video_6, name='complect_video_6'),
 
     url(r'^periphery/$', views.periphery, name='peryphery'),
     url(r'^access/$', views.access, name='access'),

@@ -353,8 +353,6 @@
                 <li><a href="{%  static '/complect' %}">Комплектующие</a></li>
                 <li><a href="{%  static '/periphery' %}">Периферия</a></li>
                 <li><a href="/access">Аксессуары</a></li>
-                <li><a href="{%  static '/sales' %}">Скидки</a></li>
-                <li><a href="/news">Новинки</a></li>
             </ul>
             <h3>Не нашли, что искали?</h3>
             <p>Попробуйте поискать здесь</p>
@@ -373,7 +371,7 @@
             <h2>{{ post.Name }}</h2>
             <div class="col col_13">
                 <a rel="lightbox[portfolio]" href="{{ post.Image_URL }}" title="{{ post.Name }}"><img
-                        src="{{ post.Image_URL }}" width="300" alt="{{ post.Name }}"/></a>
+                        src="{{ post.Image_URL }}" width="250" alt="{{ post.Name }}"/></a>
             </div>
             <div class="col col_13 no_margin_right">
                 <h1 style="color: red; font-weight: bold;">Цена: <br><br>{{ post.cena }}0 BYN</h1>

@@ -65,6 +65,7 @@
         }
     </script>
     <style type="text/css">
+
         .wrapper {
             background: #fff;
             width: 700px;
@@ -174,34 +175,14 @@
             background: #2e9419;
         }
 
-    div.col {
-            height: 300px;
+
+        div.col {
+            padding-top: 10px;
         }
 
         div.col:hover {
             background-color: #bad8f7;
             border-radius: 10px;
-
-        }
-
-        .second_block {
-            display: none;
-        }
-
-        div.col:hover .second_block {
-            display: block;
-        }
-
-        h7 {
-            color: red;
-
-            font-weight: bold;
-            font-size: 26px;
-            padding: 5px;
-            margin-top: 0px;
-            font-size: 24px;
-            border-bottom: 1px solid #0d0035;
-            bottom: 0;
         }
 
     </style>
@@ -233,7 +214,7 @@
         <ul class="menu-main">
             <li class="left-item"><a href="/" class="selected">Главная</a></li>
             <li class="left-item"><a href="/remont">Ремонт</a></li>
-            <li class="left-item"><a href="/shop">Продажа</a></li>
+            <li class="left-item"><a href="">Продажа</a></li>
 
             <li class="left-item"><a href="/price">Прейскурант</a></li>
             <li class="left-item"><a href="/credit">Кредит</a></li>
@@ -308,26 +289,33 @@
         </div> <!-- END of sidebar -->
 
         <div id="content">
-            <h1>Ноутбуки Hewlett-Packard</h1>
+            <h1>Видеокарты</h1>
+            <div class="cleaner"></div>
 
-            {% for product in notes %}
+            <div class="col col_14">
 
-                <div class="col col_14 no_margin_right">
+                <a href="/complect_video_1">
+                    <center><img src="http://static.nix.ru/autocatalog/asus/asustek_video/114692_2254_draft_large.jpg" height="110px" alt="Product 01"/>
+                        <h3>1GB</h3></center>
+                </a>
+            </div>
+            <div class="col col_14">
+                <a href="/complect_video_2">
+                    <center><img src="http://www.123.ru/xl_pics/80007653.jpg" height="110px" alt="Product 02"/>
+                        <h3>2GB</h3></center>
+                </a>
+            </div>
+            <div class="col col_14 no_margin_right">
+                <a href="/complect_video_4"><center><img src="http://static.nix.ru/autocatalog/gigabyte/video/210418_2254_draft.jpg" height="110px" alt="Product 0311"/>
+                    <h3>4GB</h3></center>
+                </a>
+            </div>
+            <div class="cleaner h50"></div>
+            <div class="col col_14">
+                <a href="/complect_video_6"><center><img src="http://img1.elmir.ua/img/759423/3000/2000/videokarta_pci-e_6gb_geforce_gtx1060_ddr5_gigabyte_gv-n1060g1_rock-6gd.jpg" height="110px" alt="Product 01"/>
+                    <h3>6GB</h3></center></a>
+            </div>
 
-                    <center>
-                        <br>
-                        <a href="{% url 'post_detail' pk=product.pk %}">
-                            <div style="height: 200px"><img src="{{ product.Image_URL }}" height="120"
-                                                            alt="{{ product.Model }}"/>
-                                <h3>{{ product.Proizv }} {{ product.Model }}</h3>
-                            </div>
-                            <h7>{{ product.cena }}0 BYN</h7><br><br>
-                            <div class="second_block"> Подробнее...</div>
-                        </a>
-                    </center>
-                </div>
-
-            {% endfor %}
             <div class="cleaner"></div>
         </div> <!-- END of content -->
         <div class="cleaner"></div>

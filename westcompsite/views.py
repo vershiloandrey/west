@@ -58,6 +58,18 @@ def shop(request):
     return render(request, 'westcompsite/shop.html', {})
 
 
+def hdds(request):
+    return render(request, 'westcompsite/hdds.html', {})
+
+
+def video(request):
+    return render(request, 'westcompsite/video.html', {})
+
+
+def processors(request):
+    return render(request, 'westcompsite/processors.html', {})
+
+
 def notes(request):
     notes = Notes.objects.all()
     return render(request, 'westcompsite/notes.html', {'notes': notes})
@@ -144,7 +156,12 @@ def complect_cooler(request):
 
 
 def complect_hdd(request):
-    products = Raznoe.objects.filter(Type__t='Жесткий диск').filter(by=False).order_by('cena')
+    products = Raznoe.objects.filter(Type__t='Жесткий диск').filter(by=False).filter(category='к').order_by('cena')
+    return render(request, 'westcompsite/complect_hdd.html', {'products': products})
+
+
+def complect_hdd_note(request):
+    products = Raznoe.objects.filter(Type__t='Жесткий диск').filter(by=False).filter(category='н').order_by('cena')
     return render(request, 'westcompsite/complect_hdd.html', {'products': products})
 
 
@@ -159,14 +176,33 @@ def complect_power_block(request):
 
 
 def complect_processor(request):
-    products = Raznoe.objects.filter(Type__t='Процессор').filter(by=False).order_by('cena')
+    products = Raznoe.objects.filter(Type__t='Процессор').filter(by=False).filter(category='i').order_by('cena')
     return render(request, 'westcompsite/complect_processor.html', {'products': products})
 
 
-def complect_video(request):
-    products = Raznoe.objects.filter(Type__t='Видеокарта').filter(by=False).order_by('cena')
+def complect_processor_amd(request):
+    products = Raznoe.objects.filter(Type__t='Процессор').filter(by=False).filter(category='a').order_by('cena')
+    return render(request, 'westcompsite/complect_processor.html', {'products': products})
+
+
+def complect_video_1(request):
+    products = Raznoe.objects.filter(Type__t='Видеокарта').filter(by=False).filter(category='1').order_by('cena')
     return render(request, 'westcompsite/complect_video.html', {'products': products})
 
+
+def complect_video_2(request):
+    products = Raznoe.objects.filter(Type__t='Видеокарта').filter(by=False).filter(category='2').order_by('cena')
+    return render(request, 'westcompsite/complect_video.html', {'products': products})
+
+
+def complect_video_4(request):
+    products = Raznoe.objects.filter(Type__t='Видеокарта').filter(by=False).filter(category='4').order_by('cena')
+    return render(request, 'westcompsite/complect_video.html', {'products': products})
+
+
+def complect_video_6(request):
+    products = Raznoe.objects.filter(Type__t='Видеокарта').filter(by=False).filter(category='6').order_by('cena')
+    return render(request, 'westcompsite/complect_video.html', {'products': products})
 
 def complect_optical(request):
     products = Raznoe.objects.filter(Type__t='Оптический привод').filter(by=False).order_by('cena')

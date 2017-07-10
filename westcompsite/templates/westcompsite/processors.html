@@ -174,34 +174,14 @@
             background: #2e9419;
         }
 
-    div.col {
-            height: 300px;
+
+        div.col {
+            padding-top: 10px;
         }
 
         div.col:hover {
             background-color: #bad8f7;
             border-radius: 10px;
-
-        }
-
-        .second_block {
-            display: none;
-        }
-
-        div.col:hover .second_block {
-            display: block;
-        }
-
-        h7 {
-            color: red;
-
-            font-weight: bold;
-            font-size: 26px;
-            padding: 5px;
-            margin-top: 0px;
-            font-size: 24px;
-            border-bottom: 1px solid #0d0035;
-            bottom: 0;
         }
 
     </style>
@@ -308,26 +288,20 @@
         </div> <!-- END of sidebar -->
 
         <div id="content">
-            <h1>Ноутбуки Hewlett-Packard</h1>
-
-            {% for product in notes %}
-
-                <div class="col col_14 no_margin_right">
-
-                    <center>
-                        <br>
-                        <a href="{% url 'post_detail' pk=product.pk %}">
-                            <div style="height: 200px"><img src="{{ product.Image_URL }}" height="120"
-                                                            alt="{{ product.Model }}"/>
-                                <h3>{{ product.Proizv }} {{ product.Model }}</h3>
-                            </div>
-                            <h7>{{ product.cena }}0 BYN</h7><br><br>
-                            <div class="second_block"> Подробнее...</div>
-                        </a>
+            <h1>Процессоры</h1>
+            <div class="col col_14">
+                <a href="/complect_processor">
+                    <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Intel-logo.svg/1200px-Intel-logo.svg.png" height="110" alt="Product 01"/>
+                        <h3>Intel</h3></center>
+                </a>
+            </div>
+            <div class="col col_14">
+                <a href="/complect_processor_amd">
+                    <center><img src="https://seeklogo.com/images/A/amd-logo-59E15B5EB9-seeklogo.com.gif" height="110" alt="Product 02"/>
+                        <h3>AMD</h3>
                     </center>
-                </div>
-
-            {% endfor %}
+                </a>
+            </div>
             <div class="cleaner"></div>
         </div> <!-- END of content -->
         <div class="cleaner"></div>
