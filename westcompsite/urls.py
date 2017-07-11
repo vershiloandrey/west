@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^hdds/$', views.hdds, name='hdds'),
     url(r'^complect_hdd/$', views.complect_hdd, name='complect_hdd'),
     url(r'^complect_hdd_note/$', views.complect_hdd_note, name='complect_hdd_note'),
+    url(r'^complect_ssd/$', views.complect_ssd, name='complect_ssd'),
 
     url(r'^complect_mem/$', views.complect_mem, name='complect_mem'),
     url(r'^complect_power_block/$', views.complect_power_block, name='complect_power_block'),

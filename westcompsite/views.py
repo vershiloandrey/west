@@ -160,6 +160,11 @@ def complect_hdd(request):
     return render(request, 'westcompsite/complect_hdd.html', {'products': products})
 
 
+def complect_ssd(request):
+    products = Raznoe.objects.filter(Type__t='Жесткий диск').filter(by=False).filter(category='с').order_by('cena')
+    return render(request, 'westcompsite/complect_hdd.html', {'products': products})
+
+
 def complect_hdd_note(request):
     products = Raznoe.objects.filter(Type__t='Жесткий диск').filter(by=False).filter(category='н').order_by('cena')
     return render(request, 'westcompsite/complect_hdd.html', {'products': products})
